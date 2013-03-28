@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SZNAltmetricAPIClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SZNAltmetricAPIClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/setAPIKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) NSString *APIKey</Declaration>
+			
+			
+			<Anchor>//api/name/APIKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SZNAltmetricAPIClient/APIKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>@property (copy, nonatomic) NSString *APIKey</Declaration>
+			
+			
+			<Anchor>//api/name/APIKey</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SZNAltmetricAPIClient/sharedClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>+ (SZNAltmetricAPIClient *)sharedClient</Declaration>
+			
+			
+			<Anchor>//api/name/sharedClient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/fetchArticleWithAltmetricIdentifier:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchArticleWithAltmetricIdentifier:(NSString *)AltmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure</Declaration>
+			
+			
+			<Anchor>//api/name/fetchArticleWithAltmetricIdentifier:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/fetchArticleWithDOI:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchArticleWithDOI:(NSString *)DOI success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure</Declaration>
+			
+			
+			<Anchor>//api/name/fetchArticleWithDOI:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/fetchArticleWithPubMedIdentifier:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchArticleWithPubMedIdentifier:(NSString *)PubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure</Declaration>
+			
+			
+			<Anchor>//api/name/fetchArticleWithPubMedIdentifier:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/fetchArticleWithArXivIdentifier:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchArticleWithArXivIdentifier:(NSString *)ArXivIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure</Declaration>
+			
+			
+			<Anchor>//api/name/fetchArticleWithArXivIdentifier:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/fetchArticleWithADSBibcode:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchArticleWithADSBibcode:(NSString *)ADSBibcode success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure</Declaration>
+			
+			
+			<Anchor>//api/name/fetchArticleWithADSBibcode:success:failure:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SZNAltmetricAPIClient/fetchArticleWithPath:identifier:success:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SZNAltmetricAPIClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)fetchArticleWithPath:(NSString *)path identifier:(NSString *)identifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure</Declaration>
+			
+			
+			<Anchor>//api/name/fetchArticleWithPath:identifier:success:failure:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
