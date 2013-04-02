@@ -1,2 +1,2 @@
-nguage: objective-c
+language: objective-c
 script: ./Examples/SZNAltmetricDemoOSX/RunTests.sh
