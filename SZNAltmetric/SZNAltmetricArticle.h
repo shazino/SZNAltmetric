@@ -47,7 +47,7 @@
 /**
  The PubMed Identifier of the article.
  */
-@property (copy, nonatomic) NSString *PubMedIdentifier;
+@property (copy, nonatomic) NSString *pubMedIdentifier;
 
 /**
  The Altmetric score of the article.

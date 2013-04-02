@@ -55,9 +55,9 @@
     return self;
 }
 
-- (void)fetchArticleWithAltmetricIdentifier:(NSString *)AltmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
+- (void)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
 {
-    [self fetchArticleWithPath:@"id" identifier:AltmetricIdentifier success:success failure:failure];
+    [self fetchArticleWithPath:@"id" identifier:altmetricIdentifier success:success failure:failure];
 }
 
 - (void)fetchArticleWithDOI:(NSString *)DOI success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
@@ -65,9 +65,9 @@
     [self fetchArticleWithPath:@"doi" identifier:DOI success:success failure:failure];
 }
 
-- (void)fetchArticleWithPubMedIdentifier:(NSString *)PubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
+- (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
 {
-    [self fetchArticleWithPath:@"pmid" identifier:PubMedIdentifier success:success failure:failure];
+    [self fetchArticleWithPath:@"pmid" identifier:pubMedIdentifier success:success failure:failure];
 }
 
 - (void)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure

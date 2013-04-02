@@ -53,11 +53,11 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 /**
  Sends a fetch article request based on the Altmetric Identifier.
  
- @param AltmetricIdentifier The Altmetric Identifier of the article.
+ @param altmetricIdentifier The Altmetric Identifier of the article.
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithAltmetricIdentifier:(NSString *)AltmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the DOI.
@@ -71,11 +71,11 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 /**
  Sends a fetch article request based on the PubMed Identifier.
  
- @param PubMedIdentifier The PubMed Identifier of the article.
+ @param pubMedIdentifier The PubMed Identifier of the article.
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithPubMedIdentifier:(NSString *)PubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the ArXiv Identifier.
