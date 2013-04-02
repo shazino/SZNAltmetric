@@ -18,7 +18,6 @@
 		146301B6170AFC2F00220E31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146301B4170AFC2F00220E31 /* InfoPlist.strings */; };
 		146301B9170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */; };
 		146301CA170B181500220E31 /* SZNAltmetricArticleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */; };
-		AB0BD5B6EE8448E48F7FA1C5 /* libPods-SZNAltmetricDemoOSXTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AFD84E8B6C43538C2B40AC /* libPods-SZNAltmetricDemoOSXTests.a */; };
 		BCB82FE188804C62B5E9BB63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E540AFA3B454868865832E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +55,6 @@
 		146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricArticleTests.m; path = classes/SZNAltmetricArticleTests.m; sourceTree = "<group>"; };
 		27909A7C6B334D3495B674BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		8E540AFA3B454868865832E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		97AFD84E8B6C43538C2B40AC /* libPods-SZNAltmetricDemoOSXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C437D590BAEB4F51BCB8FBB3 /* Pods-SZNAltmetricDemoOSXTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests.xcconfig"; path = "Pods/Pods-SZNAltmetricDemoOSXTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +73,6 @@
 			files = (
 				146301AD170AFC2F00220E31 /* SenTestingKit.framework in Frameworks */,
 				146301AE170AFC2F00220E31 /* Cocoa.framework in Frameworks */,
-				AB0BD5B6EE8448E48F7FA1C5 /* libPods-SZNAltmetricDemoOSXTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +87,6 @@
 				1463018D170AFC2F00220E31 /* Frameworks */,
 				1463018C170AFC2F00220E31 /* Products */,
 				27909A7C6B334D3495B674BC /* Pods.xcconfig */,
-				C437D590BAEB4F51BCB8FBB3 /* Pods-SZNAltmetricDemoOSXTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +106,6 @@
 				146301AC170AFC2F00220E31 /* SenTestingKit.framework */,
 				14630190170AFC2F00220E31 /* Other Frameworks */,
 				8E540AFA3B454868865832E9 /* libPods.a */,
-				97AFD84E8B6C43538C2B40AC /* libPods-SZNAltmetricDemoOSXTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,7 +193,6 @@
 				146301A7170AFC2F00220E31 /* Frameworks */,
 				146301A8170AFC2F00220E31 /* Resources */,
 				146301A9170AFC2F00220E31 /* ShellScript */,
-				5758F3E4001F4A51A6BF9171 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,20 +266,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		5758F3E4001F4A51A6BF9171 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-SZNAltmetricDemoOSXTests-resources.sh\"\n";
 		};
 		BB465C6C68C44C52B43B52DF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -458,7 +437,7 @@
 		};
 		146301C0170AFC2F00220E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C437D590BAEB4F51BCB8FBB3 /* Pods-SZNAltmetricDemoOSXTests.xcconfig */;
+			baseConfigurationReference = 27909A7C6B334D3495B674BC /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -474,7 +453,7 @@
 		};
 		146301C1170AFC2F00220E31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C437D590BAEB4F51BCB8FBB3 /* Pods-SZNAltmetricDemoOSXTests.xcconfig */;
+			baseConfigurationReference = 27909A7C6B334D3495B674BC /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX";
 				COMBINE_HIDPI_IMAGES = YES;
