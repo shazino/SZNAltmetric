@@ -1,18 +1,17 @@
+// AFNetworking.h
 //
-// SZNAltmetricArticle.m
-//
-// Copyright (c) 2013 shazino (shazino SAS), http://www.shazino.com/
-//
+// Copyright (c) 2011 Gowalla (http://gowalla.com/)
+// 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-//
+// 
 // The above copyright notice and this permission notice shall be included in
 // all copies or substantial portions of the Software.
-//
+// 
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -21,22 +20,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "SZNAltmetricArticle.h"
+#import <Foundation/Foundation.h>
+#import <Availability.h>
 
-@implementation SZNAltmetricArticle
+#ifndef _AFNETWORKING_
+    #define _AFNETWORKING_
 
-+ (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject
-{
-    SZNAltmetricArticle *article = [SZNAltmetricArticle new];
-    article.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
-    article.DOI                 = responseObject[@"doi"];
-    article.arXiv               = responseObject[@"arxiv_id"];
-    article.PubMedIdentifier    = responseObject[@"pmid"];
-    article.score               = responseObject[@"score"];
-    article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
-    article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
-    article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
-    return article;
-}
+    #import "AFURLConnectionOperation.h"
 
-@end
+    #import "AFHTTPRequestOperation.h"
+    #import "AFJSONRequestOperation.h"
+    #import "AFXMLRequestOperation.h"
+    #import "AFPropertyListRequestOperation.h"
+    #import "AFHTTPClient.h"
+
+    #import "AFImageRequestOperation.h"
+
+    #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
+        #import "AFNetworkActivityIndicatorManager.h"
+        #import "UIImageView+AFNetworking.h"
+    #endif
+#endif /* _AFNETWORKING_ */

@@ -69,4 +69,13 @@
  */
 @property (strong, nonatomic) NSURL *imageSmallURL;
 
+/**
+ Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.
+ 
+ @param responseObject The API response object
+ 
+ @return  The newly-initialized article.
+ */
++ (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject;
+
 @end

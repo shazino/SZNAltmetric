@@ -1,0 +1,18 @@
+
+DEPENDENCIES: 
+- SZNAltmetric (from `../../')
+
+SPEC CHECKSUMS: 
+  SZNAltmetric: 38c0d74609b062095510ed7c3a7c23d8a2b5d4a7
+  AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44
+
+PODS: 
+- AFNetworking (1.2.0)
+- SZNAltmetric (0.1): 
+  - AFNetworking (>= 1.0)
+
+EXTERNAL SOURCES: 
+  SZNAltmetric: 
+    :local: ../../
+
+COCOAPODS: 0.16.4

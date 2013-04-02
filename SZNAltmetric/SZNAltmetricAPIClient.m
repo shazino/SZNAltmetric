@@ -84,17 +84,8 @@
 {
     NSURLRequest *request = [self requestWithMethod:@"GET" path:[path stringByAppendingPathComponent:identifier] parameters:self.APIKey ? @{@"key" : self.APIKey} : nil];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *responseObject) {
-        SZNAltmetricArticle *article = [SZNAltmetricArticle new];
-        article.identifier      = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
-        article.DOI             = responseObject[@"doi"];
-        article.arXiv           = responseObject[@"arxiv_id"];
-        article.PubMedIdentifier = responseObject[@"pmid"];
-        article.score           = responseObject[@"score"];
-        article.imageLargeURL   = [NSURL URLWithString:responseObject[@"images"][@"large"]];
-        article.imageMediumURL  = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
-        article.imageSmallURL   = [NSURL URLWithString:responseObject[@"images"][@"small"]];
         if (success)
-            success(article);
+            success([SZNAltmetricArticle articleWithAPIResponseObject:responseObject]);
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         if (failure)
             failure(error);
