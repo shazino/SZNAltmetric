@@ -19,7 +19,7 @@
 - (IBAction)fetchArticle:(id)sender
 {
     [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.DOITextField.stringValue success:^(SZNAltmetricArticle *article) {
-        self.scoreTextField.stringValue = [article.score stringValue];
+        self.representedArticle = article;
         self.scoreImageView.image = [[NSImage alloc] initWithContentsOfURL:article.imageLargeURL];
     } failure:^(NSError *error) {
         NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);

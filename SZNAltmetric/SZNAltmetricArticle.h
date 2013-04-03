@@ -35,6 +35,11 @@
 @property (copy, nonatomic) NSString *identifier;
 
 /**
+ The title of the article.
+ */
+@property (copy, nonatomic) NSString *title;
+
+/**
  The DOI of the article.
  */
 @property (copy, nonatomic) NSString *DOI;
@@ -68,6 +73,16 @@
  The Altmetric image URL of the article (small).
  */
 @property (strong, nonatomic) NSURL *imageSmallURL;
+
+/**
+ The URL of the article.
+ */
+@property (strong, nonatomic) NSURL *articleURL;
+
+/**
+ The details URL of the article.
+ */
+@property (strong, nonatomic) NSURL *detailsURL;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.

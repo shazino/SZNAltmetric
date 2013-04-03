@@ -36,6 +36,9 @@
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
+    article.title               = responseObject[@"title"];
+    article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
+    article.detailsURL          = [NSURL URLWithString:responseObject[@"details_url"]];
     return article;
 }
 
