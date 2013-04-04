@@ -18,13 +18,26 @@
 
 - (IBAction)fetchArticle:(id)sender
 {
+    [self.progressIndicator startAnimation:sender];
     [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.DOITextField.stringValue success:^(SZNAltmetricArticle *article) {
-        self.scoreTextField.stringValue = [article.score stringValue];
+        self.representedArticle = article;
         self.scoreImageView.image = [[NSImage alloc] initWithContentsOfURL:article.imageLargeURL];
+        [self.progressIndicator stopAnimation:sender];
     } failure:^(NSError *error) {
         NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
         [[NSAlert alertWithError:error] runModal];
+        [self.progressIndicator stopAnimation:sender];
     }];
+}
+
+- (IBAction)openArticleURL:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:self.representedArticle.articleURL];
+}
+
+- (IBAction)openDetailsURL:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:self.representedArticle.detailsURL];
 }
 
 @end

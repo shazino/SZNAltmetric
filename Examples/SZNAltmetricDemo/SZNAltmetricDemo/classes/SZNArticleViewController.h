@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) SZNAltmetricArticle *article;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 

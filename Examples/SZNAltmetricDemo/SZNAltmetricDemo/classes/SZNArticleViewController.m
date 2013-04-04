@@ -33,6 +33,7 @@
 
 - (void)configureViewWithArticle:(SZNAltmetricArticle *)article
 {
+    self.titleLabel.text = self.article.title;
     self.scoreLabel.text = [self.article.score stringValue];
     [self.imageView setImageWithURL:self.article.imageLargeURL];
 }

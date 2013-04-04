@@ -35,6 +35,41 @@
 @property (copy, nonatomic) NSString *identifier;
 
 /**
+ The title of the article.
+ */
+@property (copy, nonatomic) NSString *title;
+
+/**
+ The cited by accounts count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByAccountsCount;
+
+/**
+ The cited by Facebook walls count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByFacebookWallsCount;
+
+/**
+ The cited by feeds count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByFeedsCount;
+
+/**
+ The cited by Google+ count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByGooglePlusCount;
+
+/**
+ The cited by posts count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByPostsCount;
+
+/**
+ The cited by tweeters count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByTweetersCount;
+
+/**
  The DOI of the article.
  */
 @property (copy, nonatomic) NSString *DOI;
@@ -45,9 +80,19 @@
 @property (copy, nonatomic) NSString *arXiv;
 
 /**
+ The NLM (National Library of Medicine) Identifier of the article.
+ */
+@property (copy, nonatomic) NSString *NLMIdentifier;
+
+/**
  The PubMed Identifier of the article.
  */
 @property (copy, nonatomic) NSString *pubMedIdentifier;
+
+/**
+ The ADS Bibcode of the article.
+ */
+@property (copy, nonatomic) NSString *ADSBibcode;
 
 /**
  The Altmetric score of the article.
@@ -68,6 +113,41 @@
  The Altmetric image URL of the article (small).
  */
 @property (strong, nonatomic) NSURL *imageSmallURL;
+
+/**
+ The Open Access status (boolean) of the article.
+ */
+@property (strong, nonatomic) NSNumber *openAccess;
+
+/**
+ The journal of the article.
+ */
+@property (copy, nonatomic) NSString *journal;
+
+/**
+ The URL of the article.
+ */
+@property (strong, nonatomic) NSURL *articleURL;
+
+/**
+ The details URL of the article.
+ */
+@property (strong, nonatomic) NSURL *detailsURL;
+
+/**
+ The add date of the article.
+ */
+@property (strong, nonatomic) NSDate *addedOn;
+
+/**
+ The last update of the article.
+ */
+@property (strong, nonatomic) NSDate *lastUpdated;
+
+/**
+ The publication date of the article.
+ */
+@property (strong, nonatomic) NSDate *publishedOn;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.

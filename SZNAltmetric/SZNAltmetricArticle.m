@@ -28,14 +28,30 @@
 + (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject
 {
     SZNAltmetricArticle *article = [SZNAltmetricArticle new];
+    article.addedOn             = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"added_on"] doubleValue]];
     article.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
+    article.ADSBibcode          = responseObject[@"ads_id"];
+    article.citedByAccountsCount        = responseObject[@"cited_by_accounts_count"];
+    article.citedByFacebookWallsCount   = responseObject[@"cited_by_fbwalls_count"];
+    article.citedByFeedsCount           = responseObject[@"cited_by_feeds_count"];
+    article.citedByGooglePlusCount      = responseObject[@"cited_by_gplus_count"];
+    article.citedByPostsCount           = responseObject[@"cited_by_posts_count"];
+    article.citedByTweetersCount        = responseObject[@"cited_by_tweeters_count"];
     article.DOI                 = responseObject[@"doi"];
     article.arXiv               = responseObject[@"arxiv_id"];
+    article.lastUpdated         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"last_updated"] doubleValue]];
+    article.NLMIdentifier       = responseObject[@"nlmid"];
     article.PubMedIdentifier    = responseObject[@"pmid"];
+    article.publishedOn         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"published_on"] doubleValue]];
     article.score               = responseObject[@"score"];
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
+    article.openAccess          = responseObject[@"is_oa"];
+    article.journal             = responseObject[@"journal"];
+    article.title               = responseObject[@"title"];
+    article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
+    article.detailsURL          = [NSURL URLWithString:responseObject[@"details_url"]];
     return article;
 }
 
