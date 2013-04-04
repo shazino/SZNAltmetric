@@ -40,6 +40,36 @@
 @property (copy, nonatomic) NSString *title;
 
 /**
+ The cited by accounts count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByAccountsCount;
+
+/**
+ The cited by Facebook walls count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByFacebookWallsCount;
+
+/**
+ The cited by feeds count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByFeedsCount;
+
+/**
+ The cited by Google+ count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByGooglePlusCount;
+
+/**
+ The cited by posts count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByPostsCount;
+
+/**
+ The cited by tweeters count of the article.
+ */
+@property (strong, nonatomic) NSNumber *citedByTweetersCount;
+
+/**
  The DOI of the article.
  */
 @property (copy, nonatomic) NSString *DOI;
