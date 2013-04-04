@@ -50,6 +50,11 @@
 @property (copy, nonatomic) NSString *arXiv;
 
 /**
+ The NLM (National Library of Medicine) Identifier of the article.
+ */
+@property (copy, nonatomic) NSString *NLMIdentifier;
+
+/**
  The PubMed Identifier of the article.
  */
 @property (copy, nonatomic) NSString *pubMedIdentifier;
@@ -78,6 +83,11 @@
  The Altmetric image URL of the article (small).
  */
 @property (strong, nonatomic) NSURL *imageSmallURL;
+
+/**
+ The Open Access status (boolean) of the article.
+ */
+@property (strong, nonatomic) NSNumber *openAccess;
 
 /**
  The URL of the article.

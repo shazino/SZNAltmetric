@@ -34,12 +34,14 @@
     article.DOI                 = responseObject[@"doi"];
     article.arXiv               = responseObject[@"arxiv_id"];
     article.lastUpdated         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"last_updated"] doubleValue]];
+    article.NLMIdentifier       = responseObject[@"nlmid"];
     article.PubMedIdentifier    = responseObject[@"pmid"];
     article.publishedOn         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"published_on"] doubleValue]];
     article.score               = responseObject[@"score"];
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
+    article.openAccess          = responseObject[@"is_oa"];
     article.title               = responseObject[@"title"];
     article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
     article.detailsURL          = [NSURL URLWithString:responseObject[@"details_url"]];
