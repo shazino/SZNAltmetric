@@ -28,10 +28,14 @@
 + (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject
 {
     SZNAltmetricArticle *article = [SZNAltmetricArticle new];
+    article.addedOn             = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"added_on"] doubleValue]];
     article.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
+    article.ADSBibcode          = responseObject[@"ads_id"];
     article.DOI                 = responseObject[@"doi"];
     article.arXiv               = responseObject[@"arxiv_id"];
+    article.lastUpdated         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"last_updated"] doubleValue]];
     article.PubMedIdentifier    = responseObject[@"pmid"];
+    article.publishedOn         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"published_on"] doubleValue]];
     article.score               = responseObject[@"score"];
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];

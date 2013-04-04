@@ -55,6 +55,11 @@
 @property (copy, nonatomic) NSString *pubMedIdentifier;
 
 /**
+ The ADS Bibcode of the article.
+ */
+@property (copy, nonatomic) NSString *ADSBibcode;
+
+/**
  The Altmetric score of the article.
  */
 @property (strong, nonatomic) NSNumber *score;
@@ -83,6 +88,21 @@
  The details URL of the article.
  */
 @property (strong, nonatomic) NSURL *detailsURL;
+
+/**
+ The add date of the article.
+ */
+@property (strong, nonatomic) NSDate *addedOn;
+
+/**
+ The last update of the article.
+ */
+@property (strong, nonatomic) NSDate *lastUpdated;
+
+/**
+ The publication date of the article.
+ */
+@property (strong, nonatomic) NSDate *publishedOn;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.
