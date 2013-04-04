@@ -120,6 +120,11 @@
 @property (strong, nonatomic) NSNumber *openAccess;
 
 /**
+ The journal of the article.
+ */
+@property (copy, nonatomic) NSString *journal;
+
+/**
  The URL of the article.
  */
 @property (strong, nonatomic) NSURL *articleURL;

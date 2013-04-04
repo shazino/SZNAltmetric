@@ -48,6 +48,7 @@
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
     article.openAccess          = responseObject[@"is_oa"];
+    article.journal             = responseObject[@"journal"];
     article.title               = responseObject[@"title"];
     article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
     article.detailsURL          = [NSURL URLWithString:responseObject[@"details_url"]];
