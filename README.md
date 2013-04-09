@@ -1,4 +1,5 @@
 # SZNAltmetric
+
 **Objective-C client for the Altmetric API.**
 [![Build Status](https://travis-ci.org/shazino/SZNAltmetric.png?branch=master)](https://travis-ci.org/shazino/SZNAltmetric)
 
@@ -6,6 +7,10 @@
 > Any bug reports, feature requests, or general feedback at this point would be greatly appreciated._
 
 SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and Mac OS X. It’s built on top of [AFNetworking](http://www.github.com/AFNetworking/AFNetworking) to deal with network operations.
+
+## Getting Started
+
+The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your  `Podfile` with `pod 'SZNAltmetric', '0.2'`.
 
 ## Example Usage
 
