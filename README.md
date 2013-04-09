@@ -34,6 +34,12 @@ client.APIKey = @"###abc123###";
 
 As you can see, we have just requested an article based on its DOI (you can also use Altmetric ID, PubMed ID, arXiv ID, and ADS Bibcode). What you get is a `SZNAltmetricArticle` object, containing all the identifiers, the Altmetric score, and even the URLs to the “donuts” images.
 
+With just a bit of user interface, here’s how it looks like on iOS and OS X:
+
+![iOS demo app](http://blog.shazino.com/imgs/articles/dev/sznaltmetric-release/demo-ios.png)
+
+![OS X demo app](http://blog.shazino.com/imgs/articles/dev/sznaltmetric-release/demo-osx.png)
+
 ## References
 
 - [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
