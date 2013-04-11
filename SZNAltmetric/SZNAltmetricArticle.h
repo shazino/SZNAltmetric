@@ -40,9 +40,9 @@
 @property (copy, nonatomic) NSString *ADSBibcode;
 
 /**
- The Altmetric J Identifier of the article.
+ The Altmetric journal identifier of the article.
  */
-@property (copy, nonatomic) NSString *altmetricJIdentifier;
+@property (copy, nonatomic) NSString *altmetricJournalIdentifier;
 
 /**
  The URL of the article.
@@ -50,7 +50,7 @@
 @property (strong, nonatomic) NSURL *articleURL;
 
 /**
- The arXiv Identifier of the article.
+ The arXiv identifier of the article.
  */
 @property (copy, nonatomic) NSString *arXiv;
 
@@ -110,7 +110,7 @@
 @property (strong, nonatomic) NSDictionary *history;
 
 /**
- The Altmetric Identifier of the article.
+ The Altmetric identifier of the article.
  */
 @property (copy, nonatomic) NSString *identifier;
 
@@ -145,7 +145,7 @@
 @property (strong, nonatomic) NSDate *lastUpdated;
 
 /**
- The NLM (National Library of Medicine) Identifier of the article.
+ The NLM (National Library of Medicine) identifier of the article.
  */
 @property (copy, nonatomic) NSString *NLMIdentifier;
 
@@ -160,14 +160,9 @@
 @property (strong, nonatomic) NSDate *publishedOn;
 
 /**
- The PubMed Identifier of the article.
+ The PubMed identifier of the article.
  */
 @property (copy, nonatomic) NSString *pubMedIdentifier;
-
-/**
- The quotes of the article.
- */
-@property (strong, nonatomic) NSArray *quotes;
 
 /**
  The readers of the article.
@@ -203,6 +198,11 @@
  The title of the article.
  */
 @property (copy, nonatomic) NSString *title;
+
+/**
+ The tweet quotes of the article.
+ */
+@property (strong, nonatomic) NSArray *tweetQuotes;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.

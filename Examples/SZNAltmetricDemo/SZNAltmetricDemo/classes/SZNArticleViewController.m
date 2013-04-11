@@ -68,7 +68,7 @@
     self.subjectsLabel.text = [article.subjects componentsJoinedByString:@", "];
     self.scopusSubjectsLabel.text = [article.scopusSubjects componentsJoinedByString:@", "];
     
-    self.quotesLabel.text = [article.quotes componentsJoinedByString:@"\n"];
+    self.quotesLabel.text = [article.tweetQuotes componentsJoinedByString:@"\n"];
 }
 
 @end
