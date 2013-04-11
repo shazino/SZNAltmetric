@@ -14,7 +14,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, weak) IBOutlet NSTextField *DOITextField;
-@property (nonatomic, weak) IBOutlet NSTextField *scoreTextField;
 @property (nonatomic, weak) IBOutlet NSImageView *scoreImageView;
 @property (nonatomic, weak) IBOutlet NSProgressIndicator *progressIndicator;
 
@@ -24,4 +23,10 @@
 - (IBAction)openArticleURL:(id)sender;
 - (IBAction)openDetailsURL:(id)sender;
 
+@end
+
+@interface SZNArrayToStringWithCommaTransformer: NSValueTransformer
+@end
+
+@interface SZNArrayToStringWithLineBreakTransformer: NSValueTransformer
 @end

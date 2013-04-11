@@ -30,14 +30,29 @@
 @interface SZNAltmetricArticle : NSObject
 
 /**
- The Altmetric Identifier of the article.
+ The add date of the article.
  */
-@property (copy, nonatomic) NSString *identifier;
+@property (strong, nonatomic) NSDate *addedOn;
 
 /**
- The title of the article.
+ The ADS Bibcode of the article.
  */
-@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *ADSBibcode;
+
+/**
+ The Altmetric journal identifier of the article.
+ */
+@property (copy, nonatomic) NSString *altmetricJournalIdentifier;
+
+/**
+ The URL of the article.
+ */
+@property (strong, nonatomic) NSURL *articleURL;
+
+/**
+ The arXiv identifier of the article.
+ */
+@property (copy, nonatomic) NSString *arXiv;
 
 /**
  The cited by accounts count of the article.
@@ -70,34 +85,34 @@
 @property (strong, nonatomic) NSNumber *citedByTweetersCount;
 
 /**
+ The cohorts of the article.
+ */
+@property (strong, nonatomic) NSDictionary *cohorts;
+
+/**
+ The context of the article.
+ */
+@property (strong, nonatomic) NSDictionary *context;
+
+/**
+ The details URL of the article.
+ */
+@property (strong, nonatomic) NSURL *detailsURL;
+
+/**
  The DOI of the article.
  */
 @property (copy, nonatomic) NSString *DOI;
 
 /**
- The arXiv Identifier of the article.
+ The history of the article.
  */
-@property (copy, nonatomic) NSString *arXiv;
+@property (strong, nonatomic) NSDictionary *history;
 
 /**
- The NLM (National Library of Medicine) Identifier of the article.
+ The Altmetric identifier of the article.
  */
-@property (copy, nonatomic) NSString *NLMIdentifier;
-
-/**
- The PubMed Identifier of the article.
- */
-@property (copy, nonatomic) NSString *pubMedIdentifier;
-
-/**
- The ADS Bibcode of the article.
- */
-@property (copy, nonatomic) NSString *ADSBibcode;
-
-/**
- The Altmetric score of the article.
- */
-@property (strong, nonatomic) NSNumber *score;
+@property (copy, nonatomic) NSString *identifier;
 
 /**
  The Altmetric image URL of the article (large).
@@ -115,9 +130,9 @@
 @property (strong, nonatomic) NSURL *imageSmallURL;
 
 /**
- The Open Access status (boolean) of the article.
+ The ISSNs of the article.
  */
-@property (strong, nonatomic) NSNumber *openAccess;
+@property (strong, nonatomic) NSArray *ISSNs;
 
 /**
  The journal of the article.
@@ -125,29 +140,69 @@
 @property (copy, nonatomic) NSString *journal;
 
 /**
- The URL of the article.
- */
-@property (strong, nonatomic) NSURL *articleURL;
-
-/**
- The details URL of the article.
- */
-@property (strong, nonatomic) NSURL *detailsURL;
-
-/**
- The add date of the article.
- */
-@property (strong, nonatomic) NSDate *addedOn;
-
-/**
  The last update of the article.
  */
 @property (strong, nonatomic) NSDate *lastUpdated;
 
 /**
+ The NLM (National Library of Medicine) identifier of the article.
+ */
+@property (copy, nonatomic) NSString *NLMIdentifier;
+
+/**
+ The Open Access status (boolean) of the article.
+ */
+@property (strong, nonatomic) NSNumber *openAccess;
+
+/**
  The publication date of the article.
  */
 @property (strong, nonatomic) NSDate *publishedOn;
+
+/**
+ The PubMed identifier of the article.
+ */
+@property (copy, nonatomic) NSString *pubMedIdentifier;
+
+/**
+ The readers of the article.
+ */
+@property (strong, nonatomic) NSDictionary *readers;
+
+/**
+ The readers count of the article.
+ */
+@property (strong, nonatomic) NSNumber *readersCount;
+
+/**
+ The schema of the article.
+ */
+@property (copy, nonatomic) NSString *schema;
+
+/**
+ The Scopus subjects of the article.
+ */
+@property (strong, nonatomic) NSArray *scopusSubjects;
+
+/**
+ The Altmetric score of the article.
+ */
+@property (strong, nonatomic) NSNumber *score;
+
+/**
+ The subjects of the article.
+ */
+@property (strong, nonatomic) NSArray *subjects;
+
+/**
+ The title of the article.
+ */
+@property (copy, nonatomic) NSString *title;
+
+/**
+ The tweet quotes of the article.
+ */
+@property (strong, nonatomic) NSArray *tweetQuotes;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.

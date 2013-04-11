@@ -51,6 +51,15 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 + (SZNAltmetricAPIClient *)sharedClient;
 
 /**
+ Sends a fetch article request based on the ADS Bibcode.
+ 
+ @param ADSBibcode The ADS Bibcode of the article.
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
+ @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
+ */
+- (void)fetchArticleWithADSBibcode:(NSString *)ADSBibcode success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+
+/**
  Sends a fetch article request based on the Altmetric Identifier.
  
  @param altmetricIdentifier The Altmetric Identifier of the article.
@@ -58,6 +67,15 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
 - (void)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+
+/**
+ Sends a fetch article request based on the ArXiv Identifier.
+ 
+ @param arXivIdentifier The arXiv Identifier of the article.
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
+ @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
+ */
+- (void)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the DOI.
@@ -76,23 +94,5 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
 - (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
-
-/**
- Sends a fetch article request based on the ArXiv Identifier.
- 
- @param ArXivIdentifier The arXiv Identifier of the article.
- @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
- @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
- */
-- (void)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
-
-/**
- Sends a fetch article request based on the ADS Bibcode.
- 
- @param ADSBibcode The ADS Bibcode of the article.
- @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
- @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
- */
-- (void)fetchArticleWithADSBibcode:(NSString *)ADSBibcode success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 @end
