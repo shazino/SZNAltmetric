@@ -2545,12 +2545,11 @@
 							<string key="NSFrame">{{320, 33}, {318, 51}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="684995379">
 								<int key="NSCellFlags">69206081</int>
-								<int key="NSCellFlags2">272632064</int>
+								<int key="NSCellFlags2">272631808</int>
 								<string type="base64-UTF8" key="NSContents">IyMjIwojIyMjCiMjIyM</string>
 								<reference key="NSSupport" ref="184638613"/>
 								<string key="NSCellIdentifier">_NS:1535</string>
