@@ -35,6 +35,11 @@
 @property (copy, nonatomic) NSString *identifier;
 
 /**
+ The Altmetric J Identifier of the article.
+ */
+@property (copy, nonatomic) NSString *altmetricJIdentifier;
+
+/**
  The title of the article.
  */
 @property (copy, nonatomic) NSString *title;
@@ -100,6 +105,11 @@
 @property (strong, nonatomic) NSNumber *score;
 
 /**
+ The ISSNs of the article.
+ */
+@property (strong, nonatomic) NSArray *ISSNs;
+
+/**
  The Altmetric image URL of the article (large).
  */
 @property (strong, nonatomic) NSURL *imageLargeURL;
@@ -158,6 +168,11 @@
  The Scopus subjects of the article.
  */
 @property (strong, nonatomic) NSArray *scopusSubjects;
+
+/**
+ The quotes of the article.
+ */
+@property (strong, nonatomic) NSArray *quotes;
 
 /**
  The readers count of the article.

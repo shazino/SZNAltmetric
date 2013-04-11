@@ -23,6 +23,7 @@
     
     STAssertEqualObjects(article.addedOn, [NSDate dateWithTimeIntervalSince1970:1324491937], @"Added on not extracted");
     STAssertEqualObjects(article.identifier, @"502878", @"Identifier not extracted");
+    STAssertEqualObjects(article.altmetricJIdentifier, @"4f6fa62f3cf058f6100082d3", @"J Identifier not extracted");
     STAssertEqualObjects(article.ADSBibcode, @"2011natur.480..426v", @"ADS not extracted");
     STAssertEqualObjects(article.citedByAccountsCount, @(393), @"Cited by accounts not extracted");
     STAssertEqualObjects(article.citedByFacebookWallsCount, @(12), @"Cited by Facebook walls not extracted");
@@ -39,6 +40,10 @@
     STAssertEqualObjects(article.score, @(353.626), @"Score not extracted");
     STAssertEqualObjects(article.subjects, @[@"science"], @"Subjects not extracteds");
     STAssertEqualObjects(article.scopusSubjects, @[], @"Scopus subjects not extracteds");
+    NSArray *quotes = @[@"Take a look...", @"Third...", @"Nature..."];
+    STAssertEqualObjects(article.quotes, quotes, @"Quotes not extracteds");
+    NSArray *ISSNs = @[@"0028-0836", @"1744-7933"];
+    STAssertEqualObjects(article.ISSNs, ISSNs, @"ISSNs not extracteds");
     STAssertEqualObjects(article.imageSmallURL.absoluteString, @"http://fastly.altmetric.com/?size=64&score=354&types=bfgttttt", @"Image small URL not extracted");
     STAssertEqualObjects(article.imageMediumURL.absoluteString, @"http://fastly.altmetric.com/?size=100&score=354&types=bfgttttt", @"Image medium URL not extracted");
     STAssertEqualObjects(article.imageLargeURL.absoluteString, @"http://fastly.altmetric.com/?size=180&score=354&types=bfgttttt", @"Image large URL not extracted");

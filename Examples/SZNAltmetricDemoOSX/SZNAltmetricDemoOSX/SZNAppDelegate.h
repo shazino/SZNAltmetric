@@ -25,5 +25,8 @@
 
 @end
 
-@interface SZNArrayToStringTransformer: NSValueTransformer
+@interface SZNArrayToStringWithCommaTransformer: NSValueTransformer
+@end
+
+@interface SZNArrayToStringWithLineBreakTransformer: NSValueTransformer
 @end

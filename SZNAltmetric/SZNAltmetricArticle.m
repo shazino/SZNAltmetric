@@ -30,6 +30,7 @@
     SZNAltmetricArticle *article = [SZNAltmetricArticle new];
     article.addedOn             = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"added_on"] doubleValue]];
     article.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
+    article.altmetricJIdentifier        = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_jid"]];
     article.ADSBibcode          = responseObject[@"ads_id"];
     article.citedByAccountsCount        = responseObject[@"cited_by_accounts_count"];
     article.citedByFacebookWallsCount   = responseObject[@"cited_by_fbwalls_count"];
@@ -46,6 +47,8 @@
     article.score               = responseObject[@"score"];
     article.subjects            = responseObject[@"subjects"];
     article.scopusSubjects      = responseObject[@"scopus_subjects"];
+    article.quotes              = responseObject[@"tq"];
+    article.ISSNs               = responseObject[@"issns"];
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
