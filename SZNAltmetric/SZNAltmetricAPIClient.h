@@ -80,7 +80,7 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 /**
  Sends a fetch article request based on the ArXiv Identifier.
  
- @param ArXivIdentifier The arXiv Identifier of the article.
+ @param arXivIdentifier The arXiv Identifier of the article.
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
