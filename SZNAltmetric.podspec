@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = 'SZNAltmetric'
-  s.version      = '0.2'
+  s.version      = '0.3'
   s.summary      = 'Objective-C client for the Altmetric API.'
   s.homepage     = 'https://github.com/shazino/SZNAltmetric'
   s.license      = 'MIT'
   s.author       = { 'shazino' => 'contact@shazino.com' }
-  s.source       = { :git => 'https://github.com/shazino/SZNAltmetric.git', :tag => '0.2' }
+  s.source       = { :git => 'https://github.com/shazino/SZNAltmetric.git', :tag => '0.3' }
 
   s.source_files = 'SZNAltmetric'
   s.requires_arc = true
