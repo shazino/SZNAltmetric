@@ -38,4 +38,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *scienceBlogsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *googlePlusLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *readersMendeleyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *readersCiteULikeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *readersConnoteaLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *subjectsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scopusSubjectsLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *quotesLabel;
+
 @end

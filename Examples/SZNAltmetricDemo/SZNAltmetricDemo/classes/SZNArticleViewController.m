@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
     ((UIScrollView *)self.view).alwaysBounceVertical = YES;
-    ((UIScrollView *)self.view).contentSize = CGSizeMake(self.view.frame.size.width, self.googlePlusLabel.frame.origin.y + 70);
+    ((UIScrollView *)self.view).contentSize = CGSizeMake(self.view.frame.size.width, self.quotesLabel.frame.origin.y + 120);
     [self configureViewWithArticle:self.article];
 }
 
@@ -60,6 +60,15 @@
     self.facebookUsersLabel.text = [article.citedByFacebookWallsCount stringValue];
     self.scienceBlogsLabel.text = [article.citedByFeedsCount stringValue];
     self.googlePlusLabel.text = [article.citedByGooglePlusCount stringValue];
+    
+    self.readersMendeleyLabel.text = [article.readers[@"mendeley"] stringValue];
+    self.readersCiteULikeLabel.text = [article.readers[@"citeulike"] stringValue];
+    self.readersConnoteaLabel.text = [article.readers[@"connotea"] stringValue];
+    
+    self.subjectsLabel.text = [article.subjects componentsJoinedByString:@", "];
+    self.scopusSubjectsLabel.text = [article.scopusSubjects componentsJoinedByString:@", "];
+    
+    self.quotesLabel.text = [article.quotes componentsJoinedByString:@"\n"];
 }
 
 @end
