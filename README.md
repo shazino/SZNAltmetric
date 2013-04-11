@@ -36,8 +36,9 @@ As you can see, we have just requested an article based on its DOI (you can also
 
 ## References
 
-- [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
 - [Getting Started](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started)
+- [Documentation](http://shazino.github.io/SZNAltmetric/)
+- [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
 
 ## Requirements
 
