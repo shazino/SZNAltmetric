@@ -30,9 +30,14 @@
 @interface SZNAltmetricArticle : NSObject
 
 /**
- The Altmetric Identifier of the article.
+ The add date of the article.
  */
-@property (copy, nonatomic) NSString *identifier;
+@property (strong, nonatomic) NSDate *addedOn;
+
+/**
+ The ADS Bibcode of the article.
+ */
+@property (copy, nonatomic) NSString *ADSBibcode;
 
 /**
  The Altmetric J Identifier of the article.
@@ -40,9 +45,14 @@
 @property (copy, nonatomic) NSString *altmetricJIdentifier;
 
 /**
- The title of the article.
+ The URL of the article.
  */
-@property (copy, nonatomic) NSString *title;
+@property (strong, nonatomic) NSURL *articleURL;
+
+/**
+ The arXiv Identifier of the article.
+ */
+@property (copy, nonatomic) NSString *arXiv;
 
 /**
  The cited by accounts count of the article.
@@ -85,44 +95,24 @@
 @property (strong, nonatomic) NSDictionary *context;
 
 /**
+ The details URL of the article.
+ */
+@property (strong, nonatomic) NSURL *detailsURL;
+
+/**
  The DOI of the article.
  */
 @property (copy, nonatomic) NSString *DOI;
 
 /**
- The arXiv Identifier of the article.
+ The history of the article.
  */
-@property (copy, nonatomic) NSString *arXiv;
+@property (strong, nonatomic) NSDictionary *history;
 
 /**
- The NLM (National Library of Medicine) Identifier of the article.
+ The Altmetric Identifier of the article.
  */
-@property (copy, nonatomic) NSString *NLMIdentifier;
-
-/**
- The PubMed Identifier of the article.
- */
-@property (copy, nonatomic) NSString *pubMedIdentifier;
-
-/**
- The ADS Bibcode of the article.
- */
-@property (copy, nonatomic) NSString *ADSBibcode;
-
-/**
- The schema of the article.
- */
-@property (copy, nonatomic) NSString *schema;
-
-/**
- The Altmetric score of the article.
- */
-@property (strong, nonatomic) NSNumber *score;
-
-/**
- The ISSNs of the article.
- */
-@property (strong, nonatomic) NSArray *ISSNs;
+@property (copy, nonatomic) NSString *identifier;
 
 /**
  The Altmetric image URL of the article (large).
@@ -140,14 +130,9 @@
 @property (strong, nonatomic) NSURL *imageSmallURL;
 
 /**
- The Open Access status (boolean) of the article.
+ The ISSNs of the article.
  */
-@property (strong, nonatomic) NSNumber *openAccess;
-
-/**
- The history of the article.
- */
-@property (strong, nonatomic) NSDictionary *history;
+@property (strong, nonatomic) NSArray *ISSNs;
 
 /**
  The journal of the article.
@@ -155,24 +140,19 @@
 @property (copy, nonatomic) NSString *journal;
 
 /**
- The URL of the article.
- */
-@property (strong, nonatomic) NSURL *articleURL;
-
-/**
- The details URL of the article.
- */
-@property (strong, nonatomic) NSURL *detailsURL;
-
-/**
- The add date of the article.
- */
-@property (strong, nonatomic) NSDate *addedOn;
-
-/**
  The last update of the article.
  */
 @property (strong, nonatomic) NSDate *lastUpdated;
+
+/**
+ The NLM (National Library of Medicine) Identifier of the article.
+ */
+@property (copy, nonatomic) NSString *NLMIdentifier;
+
+/**
+ The Open Access status (boolean) of the article.
+ */
+@property (strong, nonatomic) NSNumber *openAccess;
 
 /**
  The publication date of the article.
@@ -180,14 +160,9 @@
 @property (strong, nonatomic) NSDate *publishedOn;
 
 /**
- The subjects of the article.
+ The PubMed Identifier of the article.
  */
-@property (strong, nonatomic) NSArray *subjects;
-
-/**
- The Scopus subjects of the article.
- */
-@property (strong, nonatomic) NSArray *scopusSubjects;
+@property (copy, nonatomic) NSString *pubMedIdentifier;
 
 /**
  The quotes of the article.
@@ -195,14 +170,39 @@
 @property (strong, nonatomic) NSArray *quotes;
 
 /**
+ The readers of the article.
+ */
+@property (strong, nonatomic) NSDictionary *readers;
+
+/**
  The readers count of the article.
  */
 @property (strong, nonatomic) NSNumber *readersCount;
 
 /**
- The readers of the article.
+ The schema of the article.
  */
-@property (strong, nonatomic) NSDictionary *readers;
+@property (copy, nonatomic) NSString *schema;
+
+/**
+ The Scopus subjects of the article.
+ */
+@property (strong, nonatomic) NSArray *scopusSubjects;
+
+/**
+ The Altmetric score of the article.
+ */
+@property (strong, nonatomic) NSNumber *score;
+
+/**
+ The subjects of the article.
+ */
+@property (strong, nonatomic) NSArray *subjects;
+
+/**
+ The title of the article.
+ */
+@property (copy, nonatomic) NSString *title;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.
