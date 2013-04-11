@@ -18,6 +18,8 @@
 		146301B6170AFC2F00220E31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146301B4170AFC2F00220E31 /* InfoPlist.strings */; };
 		146301B9170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */; };
 		146301CA170B181500220E31 /* SZNAltmetricArticleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */; };
+		14BA88CF17143FFB00FE3550 /* article.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BA88CE17143FFB00FE3550 /* article.json */; };
+		14FFCB281715614100EFDBAA /* SZNAltmetricDemoOSX.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 14FFCB271715614100EFDBAA /* SZNAltmetricDemoOSX.iconset */; };
 		BCB82FE188804C62B5E9BB63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E540AFA3B454868865832E9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricDemoOSXTests.m; path = classes/SZNAltmetricDemoOSXTests.m; sourceTree = "<group>"; };
 		146301C8170B181500220E31 /* SZNAltmetricArticleTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricArticleTests.h; path = classes/SZNAltmetricArticleTests.h; sourceTree = "<group>"; };
 		146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricArticleTests.m; path = classes/SZNAltmetricArticleTests.m; sourceTree = "<group>"; };
+		14BA88CE17143FFB00FE3550 /* article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = article.json; path = resources/article.json; sourceTree = "<group>"; };
+		14FFCB271715614100EFDBAA /* SZNAltmetricDemoOSX.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = SZNAltmetricDemoOSX.iconset; sourceTree = SOURCE_ROOT; };
 		27909A7C6B334D3495B674BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		8E540AFA3B454868865832E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,6 +138,7 @@
 		14630195170AFC2F00220E31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14FFCB271715614100EFDBAA /* SZNAltmetricDemoOSX.iconset */,
 				14630196170AFC2F00220E31 /* SZNAltmetricDemoOSX-Info.plist */,
 				14630197170AFC2F00220E31 /* InfoPlist.strings */,
 				1463019A170AFC2F00220E31 /* main.m */,
@@ -150,6 +155,7 @@
 				146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */,
 				146301C8170B181500220E31 /* SZNAltmetricArticleTests.h */,
 				146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */,
+				14BA88D017143FFE00FE3550 /* Resources */,
 				146301B2170AFC2F00220E31 /* Supporting Files */,
 			);
 			path = SZNAltmetricDemoOSXTests;
@@ -162,6 +168,14 @@
 				146301B4170AFC2F00220E31 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14BA88D017143FFE00FE3550 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14BA88CE17143FFB00FE3550 /* article.json */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +254,7 @@
 				14630199170AFC2F00220E31 /* InfoPlist.strings in Resources */,
 				1463019F170AFC2F00220E31 /* Credits.rtf in Resources */,
 				146301A5170AFC2F00220E31 /* MainMenu.xib in Resources */,
+				14FFCB281715614100EFDBAA /* SZNAltmetricDemoOSX.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				146301B6170AFC2F00220E31 /* InfoPlist.strings in Resources */,
+				14BA88CF17143FFB00FE3550 /* article.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

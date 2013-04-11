@@ -10,7 +10,7 @@ SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and 
 
 ## Getting Started
 
-The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your  `Podfile` with `pod 'SZNAltmetric', '0.2'`.
+The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your `Podfile` with `pod 'SZNAltmetric', '0.3'`.
 
 If you want to install SZNAltmetric manually, you can read our [“Getting Started” guide](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started).
 
@@ -42,8 +42,9 @@ With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
 ## References
 
-- [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
 - [Getting Started](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started)
+- [Documentation](http://shazino.github.io/SZNAltmetric/)
+- [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
 
 ## Requirements
 

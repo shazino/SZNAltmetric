@@ -41,3 +41,42 @@
 }
 
 @end
+
+
+@implementation SZNArrayToStringWithCommaTransformer
+
++ (Class)transformedValueClass
+{
+    return [NSArray class];
+}
+
++ (BOOL)allowsReverseTransformation
+{
+    return NO;
+}
+
+- (id)transformedValue:(id)value
+{
+    return (value == nil) ? nil : [(NSArray *)value componentsJoinedByString:@", "];
+}
+
+@end
+
+@implementation SZNArrayToStringWithLineBreakTransformer
+
++ (Class)transformedValueClass
+{
+    return [NSArray class];
+}
+
++ (BOOL)allowsReverseTransformation
+{
+    return NO;
+}
+
+- (id)transformedValue:(id)value
+{
+    return (value == nil) ? nil : [(NSArray *)value componentsJoinedByString:@"\n"];
+}
+
+@end
