@@ -36,9 +36,9 @@ As you can see, we have just requested an article based on its DOI (you can also
 
 With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
-![iOS demo app](http://blog.shazino.com/imgs/articles/dev/sznaltmetric-release/demo-ios.png)
+![iOS demo app](https://github.com/shazino/SZNAltmetric/wiki/img/v0-3/screen-iOS-400px.png)
 
-![OS X demo app](http://blog.shazino.com/imgs/articles/dev/sznaltmetric-release/demo-osx.png)
+![OS X demo app](https://github.com/shazino/SZNAltmetric/wiki/img/v0-3/screen-OSX.png)
 
 ## References
 
