@@ -38,12 +38,15 @@
     article.citedByGooglePlusCount      = responseObject[@"cited_by_gplus_count"];
     article.citedByPostsCount           = responseObject[@"cited_by_posts_count"];
     article.citedByTweetersCount        = responseObject[@"cited_by_tweeters_count"];
+    article.cohorts             = responseObject[@"cohorts"];
+    article.context             = responseObject[@"context"];
     article.DOI                 = responseObject[@"doi"];
     article.arXiv               = responseObject[@"arxiv_id"];
     article.lastUpdated         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"last_updated"] doubleValue]];
     article.NLMIdentifier       = responseObject[@"nlmid"];
     article.PubMedIdentifier    = responseObject[@"pmid"];
     article.publishedOn         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"published_on"] doubleValue]];
+    article.schema              = responseObject[@"schema"];
     article.score               = responseObject[@"score"];
     article.subjects            = responseObject[@"subjects"];
     article.scopusSubjects      = responseObject[@"scopus_subjects"];
@@ -52,6 +55,7 @@
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
+    article.history             = responseObject[@"history"];
     article.openAccess          = responseObject[@"is_oa"];
     article.journal             = responseObject[@"journal"];
     article.title               = responseObject[@"title"];

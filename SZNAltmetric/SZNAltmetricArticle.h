@@ -75,6 +75,16 @@
 @property (strong, nonatomic) NSNumber *citedByTweetersCount;
 
 /**
+ The cohorts of the article.
+ */
+@property (strong, nonatomic) NSDictionary *cohorts;
+
+/**
+ The context of the article.
+ */
+@property (strong, nonatomic) NSDictionary *context;
+
+/**
  The DOI of the article.
  */
 @property (copy, nonatomic) NSString *DOI;
@@ -98,6 +108,11 @@
  The ADS Bibcode of the article.
  */
 @property (copy, nonatomic) NSString *ADSBibcode;
+
+/**
+ The schema of the article.
+ */
+@property (copy, nonatomic) NSString *schema;
 
 /**
  The Altmetric score of the article.
@@ -128,6 +143,11 @@
  The Open Access status (boolean) of the article.
  */
 @property (strong, nonatomic) NSNumber *openAccess;
+
+/**
+ The history of the article.
+ */
+@property (strong, nonatomic) NSDictionary *history;
 
 /**
  The journal of the article.

@@ -25,13 +25,11 @@
     "cited_by_tweeters_count":359,
     "cited_by_accounts_count":393,
     "context":{
-        "journal":{"count":252,"rank":12,"pct":96,"mean":107.40476190476,"median":58.8,"sample_size":252,"sparkline":[1521.466,199.758,142.2,109.2,80.65,58.8,45.75,36.518,26.75,9]},
-        "all":{"count":1076294,"rank":2,"pct":100,"mean":2.8677628974983,"median":1,"sample_size":10000,"sparkline":[1530.608,6.5,2.5,1.6,1,1,0.75,0.5,0.25,0.25]},
-        "similar_age_3m":{"count":97229,"rank":2,"pct":100,"mean":3.2396712914871,"median":1,"sample_size":10000,"sparkline":[378.86,6.672,2.5,1.5,1,1,0.5,0.5,0.25,0.25]},
-        "similar_age_journal_3m":{"count":90,"rank":2,"pct":98,"mean":97.577777777778,"median":57.8,"sample_size":90,"sparkline":[701.984,200.028,141,106.7,78.65,57.8,48.4,37.35,28.7,11.85]}
+        "journal":{"count":252,"rank":12,"sparkline":[1521.466,199.758]},
+        "all":{"count":1076294,"rank":2,"sparkline":[1530.608,6.5]}
     },
     "score":353.626,
-    "history":{"1d":0,"2d":0,"3d":0,"4d":0,"5d":0,"6d":0,"1w":0,"1m":0,"3m":0,"6m":77.35,"1y":77.35,"at":353.626},
+    "history":{"1d":0,"2d":0,"6m":77.35,"1y":77.35,"at":353.626},
     "url":"http://www.nature.com/news/365-days-2011-in-review-1.9684",
     "added_on":1324491937,
     "published_on":1324512000,
