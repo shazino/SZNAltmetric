@@ -41,3 +41,23 @@
 }
 
 @end
+
+
+@implementation SZNArrayToStringTransformer
+
++ (Class)transformedValueClass
+{
+    return [NSArray class];
+}
+
++ (BOOL)allowsReverseTransformation
+{
+    return NO;
+}
+
+- (id)transformedValue:(id)value
+{
+    return (value == nil) ? nil : [(NSArray *)value componentsJoinedByString:@", "];
+}
+
+@end

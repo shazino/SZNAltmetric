@@ -44,12 +44,16 @@
     article.PubMedIdentifier    = responseObject[@"pmid"];
     article.publishedOn         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"published_on"] doubleValue]];
     article.score               = responseObject[@"score"];
+    article.subjects            = responseObject[@"subjects"];
+    article.scopusSubjects      = responseObject[@"scopus_subjects"];
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
     article.openAccess          = responseObject[@"is_oa"];
     article.journal             = responseObject[@"journal"];
     article.title               = responseObject[@"title"];
+    article.readersCount        = responseObject[@"readers_count"];
+    article.readers             = responseObject[@"readers"];
     article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
     article.detailsURL          = [NSURL URLWithString:responseObject[@"details_url"]];
     return article;

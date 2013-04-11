@@ -150,6 +150,26 @@
 @property (strong, nonatomic) NSDate *publishedOn;
 
 /**
+ The subjects of the article.
+ */
+@property (strong, nonatomic) NSArray *subjects;
+
+/**
+ The Scopus subjects of the article.
+ */
+@property (strong, nonatomic) NSArray *scopusSubjects;
+
+/**
+ The readers count of the article.
+ */
+@property (strong, nonatomic) NSNumber *readersCount;
+
+/**
+ The readers of the article.
+ */
+@property (strong, nonatomic) NSDictionary *readers;
+
+/**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.
  
  @param responseObject The API response object
