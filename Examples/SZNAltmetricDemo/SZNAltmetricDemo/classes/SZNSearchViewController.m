@@ -10,20 +10,25 @@
 
 #import <SZNAltmetric.h>
 #import "SZNArticleViewController.h"
+#import "SZNSearchResultsViewController.h"
 
 @implementation SZNSearchViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]])
     {
-        [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.DOITextField.text success:^(SZNAltmetricArticle *article) {
+        [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
             ((SZNArticleViewController *)segue.destinationViewController).article = article;
+        } failure:^(NSError *error) {
+            NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
+        }];
+    }
+    else if ([segue.destinationViewController isKindOfClass:[SZNSearchResultsViewController class]])
+    {
+        [[SZNAltmetricAPIClient sharedClient] fetchArticlesCitationsWithTimeframe:self.searchTextField.text success:^(NSArray *articles, NSUInteger total, NSUInteger page) {
+            ((SZNSearchResultsViewController *)segue.destinationViewController).searchResults = articles;
+            [((SZNSearchResultsViewController *)segue.destinationViewController).tableView reloadData];
         } failure:^(NSError *error) {
             NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
         }];

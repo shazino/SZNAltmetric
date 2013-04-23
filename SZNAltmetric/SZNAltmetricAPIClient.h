@@ -26,6 +26,7 @@
 @class SZNAltmetricArticle;
 
 typedef void (^SZNAltmetricFetchArticleSuccessBlock)(SZNAltmetricArticle *);
+typedef void (^SZNAltmetricFetchPaginatedArticlesSuccessBlock)(NSArray *, NSUInteger, NSUInteger);
 typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 
 /**
@@ -94,5 +95,29 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
 - (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+
+/**
+ Sends a fetch articles citations request based on a timeframe.
+ 
+ @param timeframe The citations timeframe (for instance: at, 1d, 1w 1m, 1y)
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes three arguments: an array of `SZNAltmetricArticle` objects created from the data response, the total number of results, and the current page index.
+ @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
+ */
+- (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+
+/**
+ Sends a fetch articles citations request based on a timeframe.
+ 
+ @param timeframe The citations timeframe (for instance: at, 1d, 1w 1m, 1y)
+ @param page Page number, used to paginate through results. First page is page 1. Altmetric will return an error if you ask for a page number beyond (number of matched articles / num_results).
+ @param numberOfResults Number of articles per page. Defaults to 25.
+ @param citedIn Include only articles mentioned in the supplied list of sources.
+ @param DOIPrefix Include only articles with a DOI that contains the given prefix.
+ @param NLMIdentifiers Include only articles from journals with the supplied NLM journal IDs (only journals indexed in PubMed have NLM IDs).
+ @param subjects Include only articles from journals matching any of the supplied NLM subject ontology term(s).
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes three arguments: an array of `SZNAltmetricArticle` objects created from the data response, the total number of results, and the current page index.
+ @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
+ */
+- (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe page:(NSUInteger)page numberOfResults:(NSUInteger)numberOfResults citedIn:(NSString *)citedIn DOIPrefix:(NSString *)DOIPrefix NLMIdentifiers:(NSString *)NLMIdentifiers subjects:(NSString *)subjects success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 @end

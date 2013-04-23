@@ -10,6 +10,6 @@
 
 @interface SZNSearchViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *DOITextField;
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 
 @end
