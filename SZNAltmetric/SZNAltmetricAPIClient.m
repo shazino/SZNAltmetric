@@ -104,6 +104,11 @@
     [self fetchPaginatedArticlesWithPath:[@"citations" stringByAppendingPathComponent:timeframe] parameters:parameters success:success failure:failure];
 }
 
+- (void)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType identifier:(NSString *)identifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
+{
+    [self fetchArticleWithPath:[@"fetch" stringByAppendingPathComponent:identifierType] identifier:identifier success:success failure:failure];
+}
+
 - (void)fetchPaginatedArticlesWithPath:(NSString *)path parameters:(NSDictionary *)parameters success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure
 {
     NSMutableDictionary *mutableParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];

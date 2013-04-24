@@ -10,7 +10,21 @@
 #import <SZNAltmetric.h>
 #import "SZNArticleViewController.h"
 
+@interface SZNSearchResultsViewController ()
+@property (strong, nonatomic) UIImage *placeholderImage;
+@end
+
 @implementation SZNSearchResultsViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // UITableViewCell needs a placeholder image to layout its subviews before the actual image loads (async)
+    UIGraphicsBeginImageContext(CGSizeMake(32, 32));
+    self.placeholderImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -40,7 +54,7 @@
     SZNAltmetricArticle *article = self.searchResults[indexPath.row];
     cell.textLabel.text = article.title;
     cell.detailTextLabel.text = [article.articleURL absoluteString];
-    [cell.imageView setImageWithURL:article.imageSmallURL];
+    [cell.imageView setImageWithURL:article.imageSmallURL placeholderImage:self.placeholderImage];
     
     return cell;
 }

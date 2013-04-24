@@ -93,7 +93,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Citations with Timeframe" id="d2x-FC-mkX"/>
+                    <navigationItem key="navigationItem" title="Citations with Timeframe" id="d2x-FC-mkX">
+                        <barButtonItem key="backBarButtonItem" title="Citations" id="gth-Ki-3XN"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchTextField" destination="KK7-cR-VwH" id="rVS-M7-UMr"/>
                     </connections>
@@ -145,7 +147,9 @@
                             <outlet property="delegate" destination="h7p-Zt-tgw" id="0Dd-Ds-QoX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Search Results" id="5fQ-R1-xQc"/>
+                    <navigationItem key="navigationItem" title="Search Results" id="5fQ-R1-xQc">
+                        <barButtonItem key="backBarButtonItem" title="Results" id="JVw-GG-15x"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwI-6b-aIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -600,7 +604,9 @@
                             <outlet property="delegate" destination="yLM-7N-UM8" id="HFB-bo-vV7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SZNAltmetric Demo" id="gIm-Cb-DN2"/>
+                    <navigationItem key="navigationItem" title="SZNAltmetric Demo" id="gIm-Cb-DN2">
+                        <barButtonItem key="backBarButtonItem" title="Demo" id="xQW-9K-YNH"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCS-u5-HBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -625,6 +631,47 @@
             <point key="canvasLocation" x="-509" y="364"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="SZNArticleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SZNArticleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="ADSBibcodeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="DOILabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="NLMIdentifierLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="addedOnLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="altmetricIdentifierLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="arXivLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="articleURLLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="detailsURLLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="facebookUsersLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="googlePlusLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="journalLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lastUpdatedLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pubMedIdentifierLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="publishedOnLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="quotesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="readersCiteULikeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="readersConnoteaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="readersMendeleyLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scienceBlogsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scopusSubjectsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="subjectsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tweetersLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SZNSearchResultsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SZNSearchResultsViewController.h"/>
+        </class>
+        <class className="SZNSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SZNSearchViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

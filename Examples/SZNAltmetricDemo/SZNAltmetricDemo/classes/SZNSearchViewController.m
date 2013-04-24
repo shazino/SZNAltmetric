@@ -18,9 +18,12 @@
 {
     if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]])
     {
-        [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
+        [[SZNAltmetricAPIClient sharedClient] fetchArticleDetailsWithIdentifierType:@"doi" identifier:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
+        //[[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
             ((SZNArticleViewController *)segue.destinationViewController).article = article;
         } failure:^(NSError *error) {
+            [[[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@\n(%@)", [error localizedDescription], [error localizedRecoverySuggestion]]
+                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
             NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
         }];
     }
@@ -30,6 +33,8 @@
             ((SZNSearchResultsViewController *)segue.destinationViewController).searchResults = articles;
             [((SZNSearchResultsViewController *)segue.destinationViewController).tableView reloadData];
         } failure:^(NSError *error) {
+            [[[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@\n(%@)", [error localizedDescription], [error localizedRecoverySuggestion]]
+                                       delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
             NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
         }];
     }

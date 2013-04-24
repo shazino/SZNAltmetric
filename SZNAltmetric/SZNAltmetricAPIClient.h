@@ -97,7 +97,7 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 - (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
- Sends a fetch articles citations request based on a timeframe.
+ Fetches articles with activity in a given timeframe.
  
  @param timeframe The citations timeframe (for instance: at, 1d, 1w 1m, 1y)
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes three arguments: an array of `SZNAltmetricArticle` objects created from the data response, the total number of results, and the current page index.
@@ -106,7 +106,7 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
 - (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
- Sends a fetch articles citations request based on a timeframe.
+ Fetches articles with activity in a given timeframe.
  
  @param timeframe The citations timeframe (for instance: at, 1d, 1w 1m, 1y)
  @param page Page number, used to paginate through results. First page is page 1. Altmetric will return an error if you ask for a page number beyond (number of matched articles / num_results).
@@ -119,5 +119,17 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
 - (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe page:(NSUInteger)page numberOfResults:(NSUInteger)numberOfResults citedIn:(NSString *)citedIn DOIPrefix:(NSString *)DOIPrefix NLMIdentifiers:(NSString *)NLMIdentifiers subjects:(NSString *)subjects success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+
+/**
+ Fetches detailed information about an article or dataset.
+ 
+ @param identifierType A valid identifier type. Types currently accepted are: `doi`, `handle`, `pmid`, `arxiv_id`, `ads_id`, `ssrn`, `repec`, `id`.
+ @param identifier A valid identifier of the type specified by identifier type.	_e.g._ the actual DOI, PubMed ID etc.
+ @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
+ @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
+ 
+ @warning This call is only available to commercial license holders. If you call it without an authorized API key you’ll get a 403 error. 
+ */
+- (void)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType identifier:(NSString *)identifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 @end
