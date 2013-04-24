@@ -40,7 +40,7 @@
     article.citedByTweetersCount        = responseObject[@"cited_by_tweeters_count"];
     article.cohorts             = responseObject[@"cohorts"];
     article.context             = responseObject[@"context"];
-    article.DOI                 = responseObject[@"doi"];
+    article.DOI                 = responseObject[@"citation"][@"doi"] ?: responseObject[@"doi"];
     article.arXiv               = responseObject[@"arxiv_id"];
     article.lastUpdated         = [NSDate dateWithTimeIntervalSince1970:[responseObject[@"last_updated"] doubleValue]];
     article.NLMIdentifier       = responseObject[@"nlmid"];
@@ -50,14 +50,14 @@
     article.score               = responseObject[@"score"];
     article.subjects            = responseObject[@"subjects"];
     article.scopusSubjects      = responseObject[@"scopus_subjects"];
-    article.tweetQuotes         = responseObject[@"tq"];
+    article.quotes              = responseObject[@"selected_quotes"] ?: responseObject[@"tq"];
     article.ISSNs               = responseObject[@"issns"];
     article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
     article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
     article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
     article.history             = responseObject[@"history"];
     article.openAccess          = responseObject[@"is_oa"];
-    article.journal             = responseObject[@"journal"];
+    article.journal             = responseObject[@"citation"][@"journal"] ?: responseObject[@"journal"];
     article.title               = responseObject[@"title"];
     article.readersCount        = responseObject[@"readers_count"];
     article.readers             = responseObject[@"readers"];

@@ -200,9 +200,9 @@
 @property (copy, nonatomic) NSString *title;
 
 /**
- The tweet quotes of the article.
+ The quotes of the article (a.k.a. tweet quotes, selected quotes).
  */
-@property (strong, nonatomic) NSArray *tweetQuotes;
+@property (strong, nonatomic) NSArray *quotes;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.

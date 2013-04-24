@@ -18,8 +18,7 @@
 {
     if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]])
     {
-        [[SZNAltmetricAPIClient sharedClient] fetchArticleDetailsWithIdentifierType:@"doi" identifier:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
-        //[[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
+        [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
             ((SZNArticleViewController *)segue.destinationViewController).article = article;
         } failure:^(NSError *error) {
             [[[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"%@\n(%@)", [error localizedDescription], [error localizedRecoverySuggestion]]

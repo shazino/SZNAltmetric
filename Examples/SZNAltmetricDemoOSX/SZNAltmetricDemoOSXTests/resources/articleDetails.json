@@ -1,0 +1,102 @@
+{
+    "altmetric_id":194098,
+    "counts":{
+        "readers":{"mendeley":"27","citeulike":"0","connotea":"0"},
+        "blogs":{"unique_users_count":1,"posts_count":1},
+        "googleplus":{"unique_users_count":1,"unique_users":["Glenn Tenney"],"posts_count":1},
+        "total":{"posts_count":32},"twitter":{"unique_users_count":29,"posts_count":30}
+    },
+    "selected_quotes":[
+                       "Do you...",
+                       "Findings...",
+                       "New #research..."],
+    "citation":{
+        "title":"Commercial Teas Highlight Plant DNA Barcode Identification Successes and Obstacles",
+        "authors":["Mark Y. Stoeckle","Catherine C. Gamble","Rohan Kirpekar","Grace Young","Selena Ahmed","Damon P. Little"],
+        "pubdate":"2011-07-21T00:00:00+01:00",
+        "startpage":"",
+        "endpage":"",
+        "doi":"10.1038/srep00042",
+        "journal":"Scientific Reports",
+        "altmetric_jid":"4f6fa8213cf058f61000bc80",
+        "publisher":"Nature Publishing Group",
+        "links":[
+                 "http://www.nature.com/srep/2011/110721/srep00042/full/srep00042.html",
+                 "http://www.nature.com/srep/2011/110721/srep00042/full/srep00042.html?WT.mc_id=TWT_SciReports",
+                 "http://www.nature.com/srep/2011/110721/srep00042/full/srep00042.html#/supplementary-information"],
+        "first_seen_on":"2011-07-21T19:31:20+01:00"
+    },
+    "altmetric_score":{
+        "score":32.338,
+        "score_history":{
+            "1d":0,"2d":0,"3d":0,"4d":0,"5d":0,"6d":0,"1w":0,"1m":0,"3m":0,"6m":0,"1y":0,"at":32.338},
+        "context_for_score":{
+            "all":{
+                    "mean":2.8683145077793,
+                    "median":1,
+                    "sample_size":10000,
+                    "sparkline":[457.27,6.55,2.5,1.5,1,1,0.75,0.5,0.25,0.25],
+                    "total_number_of_other_articles":1067255,
+                    "this_scored_higher_than":9891,
+                    "this_scored_higher_than_pct":99
+                },
+            "similar_age_3m":{
+                "mean":3.3898058034713,
+                "median":1,
+                "sample_size":10000,
+                "sparkline":[1177.524,8.224,2.95,1.95,1.25,1,1,0.5,0.25,0.25],
+                "total_number_of_other_articles":44594,
+                "this_scored_higher_than":9837,
+                "this_scored_higher_than_pct":99
+            },
+            "this_journal":{
+                "mean":12.023588879528,
+                "median":1.75,
+                "sample_size":1187,
+                "sparkline":[1905.356,18.85,6.8,3.75,2.5,1.75,1.25,0.75,0.5,0.25],
+                "total_number_of_other_articles":1187,
+                "this_scored_higher_than":1119,
+                "this_scored_higher_than_pct":95
+            },
+            "similar_age_this_journal_3m":{
+                "mean":4.0877192982456,
+                "median":1.45,
+                "sample_size":57,
+                "sparkline":[32.338,18.75,5.8,2.85,2,1.45,1.25,1,0.5,0.25],
+                "total_number_of_other_articles":57,
+                "this_scored_higher_than":57,
+                "this_scored_higher_than_pct":100
+            }
+        }
+    },
+    "demographics":{
+        "poster_types":{
+            "member_of_the_public":9,"researcher":17,"practitioner":1,"science_communicator":3
+        },
+        "geo":{
+            "twitter":{
+                "US":17,"MY":1,"GB":3,"MX":1,"IN":2,"FR":1,"NL":1,"IE":1,"SG":1,"JP":1
+            }
+        }
+    },
+    "posts":{
+        "googleplus":[
+                      {"title":"Student Researchers Find Secret Tea Ingredients Three NYC high school students did DNA analyses o...",
+                      "url":"https://plus.google.com/100057069861700562165/posts/TqwPho8xGVA",
+                      "posted_on":"2011-07-22T21:38:23+01:00",
+                      "summary":"Student Researchers Find Secret Tea Ingredients Three NYC high school students did DNA analyses o... Student Researchers Find Secret Tea IngredientsThree NYC high school students did DNA analyses of various teas and spotted sequences belonging to lots of f",
+                      "author":{
+                      "name":"Glenn Tenney",
+                      "url":"https://plus.google.com/100057069861700562165",
+                      "image":"https://lh3.googleusercontent.com/-fBFhK_FP2xM/AAAAAAAAAAI/AAAAAAAAACo/wqdNhMjAB-k/photo.jpg?sz=50",
+                      "id_on_source":"100057069861700562165"
+                      }
+                      }
+                      ]
+    },
+    "images":{
+        "small":"https://altmetric-badges.a.ssl.fastly.net/?size=64&score=33&types=bgtttttt",
+        "medium":"https://altmetric-badges.a.ssl.fastly.net/?size=100&score=33&types=bgtttttt",
+        "large":"https://altmetric-badges.a.ssl.fastly.net/?size=180&score=33&types=bgtttttt"
+    },
+    "score":32.338}
