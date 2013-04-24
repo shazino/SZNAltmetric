@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
 
   s.osx.deployment_target = '10.7'
 
-  s.dependency 'AFNetworking', '>= 1.0'
+  s.dependency 'AFNetworking', '~> 1.0'
 end
