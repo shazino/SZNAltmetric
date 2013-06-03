@@ -164,6 +164,14 @@
     
     NSURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:mutableParameters];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *responseObject) {
+        
+        NSNumberFormatter *numberFormatter = [NSNumberFormatter new];
+        numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+        self.dailyRateLimit      = [numberFormatter numberFromString:[response allHeaderFields][@"X-DailyRateLimit-Limit"]];
+        self.dailyRateRemaining  = [numberFormatter numberFromString:[response allHeaderFields][@"X-DailyRateLimit-Remaining"]];
+        self.hourlyRateLimit     = [numberFormatter numberFromString:[response allHeaderFields][@"X-HourlyRateLimit-Limit"]];
+        self.hourlyRateRemaining = [numberFormatter numberFromString:[response allHeaderFields][@"X-HourlyRateLimit-Remaining"]];
+        
         if (success)
         {
             if (responseObject[@"results"] && responseObject[@"query"])
