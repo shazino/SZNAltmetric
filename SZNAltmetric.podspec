@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SZNAltmetric'
-  s.version      = '0.3'
+  s.version      = '1.0'
   s.summary      = 'Objective-C client for the Altmetric API.'
   s.homepage     = 'https://github.com/shazino/SZNAltmetric'
   s.license      = 'MIT'
