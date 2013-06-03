@@ -90,6 +90,11 @@
 @property (strong, nonatomic) NSDictionary *cohorts;
 
 /**
+ The raw content of the article from the API response.
+ */
+@property (strong, nonatomic) NSDictionary *content;
+
+/**
  The context of the article.
  */
 @property (strong, nonatomic) NSDictionary *context;

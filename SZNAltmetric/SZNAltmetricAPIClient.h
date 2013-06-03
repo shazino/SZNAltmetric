@@ -58,7 +58,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithADSBibcode:(NSString *)ADSBibcode success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithADSBibcode:(NSString *)ADSBibcode
+                           success:(SZNAltmetricFetchArticleSuccessBlock)success
+                           failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the Altmetric Identifier.
@@ -67,7 +69,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier
+                                    success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the ArXiv Identifier.
@@ -76,7 +80,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier
+                                success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the DOI.
@@ -85,7 +91,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithDOI:(NSString *)DOI success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithDOI:(NSString *)DOI
+                    success:(SZNAltmetricFetchArticleSuccessBlock)success
+                    failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the PubMed Identifier.
@@ -94,7 +102,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes one argument: the `SZNAltmetricArticle` object created from the data response.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier
+                                 success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                 failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Fetches articles with activity in a given timeframe.
@@ -103,7 +113,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes three arguments: an array of `SZNAltmetricArticle` objects created from the data response, the total number of results, and the current page index.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
+                                    success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Fetches articles with activity in a given timeframe.
@@ -118,7 +130,15 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  @param success A block object to be executed when the request operation finishes successfully. This block has no return value and takes three arguments: an array of `SZNAltmetricArticle` objects created from the data response, the total number of results, and the current page index.
  @param failure A block object to be executed when the request operation finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes one argument: the `NSError` object describing the network or parsing error that occurred.
  */
-- (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe page:(NSUInteger)page numberOfResults:(NSUInteger)numberOfResults citedIn:(NSString *)citedIn DOIPrefix:(NSString *)DOIPrefix NLMIdentifiers:(NSString *)NLMIdentifiers subjects:(NSString *)subjects success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
+                                       page:(NSUInteger)page
+                            numberOfResults:(NSUInteger)numberOfResults
+                                    citedIn:(NSString *)citedIn
+                                  DOIPrefix:(NSString *)DOIPrefix
+                             NLMIdentifiers:(NSString *)NLMIdentifiers
+                                   subjects:(NSString *)subjects
+                                    success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Fetches detailed information about an article or dataset.
@@ -130,6 +150,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError *);
  
  @warning This call is only available to commercial license holders. If you call it without an authorized API key you’ll get a 403 error. 
  */
-- (void)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType identifier:(NSString *)identifier success:(SZNAltmetricFetchArticleSuccessBlock)success failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (void)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType
+                                   identifier:(NSString *)identifier
+                                      success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 @end
