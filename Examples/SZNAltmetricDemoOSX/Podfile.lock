@@ -1,18 +1,17 @@
+PODS:
+  - AFNetworking (1.3.0)
+  - SZNAltmetric (0.3):
+    - AFNetworking (~> 1.0)
 
-EXTERNAL SOURCES: 
-  SZNAltmetric: 
-    :local: ../../
+DEPENDENCIES:
+  - SZNAltmetric (from `../../`)
 
-SPEC CHECKSUMS: 
-  AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44
-  SZNAltmetric: 38c0d74609b062095510ed7c3a7c23d8a2b5d4a7
+EXTERNAL SOURCES:
+  SZNAltmetric:
+    :path: ../../
 
-COCOAPODS: 0.16.4
+SPEC CHECKSUMS:
+  AFNetworking: e528f20d06b1b818c3571266fb5efa20031a8ace
+  SZNAltmetric: 4654b6bed3f6546ac07213734ebceb3762e4152d
 
-PODS: 
-- AFNetworking (1.2.0)
-- SZNAltmetric (0.1): 
-  - AFNetworking (>= 1.0)
-
-DEPENDENCIES: 
-- SZNAltmetric (from `../../')
+COCOAPODS: 0.19.1

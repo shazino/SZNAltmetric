@@ -1,6 +1,6 @@
 platform :osx, '10.7'
 
-pod 'SZNAltmetric', :local => '../../'
+pod 'SZNAltmetric', :path => '../../'
 
 target :SZNAltmetricDemoOSXTests do
 end
