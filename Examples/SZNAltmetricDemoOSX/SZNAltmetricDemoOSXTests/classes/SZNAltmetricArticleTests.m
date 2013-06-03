@@ -11,7 +11,7 @@
 
 @implementation SZNAltmetricArticleTests
 
-- (void)testArticleFromRespondeDictionary
+- (void)testArticleFromResponseDictionary
 {
     NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"article" ofType:@"json"]];
     NSError *JSONError = nil;
@@ -43,12 +43,12 @@
     STAssertEqualObjects(article.publishedOn, [NSDate dateWithTimeIntervalSince1970:1324512000], @"Published on not extracted");
     STAssertEqualObjects(article.schema, @"1.5.4", @"Schema not extracted");
     STAssertEqualObjects(article.score, @(353.626), @"Score not extracted");
-    STAssertEqualObjects(article.subjects, @[@"science"], @"Subjects not extracteds");
-    STAssertEqualObjects(article.scopusSubjects, @[], @"Scopus subjects not extracteds");
+    STAssertEqualObjects(article.subjects, @[@"science"], @"Subjects not extracted");
+    STAssertEqualObjects(article.scopusSubjects, @[], @"Scopus subjects not extracted");
     NSArray *quotes = @[@"Take a look...", @"Third...", @"Nature..."];
-    STAssertEqualObjects(article.tweetQuotes, quotes, @"Tweet quotes not extracteds");
+    STAssertEqualObjects(article.quotes, quotes, @"Tweet quotes not extracted");
     NSArray *ISSNs = @[@"0028-0836", @"1744-7933"];
-    STAssertEqualObjects(article.ISSNs, ISSNs, @"ISSNs not extracteds");
+    STAssertEqualObjects(article.ISSNs, ISSNs, @"ISSNs not extracted");
     STAssertEqualObjects(article.imageSmallURL.absoluteString, @"http://fastly.altmetric.com/?size=64&score=354&types=bfgttttt", @"Image small URL not extracted");
     STAssertEqualObjects(article.imageMediumURL.absoluteString, @"http://fastly.altmetric.com/?size=100&score=354&types=bfgttttt", @"Image medium URL not extracted");
     STAssertEqualObjects(article.imageLargeURL.absoluteString, @"http://fastly.altmetric.com/?size=180&score=354&types=bfgttttt", @"Image large URL not extracted");
@@ -62,6 +62,27 @@
     STAssertEqualObjects(article.readers, readers, @"Readers not extracted");
     STAssertEqualObjects(article.articleURL.absoluteString, @"http://www.nature.com/news/365-days-2011-in-review-1.9684", @"Article URL not extracted");
     STAssertEqualObjects(article.detailsURL.absoluteString, @"http://www.altmetric.com/details.php?citation_id=502878", @"Details URL not extracted");
+}
+
+
+- (void)testArticleDetailsFromResponseDictionary
+{
+    NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"articleDetails" ofType:@"json"]];
+    NSError *JSONError = nil;
+    NSDictionary *JSONArticleDictionary = [NSJSONSerialization JSONObjectWithData:JSONData options:kNilOptions error:&JSONError];
+    SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:JSONArticleDictionary];
+    
+    STAssertNil(JSONError, @"Article deserialization failed");
+    STAssertNotNil(article, @"Article not created");
+    
+    STAssertEqualObjects(article.identifier, @"194098", @"Altmetric identifier not extracted");
+    STAssertEqualObjects(article.DOI, @"10.1038/srep00042", @"DOI not extracted");
+    STAssertEqualObjects(article.imageSmallURL.absoluteString, @"https://altmetric-badges.a.ssl.fastly.net/?size=64&score=33&types=bgtttttt", @"Image small URL not extracted");
+    STAssertEqualObjects(article.imageMediumURL.absoluteString, @"https://altmetric-badges.a.ssl.fastly.net/?size=100&score=33&types=bgtttttt", @"Image medium URL not extracted");
+    STAssertEqualObjects(article.imageLargeURL.absoluteString, @"https://altmetric-badges.a.ssl.fastly.net/?size=180&score=33&types=bgtttttt", @"Image large URL not extracted");
+    STAssertEqualObjects(article.journal, @"Scientific Reports", @"Journal not extracted");
+    NSArray *quotes = @[@"Do you...", @"Findings...", @"New #research..."];
+    STAssertEqualObjects(article.quotes, quotes, @"Selected quotes not extracted");
 }
 
 @end

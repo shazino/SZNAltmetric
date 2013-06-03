@@ -48,7 +48,7 @@ With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
 ## Requirements
 
-SZNAltmetric requires Xcode 4.4 with either the iOS 5.0 or Mac OS X 10.7, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
+SZNAltmetric requires Xcode 4.4 with either the iOS 5.0 or Mac OS X 10.7, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [ISO 8601 parser unparser](https://bitbucket.org/boredzo/iso-8601-parser-unparser/). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
 
 ## Credits
 
