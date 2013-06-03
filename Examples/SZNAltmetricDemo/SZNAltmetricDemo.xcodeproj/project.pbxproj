@@ -20,6 +20,7 @@
 		1403C65C1704901D0027615A /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403C659170490170027615A /* SZNAppDelegate.m */; };
 		1403C65D170490200027615A /* SZNSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403C65B170490170027615A /* SZNSearchViewController.m */; };
 		1403C6601704984D0027615A /* SZNArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1403C65F1704984D0027615A /* SZNArticleViewController.m */; };
+		14B744C71726E45F0031B2A2 /* SZNSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B744C61726E45F0031B2A2 /* SZNSearchResultsViewController.m */; };
 		14FFCB2417155F2300EFDBAA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FFCB2317155F2300EFDBAA /* Icon.png */; };
 		14FFCB2617155F2E00EFDBAA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FFCB2517155F2E00EFDBAA /* Icon@2x.png */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,8 @@
 		1403C65B170490170027615A /* SZNSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SZNSearchViewController.m; path = classes/SZNSearchViewController.m; sourceTree = "<group>"; };
 		1403C65E1704984D0027615A /* SZNArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNArticleViewController.h; path = classes/SZNArticleViewController.h; sourceTree = "<group>"; };
 		1403C65F1704984D0027615A /* SZNArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNArticleViewController.m; path = classes/SZNArticleViewController.m; sourceTree = "<group>"; };
+		14B744C51726E45F0031B2A2 /* SZNSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNSearchResultsViewController.h; path = classes/SZNSearchResultsViewController.h; sourceTree = "<group>"; };
+		14B744C61726E45F0031B2A2 /* SZNSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNSearchResultsViewController.m; path = classes/SZNSearchResultsViewController.m; sourceTree = "<group>"; };
 		14FFCB2317155F2300EFDBAA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		14FFCB2517155F2E00EFDBAA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		76A0B4ED8C6F4082A1950B88 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -100,6 +103,8 @@
 				1403C659170490170027615A /* SZNAppDelegate.m */,
 				1403C65A170490170027615A /* SZNSearchViewController.h */,
 				1403C65B170490170027615A /* SZNSearchViewController.m */,
+				14B744C51726E45F0031B2A2 /* SZNSearchResultsViewController.h */,
+				14B744C61726E45F0031B2A2 /* SZNSearchResultsViewController.m */,
 				1403C65E1704984D0027615A /* SZNArticleViewController.h */,
 				1403C65F1704984D0027615A /* SZNArticleViewController.m */,
 				1403C64D17048FCD0027615A /* MainStoryboard.storyboard */,
@@ -215,6 +220,7 @@
 				1403C65C1704901D0027615A /* SZNAppDelegate.m in Sources */,
 				1403C65D170490200027615A /* SZNSearchViewController.m in Sources */,
 				1403C6601704984D0027615A /* SZNArticleViewController.m in Sources */,
+				14B744C71726E45F0031B2A2 /* SZNSearchResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

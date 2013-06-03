@@ -90,6 +90,11 @@
 @property (strong, nonatomic) NSDictionary *cohorts;
 
 /**
+ The raw content of the article from the API response.
+ */
+@property (strong, nonatomic) NSDictionary *content;
+
+/**
  The context of the article.
  */
 @property (strong, nonatomic) NSDictionary *context;
@@ -200,9 +205,9 @@
 @property (copy, nonatomic) NSString *title;
 
 /**
- The tweet quotes of the article.
+ The quotes of the article (a.k.a. tweet quotes, selected quotes).
  */
-@property (strong, nonatomic) NSArray *tweetQuotes;
+@property (strong, nonatomic) NSArray *quotes;
 
 /**
  Creates a `SZNAltmetricArticle` and initializes its properties from the API response object.
