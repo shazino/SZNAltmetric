@@ -180,8 +180,11 @@
                 NSNumber *total = responseObject[@"query"][@"total"];
                 
                 NSMutableArray *results = [NSMutableArray array];
-                for (NSDictionary *result in responseObject[@"results"])
-                    [results addObject:[SZNAltmetricArticle articleWithAPIResponseObject:result]];
+                for (NSDictionary *result in responseObject[@"results"]) {
+                    SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:result];
+                    if (article)
+                        [results addObject:article];
+                }
                 success(results, [total unsignedIntegerValue], [page unsignedIntegerValue]);
             }
             else
