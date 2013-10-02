@@ -180,12 +180,17 @@
                 NSNumber *total = responseObject[@"query"][@"total"];
                 
                 NSMutableArray *results = [NSMutableArray array];
-                for (NSDictionary *result in responseObject[@"results"])
-                    [results addObject:[SZNAltmetricArticle articleWithAPIResponseObject:result]];
+                for (NSDictionary *result in responseObject[@"results"]) {
+                    SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:result];
+                    if (article)
+                        [results addObject:article];
+                }
                 success(results, [total unsignedIntegerValue], [page unsignedIntegerValue]);
             }
-            else
-                success(@[[SZNAltmetricArticle articleWithAPIResponseObject:responseObject]], NSNotFound, NSNotFound);
+            else {
+                SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:responseObject];
+                success(article ? @[article] : @[], NSNotFound, NSNotFound);
+            }
         }
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         if (failure)
