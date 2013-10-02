@@ -187,8 +187,10 @@
                 }
                 success(results, [total unsignedIntegerValue], [page unsignedIntegerValue]);
             }
-            else
-                success(@[[SZNAltmetricArticle articleWithAPIResponseObject:responseObject]], NSNotFound, NSNotFound);
+            else {
+                SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:responseObject];
+                success(article ? @[article] : @[], NSNotFound, NSNotFound);
+            }
         }
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         if (failure)
