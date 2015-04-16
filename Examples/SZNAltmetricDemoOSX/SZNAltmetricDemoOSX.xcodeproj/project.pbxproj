@@ -10,6 +10,19 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>0B7A1D713701CEB848F7016A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-SZNAltmetricDemoOSXTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>14630182170AFC2F00220E31</key>
 		<dict>
 			<key>children</key>
@@ -185,6 +198,7 @@
 				<string>146301AC170AFC2F00220E31</string>
 				<string>14630190170AFC2F00220E31</string>
 				<string>8E540AFA3B454868865832E9</string>
+				<string>0B7A1D713701CEB848F7016A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -491,6 +505,7 @@
 			<array>
 				<string>146301AD170AFC2F00220E31</string>
 				<string>146301AE170AFC2F00220E31</string>
+				<string>FA00008EBD24E89D71038C32</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -539,10 +554,12 @@
 			<string>146301BF170AFC2F00220E31</string>
 			<key>buildPhases</key>
 			<array>
+				<string>C6D594F1F87497BFB274F0A7</string>
 				<string>146301A6170AFC2F00220E31</string>
 				<string>146301A7170AFC2F00220E31</string>
 				<string>146301A8170AFC2F00220E31</string>
 				<string>146301A9170AFC2F00220E31</string>
+				<string>F371C48A452BF525BC135A6A</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -925,6 +942,8 @@
 		</dict>
 		<key>146301C0170AFC2F00220E31</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>27EE88C60EDF1AE4C7CBA7B9</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -953,6 +972,8 @@
 		</dict>
 		<key>146301C1170AFC2F00220E31</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>83E20FD02F4292C3AA48597B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -1092,6 +1113,21 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>27EE88C60EDF1AE4C7CBA7B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-SZNAltmetricDemoOSXTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-SZNAltmetricDemoOSXTests/Pods-SZNAltmetricDemoOSXTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4DAFFDC5473063C2245FBCD4</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1113,11 +1149,28 @@
 			<array>
 				<string>4DAFFDC5473063C2245FBCD4</string>
 				<string>937E3EB5B18AE0B04BF266CE</string>
+				<string>27EE88C60EDF1AE4C7CBA7B9</string>
+				<string>83E20FD02F4292C3AA48597B</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83E20FD02F4292C3AA48597B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-SZNAltmetricDemoOSXTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-SZNAltmetricDemoOSXTests/Pods-SZNAltmetricDemoOSXTests.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1175,6 +1228,67 @@
 		<dict>
 			<key>fileRef</key>
 			<string>8E540AFA3B454868865832E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6D594F1F87497BFB274F0A7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F371C48A452BF525BC135A6A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-SZNAltmetricDemoOSXTests/Pods-SZNAltmetricDemoOSXTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FA00008EBD24E89D71038C32</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B7A1D713701CEB848F7016A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
