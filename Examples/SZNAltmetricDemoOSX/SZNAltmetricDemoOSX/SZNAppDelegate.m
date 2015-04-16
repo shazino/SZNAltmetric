@@ -11,13 +11,11 @@
 
 @implementation SZNAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // [SZNAltmetricAPIClient sharedClient].APIKey = @"###";
 }
 
-- (IBAction)fetchArticle:(id)sender
-{
+- (IBAction)fetchArticle:(id)sender {
     [self.progressIndicator startAnimation:sender];
     [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.DOITextField.stringValue success:^(SZNAltmetricArticle *article) {
         self.representedArticle = article;
@@ -30,13 +28,11 @@
     }];
 }
 
-- (IBAction)openArticleURL:(id)sender
-{
+- (IBAction)openArticleURL:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:self.representedArticle.articleURL];
 }
 
-- (IBAction)openDetailsURL:(id)sender
-{
+- (IBAction)openDetailsURL:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:self.representedArticle.detailsURL];
 }
 
@@ -45,37 +41,32 @@
 
 @implementation SZNArrayToStringWithCommaTransformer
 
-+ (Class)transformedValueClass
-{
++ (Class)transformedValueClass {
     return [NSArray class];
 }
 
-+ (BOOL)allowsReverseTransformation
-{
++ (BOOL)allowsReverseTransformation {
     return NO;
 }
 
-- (id)transformedValue:(id)value
-{
+- (id)transformedValue:(id)value {
     return (value == nil) ? nil : [(NSArray *)value componentsJoinedByString:@", "];
 }
 
 @end
 
+
 @implementation SZNArrayToStringWithLineBreakTransformer
 
-+ (Class)transformedValueClass
-{
++ (Class)transformedValueClass {
     return [NSArray class];
 }
 
-+ (BOOL)allowsReverseTransformation
-{
++ (BOOL)allowsReverseTransformation {
     return NO;
 }
 
-- (id)transformedValue:(id)value
-{
+- (id)transformedValue:(id)value {
     return (value == nil) ? nil : [(NSArray *)value componentsJoinedByString:@"\n"];
 }
 

@@ -14,10 +14,8 @@
 
 @implementation SZNSearchViewController
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]])
-    {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]]) {
         [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.searchTextField.text success:^(SZNAltmetricArticle *article) {
             ((SZNArticleViewController *)segue.destinationViewController).article = article;
         } failure:^(NSError *error) {
@@ -26,8 +24,7 @@
             NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
         }];
     }
-    else if ([segue.destinationViewController isKindOfClass:[SZNSearchResultsViewController class]])
-    {
+    else if ([segue.destinationViewController isKindOfClass:[SZNSearchResultsViewController class]]) {
         [[SZNAltmetricAPIClient sharedClient] fetchArticlesCitationsWithTimeframe:self.searchTextField.text success:^(NSArray *articles, NSUInteger total, NSUInteger page) {
             ((SZNSearchResultsViewController *)segue.destinationViewController).searchResults = articles;
             [((SZNSearchResultsViewController *)segue.destinationViewController).tableView reloadData];
