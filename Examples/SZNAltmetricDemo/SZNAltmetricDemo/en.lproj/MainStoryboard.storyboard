@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Anc-R1-UAt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" promptedForUpgradeToXcode5="NO" initialViewController="Anc-R1-UAt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller - Article with DOI-->
+        <!--Article with DOI-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="SZNSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.1038/480426a" borderStyle="roundedRect" placeholder="Required" minimumFontSize="17" id="bqs-oj-j9A">
-                                <rect key="frame" x="73" y="20" width="227" height="30"/>
+                                <rect key="frame" x="73" y="120" width="227" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="t39-I3-ZX7">
-                                <rect key="frame" x="20" y="90" width="280" height="44"/>
+                                <rect key="frame" x="20" y="190" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Search Article">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="XpV-6B-Fne" kind="push" id="rZ1-JZ-tan"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DOI:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vw5-Id-OKE">
-                                <rect key="frame" x="20" y="20" width="45" height="30"/>
+                                <rect key="frame" x="20" y="120" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -54,37 +51,33 @@
             </objects>
             <point key="canvasLocation" x="603" y="61"/>
         </scene>
-        <!--Search View Controller - Citations with Timeframe-->
+        <!--Citations with Timeframe-->
         <scene sceneID="8Xb-26-LIG">
             <objects>
                 <viewController id="Yp4-dZ-h15" customClass="SZNSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2i8-lY-GvZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1w" borderStyle="roundedRect" placeholder="Required" minimumFontSize="17" id="KK7-cR-VwH">
-                                <rect key="frame" x="127" y="20" width="173" height="30"/>
+                                <rect key="frame" x="127" y="120" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gzf-4Q-1Jx">
-                                <rect key="frame" x="20" y="90" width="280" height="44"/>
+                                <rect key="frame" x="20" y="190" width="280" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Search Citations">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="h7p-Zt-tgw" kind="push" id="2rk-j3-OlG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Timeframe:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6lb-NG-dot">
-                                <rect key="frame" x="20" y="20" width="99" height="30"/>
+                                <rect key="frame" x="20" y="120" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -104,20 +97,20 @@
             </objects>
             <point key="canvasLocation" x="603" y="747"/>
         </scene>
-        <!--Search Results View Controller - Search Results-->
+        <!--Search Results-->
         <scene sceneID="VnR-Nn-Pve">
             <objects>
                 <tableViewController id="h7p-Zt-tgw" customClass="SZNSearchResultsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2o4-xm-Ack">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2o4-xm-Ack">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SZNArticleCell" textLabel="urC-mw-BvJ" detailTextLabel="wPC-69-5uz" style="IBUITableViewCellStyleSubtitle" id="aQm-YW-pBD">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aQm-YW-pBD" id="pco-GW-qve">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="urC-mw-BvJ">
@@ -135,8 +128,7 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <connections>
                                     <segue destination="XpV-6B-Fne" kind="push" id="RWi-83-jW2"/>
                                 </connections>
@@ -155,12 +147,12 @@
             </objects>
             <point key="canvasLocation" x="1039" y="747"/>
         </scene>
-        <!--Article View Controller - Altmetric Article-->
+        <!--Altmetric Article-->
         <scene sceneID="zR2-IR-Sbd">
             <objects>
                 <viewController id="XpV-6B-Fne" customClass="SZNArticleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YhW-cc-YbQ" customClass="UIScrollView">
-                        <rect key="frame" x="0.0" y="64" width="320" height="1050"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1070"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Altmetric ID:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wYA-Sh-47O">
@@ -511,6 +503,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Altmetric Article" id="6MR-HA-0oo"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1070"/>
                     <connections>
                         <outlet property="ADSBibcodeLabel" destination="Fda-Mp-wq3" id="eTC-xi-I3o"/>
                         <outlet property="DOILabel" destination="pOl-MY-kdQ" id="bfa-eT-IX4"/>
@@ -543,22 +536,22 @@
             </objects>
             <point key="canvasLocation" x="1597" y="-10"/>
         </scene>
-        <!--Table View Controller - SZNAltmetric Demo-->
+        <!--SZNAltmetric Demo-->
         <scene sceneID="34n-eB-9ow">
             <objects>
                 <tableViewController id="yLM-7N-UM8" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="a21-u6-XeV">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="a21-u6-XeV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection id="145-Pn-P8N">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="JLd-4r-OjP" style="IBUITableViewCellStyleDefault" id="reh-Tq-5zi">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="reh-Tq-5zi" id="SZQ-8s-j5m">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Article with DOI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JLd-4r-OjP">
@@ -569,17 +562,16 @@
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="2" kind="push" id="lQ6-HO-Qps"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="1sX-SZ-Ai6" style="IBUITableViewCellStyleDefault" id="bzb-6u-G7a">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bzb-6u-G7a" id="AUa-sd-Z3g">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Citations with Timeframe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1sX-SZ-Ai6">
@@ -590,8 +582,7 @@
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Yp4-dZ-h15" kind="push" id="A3V-Lu-riR"/>
                                         </connections>
@@ -631,53 +622,12 @@
             <point key="canvasLocation" x="-509" y="364"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="SZNArticleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SZNArticleViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="ADSBibcodeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="DOILabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="NLMIdentifierLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="addedOnLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="altmetricIdentifierLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="arXivLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="articleURLLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="detailsURLLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="facebookUsersLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="googlePlusLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="journalLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lastUpdatedLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pubMedIdentifierLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="publishedOnLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="quotesLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="readersCiteULikeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="readersConnoteaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="readersMendeleyLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scienceBlogsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scopusSubjectsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="subjectsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tweetersLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SZNSearchResultsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SZNSearchResultsViewController.h"/>
-        </class>
-        <class className="SZNSearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SZNSearchViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="RWi-83-jW2"/>
+        <segue reference="rZ1-JZ-tan"/>
     </inferredMetricsTieBreakers>
 </document>

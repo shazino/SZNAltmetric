@@ -16,46 +16,36 @@
 
 @implementation SZNSearchResultsViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // UITableViewCell needs a placeholder image to layout its subviews before the actual image loads (async)
     UIGraphicsBeginImageContext(CGSizeMake(32, 32));
     self.placeholderImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]])
-    {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.destinationViewController isKindOfClass:[SZNArticleViewController class]]) {
         ((SZNArticleViewController *)segue.destinationViewController).article = self.searchResults[self.tableView.indexPathForSelectedRow.row];
     }
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.searchResults.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.searchResults count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"SZNArticleCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+
     SZNAltmetricArticle *article = self.searchResults[indexPath.row];
     cell.textLabel.text = article.title;
     cell.detailTextLabel.text = [article.articleURL absoluteString];
     [cell.imageView setImageWithURL:article.imageSmallURL placeholderImage:self.placeholderImage];
-    
+
     return cell;
 }
 

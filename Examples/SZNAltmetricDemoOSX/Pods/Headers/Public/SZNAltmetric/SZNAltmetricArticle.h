@@ -1,0 +1,1 @@
+../../../../../../SZNAltmetric/SZNAltmetricArticle.h

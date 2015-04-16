@@ -13,11 +13,10 @@
 
 @implementation SZNAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     // [SZNAltmetricAPIClient sharedClient].APIKey = @"###";
-    
+
     return YES;
 }
 

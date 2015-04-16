@@ -1,523 +1,1299 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1463018F170AFC2F00220E31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463018E170AFC2F00220E31 /* Cocoa.framework */; };
-		14630199170AFC2F00220E31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14630197170AFC2F00220E31 /* InfoPlist.strings */; };
-		1463019B170AFC2F00220E31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1463019A170AFC2F00220E31 /* main.m */; };
-		1463019F170AFC2F00220E31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1463019D170AFC2F00220E31 /* Credits.rtf */; };
-		146301A2170AFC2F00220E31 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301A1170AFC2F00220E31 /* SZNAppDelegate.m */; };
-		146301A5170AFC2F00220E31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146301A3170AFC2F00220E31 /* MainMenu.xib */; };
-		146301AD170AFC2F00220E31 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146301AC170AFC2F00220E31 /* SenTestingKit.framework */; };
-		146301AE170AFC2F00220E31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463018E170AFC2F00220E31 /* Cocoa.framework */; };
-		146301B6170AFC2F00220E31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146301B4170AFC2F00220E31 /* InfoPlist.strings */; };
-		146301B9170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */; };
-		146301CA170B181500220E31 /* SZNAltmetricArticleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */; };
-		14BA88CF17143FFB00FE3550 /* article.json in Resources */ = {isa = PBXBuildFile; fileRef = 14BA88CE17143FFB00FE3550 /* article.json */; };
-		14FB98021728181D00F720E4 /* articleDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 14FB98011728181D00F720E4 /* articleDetails.json */; };
-		14FFCB281715614100EFDBAA /* SZNAltmetricDemoOSX.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 14FFCB271715614100EFDBAA /* SZNAltmetricDemoOSX.iconset */; };
-		BCB82FE188804C62B5E9BB63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E540AFA3B454868865832E9 /* libPods.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		146301AF170AFC2F00220E31 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14630183170AFC2F00220E31 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1463018A170AFC2F00220E31;
-			remoteInfo = SZNAltmetricDemoOSX;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		1463018B170AFC2F00220E31 /* SZNAltmetricDemoOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZNAltmetricDemoOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1463018E170AFC2F00220E31 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		14630191170AFC2F00220E31 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		14630192170AFC2F00220E31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		14630193170AFC2F00220E31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		14630196170AFC2F00220E31 /* SZNAltmetricDemoOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SZNAltmetricDemoOSX-Info.plist"; sourceTree = "<group>"; };
-		14630198170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1463019A170AFC2F00220E31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1463019C170AFC2F00220E31 /* SZNAltmetricDemoOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SZNAltmetricDemoOSX-Prefix.pch"; sourceTree = "<group>"; };
-		1463019E170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		146301A0170AFC2F00220E31 /* SZNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNAppDelegate.h; sourceTree = "<group>"; };
-		146301A1170AFC2F00220E31 /* SZNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNAppDelegate.m; sourceTree = "<group>"; };
-		146301A4170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZNAltmetricDemoOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		146301AC170AFC2F00220E31 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		146301B3170AFC2F00220E31 /* SZNAltmetricDemoOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SZNAltmetricDemoOSXTests-Info.plist"; sourceTree = "<group>"; };
-		146301B5170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		146301B7170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricDemoOSXTests.h; path = classes/SZNAltmetricDemoOSXTests.h; sourceTree = "<group>"; };
-		146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricDemoOSXTests.m; path = classes/SZNAltmetricDemoOSXTests.m; sourceTree = "<group>"; };
-		146301C8170B181500220E31 /* SZNAltmetricArticleTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricArticleTests.h; path = classes/SZNAltmetricArticleTests.h; sourceTree = "<group>"; };
-		146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricArticleTests.m; path = classes/SZNAltmetricArticleTests.m; sourceTree = "<group>"; };
-		14BA88CE17143FFB00FE3550 /* article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = article.json; path = resources/article.json; sourceTree = "<group>"; };
-		14FB98011728181D00F720E4 /* articleDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = articleDetails.json; path = resources/articleDetails.json; sourceTree = "<group>"; };
-		14FFCB271715614100EFDBAA /* SZNAltmetricDemoOSX.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = SZNAltmetricDemoOSX.iconset; sourceTree = SOURCE_ROOT; };
-		27909A7C6B334D3495B674BC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		8E540AFA3B454868865832E9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		14630188170AFC2F00220E31 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1463018F170AFC2F00220E31 /* Cocoa.framework in Frameworks */,
-				BCB82FE188804C62B5E9BB63 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		146301A7170AFC2F00220E31 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				146301AD170AFC2F00220E31 /* SenTestingKit.framework in Frameworks */,
-				146301AE170AFC2F00220E31 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		14630182170AFC2F00220E31 = {
-			isa = PBXGroup;
-			children = (
-				14630194170AFC2F00220E31 /* SZNAltmetricDemoOSX */,
-				146301B1170AFC2F00220E31 /* SZNAltmetricDemoOSXTests */,
-				1463018D170AFC2F00220E31 /* Frameworks */,
-				1463018C170AFC2F00220E31 /* Products */,
-				27909A7C6B334D3495B674BC /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		1463018C170AFC2F00220E31 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1463018B170AFC2F00220E31 /* SZNAltmetricDemoOSX.app */,
-				146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1463018D170AFC2F00220E31 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1463018E170AFC2F00220E31 /* Cocoa.framework */,
-				146301AC170AFC2F00220E31 /* SenTestingKit.framework */,
-				14630190170AFC2F00220E31 /* Other Frameworks */,
-				8E540AFA3B454868865832E9 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		14630190170AFC2F00220E31 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				14630191170AFC2F00220E31 /* AppKit.framework */,
-				14630192170AFC2F00220E31 /* CoreData.framework */,
-				14630193170AFC2F00220E31 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		14630194170AFC2F00220E31 /* SZNAltmetricDemoOSX */ = {
-			isa = PBXGroup;
-			children = (
-				146301A0170AFC2F00220E31 /* SZNAppDelegate.h */,
-				146301A1170AFC2F00220E31 /* SZNAppDelegate.m */,
-				146301A3170AFC2F00220E31 /* MainMenu.xib */,
-				14630195170AFC2F00220E31 /* Supporting Files */,
-			);
-			path = SZNAltmetricDemoOSX;
-			sourceTree = "<group>";
-		};
-		14630195170AFC2F00220E31 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				14FFCB271715614100EFDBAA /* SZNAltmetricDemoOSX.iconset */,
-				14630196170AFC2F00220E31 /* SZNAltmetricDemoOSX-Info.plist */,
-				14630197170AFC2F00220E31 /* InfoPlist.strings */,
-				1463019A170AFC2F00220E31 /* main.m */,
-				1463019C170AFC2F00220E31 /* SZNAltmetricDemoOSX-Prefix.pch */,
-				1463019D170AFC2F00220E31 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		146301B1170AFC2F00220E31 /* SZNAltmetricDemoOSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				146301B7170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.h */,
-				146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */,
-				146301C8170B181500220E31 /* SZNAltmetricArticleTests.h */,
-				146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */,
-				14BA88D017143FFE00FE3550 /* Resources */,
-				146301B2170AFC2F00220E31 /* Supporting Files */,
-			);
-			path = SZNAltmetricDemoOSXTests;
-			sourceTree = "<group>";
-		};
-		146301B2170AFC2F00220E31 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				146301B3170AFC2F00220E31 /* SZNAltmetricDemoOSXTests-Info.plist */,
-				146301B4170AFC2F00220E31 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		14BA88D017143FFE00FE3550 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				14BA88CE17143FFB00FE3550 /* article.json */,
-				14FB98011728181D00F720E4 /* articleDetails.json */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		1463018A170AFC2F00220E31 /* SZNAltmetricDemoOSX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 146301BC170AFC2F00220E31 /* Build configuration list for PBXNativeTarget "SZNAltmetricDemoOSX" */;
-			buildPhases = (
-				14630187170AFC2F00220E31 /* Sources */,
-				14630188170AFC2F00220E31 /* Frameworks */,
-				14630189170AFC2F00220E31 /* Resources */,
-				BB465C6C68C44C52B43B52DF /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SZNAltmetricDemoOSX;
-			productName = SZNAltmetricDemoOSX;
-			productReference = 1463018B170AFC2F00220E31 /* SZNAltmetricDemoOSX.app */;
-			productType = "com.apple.product-type.application";
-		};
-		146301AA170AFC2F00220E31 /* SZNAltmetricDemoOSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 146301BF170AFC2F00220E31 /* Build configuration list for PBXNativeTarget "SZNAltmetricDemoOSXTests" */;
-			buildPhases = (
-				146301A6170AFC2F00220E31 /* Sources */,
-				146301A7170AFC2F00220E31 /* Frameworks */,
-				146301A8170AFC2F00220E31 /* Resources */,
-				146301A9170AFC2F00220E31 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				146301B0170AFC2F00220E31 /* PBXTargetDependency */,
-			);
-			name = SZNAltmetricDemoOSXTests;
-			productName = SZNAltmetricDemoOSXTests;
-			productReference = 146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		14630183170AFC2F00220E31 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = SZN;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = shazino;
-			};
-			buildConfigurationList = 14630186170AFC2F00220E31 /* Build configuration list for PBXProject "SZNAltmetricDemoOSX" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 14630182170AFC2F00220E31;
-			productRefGroup = 1463018C170AFC2F00220E31 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				1463018A170AFC2F00220E31 /* SZNAltmetricDemoOSX */,
-				146301AA170AFC2F00220E31 /* SZNAltmetricDemoOSXTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		14630189170AFC2F00220E31 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				14630199170AFC2F00220E31 /* InfoPlist.strings in Resources */,
-				1463019F170AFC2F00220E31 /* Credits.rtf in Resources */,
-				146301A5170AFC2F00220E31 /* MainMenu.xib in Resources */,
-				14FFCB281715614100EFDBAA /* SZNAltmetricDemoOSX.iconset in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		146301A8170AFC2F00220E31 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				146301B6170AFC2F00220E31 /* InfoPlist.strings in Resources */,
-				14BA88CF17143FFB00FE3550 /* article.json in Resources */,
-				14FB98021728181D00F720E4 /* articleDetails.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		146301A9170AFC2F00220E31 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		BB465C6C68C44C52B43B52DF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		14630187170AFC2F00220E31 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1463019B170AFC2F00220E31 /* main.m in Sources */,
-				146301A2170AFC2F00220E31 /* SZNAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		146301A6170AFC2F00220E31 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				146301B9170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m in Sources */,
-				146301CA170B181500220E31 /* SZNAltmetricArticleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		146301B0170AFC2F00220E31 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1463018A170AFC2F00220E31 /* SZNAltmetricDemoOSX */;
-			targetProxy = 146301AF170AFC2F00220E31 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		14630197170AFC2F00220E31 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14630198170AFC2F00220E31 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1463019D170AFC2F00220E31 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1463019E170AFC2F00220E31 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		146301A3170AFC2F00220E31 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				146301A4170AFC2F00220E31 /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		146301B4170AFC2F00220E31 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				146301B5170AFC2F00220E31 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		146301BA170AFC2F00220E31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		146301BB170AFC2F00220E31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		146301BD170AFC2F00220E31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27909A7C6B334D3495B674BC /* Pods.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
-				INFOPLIST_FILE = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		146301BE170AFC2F00220E31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27909A7C6B334D3495B674BC /* Pods.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
-				INFOPLIST_FILE = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		146301C0170AFC2F00220E31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27909A7C6B334D3495B674BC /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
-				INFOPLIST_FILE = "SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		146301C1170AFC2F00220E31 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27909A7C6B334D3495B674BC /* Pods.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
-				INFOPLIST_FILE = "SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		14630186170AFC2F00220E31 /* Build configuration list for PBXProject "SZNAltmetricDemoOSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				146301BA170AFC2F00220E31 /* Debug */,
-				146301BB170AFC2F00220E31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		146301BC170AFC2F00220E31 /* Build configuration list for PBXNativeTarget "SZNAltmetricDemoOSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				146301BD170AFC2F00220E31 /* Debug */,
-				146301BE170AFC2F00220E31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		146301BF170AFC2F00220E31 /* Build configuration list for PBXNativeTarget "SZNAltmetricDemoOSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				146301C0170AFC2F00220E31 /* Debug */,
-				146301C1170AFC2F00220E31 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 14630183170AFC2F00220E31 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0B7A1D713701CEB848F7016A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-SZNAltmetricDemoOSXTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>14630182170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14630194170AFC2F00220E31</string>
+				<string>146301B1170AFC2F00220E31</string>
+				<string>1463018D170AFC2F00220E31</string>
+				<string>1463018C170AFC2F00220E31</string>
+				<string>60F0F1C7CFC35FC527CC6F67</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630183170AFC2F00220E31</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>SZN</string>
+				<key>LastUpgradeCheck</key>
+				<string>0460</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>shazino</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>14630186170AFC2F00220E31</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>14630182170AFC2F00220E31</string>
+			<key>productRefGroup</key>
+			<string>1463018C170AFC2F00220E31</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>1463018A170AFC2F00220E31</string>
+				<string>146301AA170AFC2F00220E31</string>
+			</array>
+		</dict>
+		<key>14630186170AFC2F00220E31</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>146301BA170AFC2F00220E31</string>
+				<string>146301BB170AFC2F00220E31</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>14630187170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1463019B170AFC2F00220E31</string>
+				<string>146301A2170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14630188170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1463018F170AFC2F00220E31</string>
+				<string>BCB82FE188804C62B5E9BB63</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>14630189170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>14630199170AFC2F00220E31</string>
+				<string>1463019F170AFC2F00220E31</string>
+				<string>146301A5170AFC2F00220E31</string>
+				<string>14FFCB281715614100EFDBAA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1463018A170AFC2F00220E31</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>146301BC170AFC2F00220E31</string>
+			<key>buildPhases</key>
+			<array>
+				<string>14630187170AFC2F00220E31</string>
+				<string>14630188170AFC2F00220E31</string>
+				<string>14630189170AFC2F00220E31</string>
+				<string>BB465C6C68C44C52B43B52DF</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SZNAltmetricDemoOSX</string>
+			<key>productName</key>
+			<string>SZNAltmetricDemoOSX</string>
+			<key>productReference</key>
+			<string>1463018B170AFC2F00220E31</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>1463018B170AFC2F00220E31</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSX.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1463018C170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1463018B170AFC2F00220E31</string>
+				<string>146301AB170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1463018D170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1463018E170AFC2F00220E31</string>
+				<string>146301AC170AFC2F00220E31</string>
+				<string>14630190170AFC2F00220E31</string>
+				<string>8E540AFA3B454868865832E9</string>
+				<string>0B7A1D713701CEB848F7016A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1463018E170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Cocoa.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Cocoa.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1463018F170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1463018E170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14630190170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14630191170AFC2F00220E31</string>
+				<string>14630192170AFC2F00220E31</string>
+				<string>14630193170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Other Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630191170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AppKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AppKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>14630192170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreData.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreData.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>14630193170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>14630194170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>146301A0170AFC2F00220E31</string>
+				<string>146301A1170AFC2F00220E31</string>
+				<string>146301A3170AFC2F00220E31</string>
+				<string>14630195170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSX</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630195170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14FFCB271715614100EFDBAA</string>
+				<string>14630196170AFC2F00220E31</string>
+				<string>14630197170AFC2F00220E31</string>
+				<string>1463019A170AFC2F00220E31</string>
+				<string>1463019C170AFC2F00220E31</string>
+				<string>1463019D170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630196170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSX-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630197170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14630198170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630198170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14630199170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14630197170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1463019A170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1463019B170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1463019A170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1463019C170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSX-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1463019D170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1463019E170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Credits.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1463019E170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.rtf</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/Credits.rtf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1463019F170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1463019D170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301A0170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SZNAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301A1170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SZNAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301A2170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>146301A1170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301A3170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>146301A4170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301A4170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainMenu.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301A5170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>146301A3170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301A6170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>146301B9170AFC2F00220E31</string>
+				<string>146301CA170B181500220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>146301A7170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>146301AD170AFC2F00220E31</string>
+				<string>146301AE170AFC2F00220E31</string>
+				<string>FA00008EBD24E89D71038C32</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>146301A8170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>146301B6170AFC2F00220E31</string>
+				<string>14BA88CF17143FFB00FE3550</string>
+				<string>14FB98021728181D00F720E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>146301A9170AFC2F00220E31</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>146301AA170AFC2F00220E31</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>146301BF170AFC2F00220E31</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C6D594F1F87497BFB274F0A7</string>
+				<string>146301A6170AFC2F00220E31</string>
+				<string>146301A7170AFC2F00220E31</string>
+				<string>146301A8170AFC2F00220E31</string>
+				<string>146301A9170AFC2F00220E31</string>
+				<string>F371C48A452BF525BC135A6A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>146301B0170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SZNAltmetricDemoOSXTests</string>
+			<key>productName</key>
+			<string>SZNAltmetricDemoOSXTests</string>
+			<key>productReference</key>
+			<string>146301AB170AFC2F00220E31</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>146301AB170AFC2F00220E31</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSXTests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>146301AC170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>146301AD170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>146301AC170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301AE170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1463018E170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301AF170AFC2F00220E31</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>14630183170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1463018A170AFC2F00220E31</string>
+			<key>remoteInfo</key>
+			<string>SZNAltmetricDemoOSX</string>
+		</dict>
+		<key>146301B0170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>1463018A170AFC2F00220E31</string>
+			<key>targetProxy</key>
+			<string>146301AF170AFC2F00220E31</string>
+		</dict>
+		<key>146301B1170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>146301B7170AFC2F00220E31</string>
+				<string>146301B8170AFC2F00220E31</string>
+				<string>146301C8170B181500220E31</string>
+				<string>146301C9170B181500220E31</string>
+				<string>14BA88D017143FFE00FE3550</string>
+				<string>146301B2170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSXTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B2170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>146301B3170AFC2F00220E31</string>
+				<string>146301B4170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B3170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSXTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B4170AFC2F00220E31</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>146301B5170AFC2F00220E31</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B5170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B6170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>146301B4170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301B7170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SZNAltmetricDemoOSXTests.h</string>
+			<key>path</key>
+			<string>classes/SZNAltmetricDemoOSXTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B8170AFC2F00220E31</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SZNAltmetricDemoOSXTests.m</string>
+			<key>path</key>
+			<string>classes/SZNAltmetricDemoOSXTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301B9170AFC2F00220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>146301B8170AFC2F00220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>146301BA170AFC2F00220E31</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>146301BB170AFC2F00220E31</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.8</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>146301BC170AFC2F00220E31</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>146301BD170AFC2F00220E31</string>
+				<string>146301BE170AFC2F00220E31</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>146301BD170AFC2F00220E31</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4DAFFDC5473063C2245FBCD4</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Info.plist</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.7</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>146301BE170AFC2F00220E31</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>937E3EB5B18AE0B04BF266CE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Info.plist</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.7</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>146301BF170AFC2F00220E31</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>146301C0170AFC2F00220E31</string>
+				<string>146301C1170AFC2F00220E31</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>146301C0170AFC2F00220E31</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>27EE88C60EDF1AE4C7CBA7B9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>146301C1170AFC2F00220E31</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>83E20FD02F4292C3AA48597B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>146301C8170B181500220E31</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SZNAltmetricArticleTests.h</string>
+			<key>path</key>
+			<string>classes/SZNAltmetricArticleTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301C9170B181500220E31</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SZNAltmetricArticleTests.m</string>
+			<key>path</key>
+			<string>classes/SZNAltmetricArticleTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>146301CA170B181500220E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>146301C9170B181500220E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14BA88CE17143FFB00FE3550</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>article.json</string>
+			<key>path</key>
+			<string>resources/article.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14BA88CF17143FFB00FE3550</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14BA88CE17143FFB00FE3550</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14BA88D017143FFE00FE3550</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>14BA88CE17143FFB00FE3550</string>
+				<string>14FB98011728181D00F720E4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14FB98011728181D00F720E4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>articleDetails.json</string>
+			<key>path</key>
+			<string>resources/articleDetails.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>14FB98021728181D00F720E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14FB98011728181D00F720E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>14FFCB271715614100EFDBAA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.iconset</string>
+			<key>path</key>
+			<string>SZNAltmetricDemoOSX.iconset</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>14FFCB281715614100EFDBAA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>14FFCB271715614100EFDBAA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>27EE88C60EDF1AE4C7CBA7B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-SZNAltmetricDemoOSXTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-SZNAltmetricDemoOSXTests/Pods-SZNAltmetricDemoOSXTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4DAFFDC5473063C2245FBCD4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60F0F1C7CFC35FC527CC6F67</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4DAFFDC5473063C2245FBCD4</string>
+				<string>937E3EB5B18AE0B04BF266CE</string>
+				<string>27EE88C60EDF1AE4C7CBA7B9</string>
+				<string>83E20FD02F4292C3AA48597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>83E20FD02F4292C3AA48597B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-SZNAltmetricDemoOSXTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-SZNAltmetricDemoOSXTests/Pods-SZNAltmetricDemoOSXTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E540AFA3B454868865832E9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>937E3EB5B18AE0B04BF266CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BB465C6C68C44C52B43B52DF</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+		</dict>
+		<key>BCB82FE188804C62B5E9BB63</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E540AFA3B454868865832E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6D594F1F87497BFB274F0A7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F371C48A452BF525BC135A6A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-SZNAltmetricDemoOSXTests/Pods-SZNAltmetricDemoOSXTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FA00008EBD24E89D71038C32</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B7A1D713701CEB848F7016A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>14630183170AFC2F00220E31</string>
+</dict>
+</plist>

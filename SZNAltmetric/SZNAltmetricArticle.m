@@ -33,14 +33,14 @@
 
 @implementation SZNAltmetricArticle
 
-+ (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject
-{
-    if (![responseObject isKindOfClass:[NSDictionary class]])
++ (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject {
+    if (![responseObject isKindOfClass:[NSDictionary class]]) {
         return nil;
-    
+    }
+
     SZNAltmetricArticle *article = [SZNAltmetricArticle new];
     article.content = responseObject;
-    
+
     NSDictionary *citationDictionary = responseObject[@"citation"] ?: responseObject;
     article.addedOn             = [self dateFromResponseObject:responseObject[@"added_on"]];
     article.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
@@ -58,11 +58,16 @@
     article.arXiv               = citationDictionary[@"arxiv_id"];
     article.lastUpdated         = [self dateFromResponseObject:responseObject[@"last_updated"]];
     article.NLMIdentifier       = citationDictionary[@"nlmid"];
-    article.PubMedIdentifier    = citationDictionary[@"pmid"];
-    if (responseObject[@"published_on"])
+    article.pubMedIdentifier    = citationDictionary[@"pmid"];
+
+    if (responseObject[@"published_on"]) {
         article.publishedOn     = [self dateFromResponseObject:responseObject[@"published_on"]];
-    if (citationDictionary[@"pubdate"])
+    }
+
+    if (citationDictionary[@"pubdate"]) {
         article.publishedOn     = [self dateFromResponseObject:citationDictionary[@"pubdate"]];
+    }
+
     article.schema              = responseObject[@"schema"];
     article.score               = responseObject[@"score"];
     article.subjects            = responseObject[@"subjects"];
@@ -79,22 +84,28 @@
     article.readersCount        = responseObject[@"readers_count"];
     article.readers             = responseObject[@"readers"];
     article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
+
     if ([citationDictionary[@"links"] isKindOfClass:[NSArray class]] &&
-        [citationDictionary[@"links"] count] > 0)
+        [citationDictionary[@"links"] count] > 0) {
         article.detailsURL      = [NSURL URLWithString:citationDictionary[@"links"][0]];
-    else
+    }
+    else {
         article.detailsURL      = [NSURL URLWithString:responseObject[@"details_url"]];
+    }
+
     return article;
 }
 
-+ (NSDate *)dateFromResponseObject:(id)responseObject
-{
-    if ([responseObject isKindOfClass:[NSNumber class]])
++ (NSDate *)dateFromResponseObject:(id)responseObject {
+    if ([responseObject isKindOfClass:[NSNumber class]]) {
         return [NSDate dateWithTimeIntervalSince1970:[responseObject doubleValue]];
-    else if ([responseObject isKindOfClass:[NSString class]])
+    }
+    else if ([responseObject isKindOfClass:[NSString class]]) {
         return [[ISO8601DateFormatter new] dateFromString:responseObject];
-    else
+    }
+    else {
         return nil;
+    }
 }
 
 @end
