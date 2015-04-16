@@ -40,68 +40,61 @@
 
 @implementation SZNAltmetricAPIClient
 
-+ (SZNAltmetricAPIClient *)sharedClient
-{
++ (SZNAltmetricAPIClient *)sharedClient {
     static SZNAltmetricAPIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSURL *URL = [NSURL URLWithString:@"http://api.altmetric.com/v1/"];
         _sharedClient = [[self alloc] initWithBaseURL:URL];
     });
-    
+
     return _sharedClient;
 }
 
-- (id)initWithBaseURL:(NSURL *)url
-{
+- (id)initWithBaseURL:(NSURL *)url {
     self = [super initWithBaseURL:url];
-    if (!self)
+    if (!self) {
         return nil;
-    
+    }
+
     [self setDefaultHeader:@"Accept" value:@"application/json"];
-    
+
     return self;
 }
 
 - (void)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier
                                     success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticleWithPath:@"id" identifier:altmetricIdentifier success:success failure:failure];
 }
 
 - (void)fetchArticleWithDOI:(NSString *)DOI
                     success:(SZNAltmetricFetchArticleSuccessBlock)success
-                    failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                    failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticleWithPath:@"doi" identifier:DOI success:success failure:failure];
 }
 
 - (void)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier
                                  success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                 failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                                 failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticleWithPath:@"pmid" identifier:pubMedIdentifier success:success failure:failure];
 }
 
 - (void)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier
                                 success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                                failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticleWithPath:@"arxiv" identifier:arXivIdentifier success:success failure:failure];
 }
 
 - (void)fetchArticleWithADSBibcode:(NSString *)ADSBibcode
                            success:(SZNAltmetricFetchArticleSuccessBlock)success
-                           failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                           failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticleWithPath:@"ads" identifier:ADSBibcode success:success failure:failure];
 }
 
 - (void)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
                                     success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticlesCitationsWithTimeframe:timeframe
                                          page:0
                               numberOfResults:0
@@ -121,21 +114,32 @@
                              NLMIdentifiers:(NSString *)NLMIdentifiers
                                    subjects:(NSString *)subjects
                                     success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    if (page > 0)
+    if (page > 0) {
         parameters[@"page"] = @(page);
-    if (numberOfResults > 0)
+    }
+
+    if (numberOfResults > 0) {
         parameters[@"num_results"] = @(numberOfResults);
-    if (citedIn)
+    }
+
+    if (citedIn) {
         parameters[@"cited_in"] = citedIn;
-    if (DOIPrefix)
+    }
+
+    if (DOIPrefix) {
         parameters[@"doi_prefix"] = DOIPrefix;
-    if (NLMIdentifiers)
+    }
+
+    if (NLMIdentifiers) {
         parameters[@"nlmid"] = NLMIdentifiers;
-    if (subjects)
+    }
+
+    if (subjects) {
         parameters[@"subject"] = subjects;
+    }
+
     [self fetchPaginatedArticlesWithPath:[@"citations" stringByAppendingPathComponent:timeframe]
                               parameters:parameters
                                  success:success
@@ -145,8 +149,7 @@
 - (void)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType
                                    identifier:(NSString *)identifier
                                       success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchArticleWithPath:[@"fetch" stringByAppendingPathComponent:identifierType]
                     identifier:identifier
                        success:success
@@ -156,36 +159,35 @@
 - (void)fetchPaginatedArticlesWithPath:(NSString *)path
                             parameters:(NSDictionary *)parameters
                                success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                               failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                               failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     NSMutableDictionary *mutableParameters = [NSMutableDictionary dictionaryWithDictionary:parameters];
-    if (self.APIKey)
+    if (self.APIKey) {
         mutableParameters[@"key"] = self.APIKey;
-    
+    }
+
     NSURLRequest *request = [self requestWithMethod:@"GET" path:path parameters:mutableParameters];
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSDictionary *responseObject) {
-        
+
         NSNumberFormatter *numberFormatter = [NSNumberFormatter new];
         numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-        self.dailyRateLimit      = [numberFormatter numberFromString:[response allHeaderFields][@"X-DailyRateLimit-Limit"]];
-        self.dailyRateRemaining  = [numberFormatter numberFromString:[response allHeaderFields][@"X-DailyRateLimit-Remaining"]];
-        self.hourlyRateLimit     = [numberFormatter numberFromString:[response allHeaderFields][@"X-HourlyRateLimit-Limit"]];
-        self.hourlyRateRemaining = [numberFormatter numberFromString:[response allHeaderFields][@"X-HourlyRateLimit-Remaining"]];
-        
-        if (success)
-        {
-            if (responseObject[@"results"] && responseObject[@"query"])
-            {
+        self.dailyRateLimit      = [numberFormatter numberFromString:response.allHeaderFields[@"X-DailyRateLimit-Limit"]];
+        self.dailyRateRemaining  = [numberFormatter numberFromString:response.allHeaderFields[@"X-DailyRateLimit-Remaining"]];
+        self.hourlyRateLimit     = [numberFormatter numberFromString:response.allHeaderFields[@"X-HourlyRateLimit-Limit"]];
+        self.hourlyRateRemaining = [numberFormatter numberFromString:response.allHeaderFields[@"X-HourlyRateLimit-Remaining"]];
+
+        if (success) {
+            if (responseObject[@"results"] && responseObject[@"query"]) {
                 NSNumber *page  = responseObject[@"query"][@"page"];
                 NSNumber *total = responseObject[@"query"][@"total"];
-                
+
                 NSMutableArray *results = [NSMutableArray array];
                 for (NSDictionary *result in responseObject[@"results"]) {
                     SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:result];
-                    if (article)
+                    if (article) {
                         [results addObject:article];
+                    }
                 }
-                success(results, [total unsignedIntegerValue], [page unsignedIntegerValue]);
+                success(results, total.unsignedIntegerValue, page.unsignedIntegerValue);
             }
             else {
                 SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:responseObject];
@@ -193,8 +195,9 @@
             }
         }
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-        if (failure)
+        if (failure) {
             failure(error);
+        }
     }];
     [operation start];
 }
@@ -202,13 +205,13 @@
 - (void)fetchArticleWithPath:(NSString *)path
                   identifier:(NSString *)identifier
                      success:(SZNAltmetricFetchArticleSuccessBlock)success
-                     failure:(SZNAltmetricFetchArticleFailureBlock)failure
-{
+                     failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     [self fetchPaginatedArticlesWithPath:[path stringByAppendingPathComponent:identifier]
                               parameters:nil
                                  success:^(NSArray *results, NSUInteger total, NSUInteger page) {
-                                     if (success)
-                                         success([results lastObject]);
+                                     if (success) {
+                                         success(results.lastObject);
+                                     }
                                  }
                                  failure:failure];
 }
