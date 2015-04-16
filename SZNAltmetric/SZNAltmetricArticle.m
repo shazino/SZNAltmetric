@@ -58,7 +58,7 @@
     article.arXiv               = citationDictionary[@"arxiv_id"];
     article.lastUpdated         = [self dateFromResponseObject:responseObject[@"last_updated"]];
     article.NLMIdentifier       = citationDictionary[@"nlmid"];
-    article.PubMedIdentifier    = citationDictionary[@"pmid"];
+    article.pubMedIdentifier    = citationDictionary[@"pmid"];
     if (responseObject[@"published_on"])
         article.publishedOn     = [self dateFromResponseObject:responseObject[@"published_on"]];
     if (citationDictionary[@"pubdate"])
