@@ -61,9 +61,9 @@
     self.scienceBlogsLabel.text = [article.citedByFeedsCount stringValue];
     self.googlePlusLabel.text = [article.citedByGooglePlusCount stringValue];
     
-    self.readersMendeleyLabel.text = [article.readers[@"mendeley"] stringValue];
-    self.readersCiteULikeLabel.text = [article.readers[@"citeulike"] stringValue];
-    self.readersConnoteaLabel.text = [article.readers[@"connotea"] stringValue];
+    self.readersMendeleyLabel.text = [article.readers[@"mendeley"] description];
+    self.readersCiteULikeLabel.text = [article.readers[@"citeulike"] description];
+    self.readersConnoteaLabel.text = [article.readers[@"connotea"] description];
     
     self.subjectsLabel.text = [article.subjects componentsJoinedByString:@", "];
     self.scopusSubjectsLabel.text = [article.scopusSubjects componentsJoinedByString:@", "];
