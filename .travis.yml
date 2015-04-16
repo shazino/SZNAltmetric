@@ -1,3 +1,3 @@
 language: objective-c
-xcode_project: Examples/SZNAltmetricDemoOSX/SZNAltmetricDemoOSX.xcworkspace
+xcode_workspace: Examples/SZNAltmetricDemoOSX/SZNAltmetricDemoOSX.xcworkspace
 xcode_scheme: SZNAltmetricDemoOSX
