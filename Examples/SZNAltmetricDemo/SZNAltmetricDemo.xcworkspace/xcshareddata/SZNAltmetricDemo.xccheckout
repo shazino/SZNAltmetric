@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>298CC683-DD9A-496F-B908-C2FF4AD34B28</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SZNAltmetricDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0D43DD011E7D49DD3B4E0EFD17DA366950E3EFF9</key>
+		<string>ssh://github.com/shazino/SZNAltmetric.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Examples/SZNAltmetricDemo/SZNAltmetricDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0D43DD011E7D49DD3B4E0EFD17DA366950E3EFF9</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/shazino/SZNAltmetric.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0D43DD011E7D49DD3B4E0EFD17DA366950E3EFF9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0D43DD011E7D49DD3B4E0EFD17DA366950E3EFF9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SZNAltmetric</string>
+		</dict>
+	</array>
+</dict>
+</plist>
