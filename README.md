@@ -21,11 +21,8 @@ If you want to install SZNAltmetric manually, you can read our [“Getting Start
 We wanted to make it as simple as possible to fetch details about an article from the API, so here is how it looks like:
 
 ```objectivec
-// Let’s specify an API key (optional)
 SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
-client.APIKey = @"###abc123###";
 
-// Okay, now let’s fetch some data
 [client fetchArticleWithDOI:@"###DOI###"
                     success:^(SZNAltmetricArticle *article) {
                         // We have the article, 
@@ -35,6 +32,13 @@ client.APIKey = @"###abc123###";
 ```
 
 As you can see, we have just requested an article based on its DOI (you can also use Altmetric ID, PubMed ID, arXiv ID, and ADS Bibcode). What you get is a `SZNAltmetricArticle` object, containing all the identifiers, the Altmetric score, and even the URLs to the “donuts” images.
+
+Having a client API key is optional, and it’s easy to configure if you need it:
+
+```objectivec
+SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
+client.APIKey = @"###key###";
+```
 
 With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
