@@ -46,6 +46,20 @@ With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
 ![OS X demo app](https://github.com/shazino/SZNAltmetric/wiki/img/v0-3/screen-OSX.png)
 
+You can also search articles with different types of identifiers, or with a timeframe:
+
+```objectivec
+SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
+
+[client
+ fetchArticlesCitationsWithTimeframe:@"1d"
+ success:^(NSArray *articles, NSUInteger total, NSUInteger page) {
+     // We have an array of articles.
+     NSLog(@"%@", articles);
+  }
+  failure:nil];
+```
+
 
 ## References
 
