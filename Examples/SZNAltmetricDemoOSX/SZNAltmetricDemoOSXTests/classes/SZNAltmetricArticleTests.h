@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 shazino. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 
 @interface SZNAltmetricArticleTests : XCTestCase
 
