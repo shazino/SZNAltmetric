@@ -7,9 +7,14 @@ SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and 
 
 ## Getting Started
 
-The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your `Podfile` with `pod 'SZNAltmetric', '1.0.2'`.
+The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your `Podfile`:
+
+```
+pod 'SZNAltmetric', '1.0.2'
+```
 
 If you want to install SZNAltmetric manually, you can read our [“Getting Started” guide](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started).
+
 
 ## Example Usage
 
@@ -37,19 +42,23 @@ With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
 ![OS X demo app](https://github.com/shazino/SZNAltmetric/wiki/img/v0-3/screen-OSX.png)
 
+
 ## References
 
 - [Getting Started](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started)
 - [Documentation](http://shazino.github.io/SZNAltmetric/)
 - [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
 
+
 ## Requirements
 
 SZNAltmetric requires Xcode 4.4 with either the iOS 5.0 or Mac OS X 10.7, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [ISO 8601 parser unparser](https://bitbucket.org/boredzo/iso-8601-parser-unparser/). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
 
+
 ## Credits
 
 SZNAltmetric is developed by [shazino](http://www.shazino.com).
+
 
 ## License
 
