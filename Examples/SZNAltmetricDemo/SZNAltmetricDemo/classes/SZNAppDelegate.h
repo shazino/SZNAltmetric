@@ -3,10 +3,10 @@
 //  SZNAltmetricDemo
 //
 //  Created by Vincent Tourraine on 28/03/13.
-//  Copyright (c) 2013 shazino. All rights reserved.
+//  Copyright (c) 2013-2015 shazino. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface SZNAppDelegate : UIResponder <UIApplicationDelegate>
 
