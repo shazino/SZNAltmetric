@@ -10,7 +10,7 @@ SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and 
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your `Podfile`:
 
 ```
-pod 'SZNAltmetric', '1.0.2'
+pod 'SZNAltmetric', '1.0.3'
 ```
 
 If you want to install SZNAltmetric manually, you can read our [“Getting Started” guide](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started).
@@ -23,12 +23,14 @@ We wanted to make it as simple as possible to fetch details about an article fro
 ```objectivec
 SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
 
-[client fetchArticleWithDOI:@"###DOI###"
-                    success:^(SZNAltmetricArticle *article) {
-                        // We have the article, 
-                        // we can log the Altmetric score
-                        NSLog(@"%@", [article.score stringValue]);
-                    } failure:nil];
+[client
+ fetchArticleWithDOI:@"###DOI###"
+ success:^(SZNAltmetricArticle *article) {
+     // We have the article,
+     // we can log the Altmetric score
+     NSLog(@"%@", [article.score stringValue]);
+ }
+ failure:nil];
 ```
 
 As you can see, we have just requested an article based on its DOI (you can also use Altmetric ID, PubMed ID, arXiv ID, and ADS Bibcode). What you get is a `SZNAltmetricArticle` object, containing all the identifiers, the Altmetric score, and even the URLs to the “donuts” images.
@@ -56,8 +58,8 @@ SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
  success:^(NSArray *articles, NSUInteger total, NSUInteger page) {
      // We have an array of articles.
      NSLog(@"%@", articles);
-  }
-  failure:nil];
+ }
+ failure:nil];
 ```
 
 
