@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 shazino. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface SZNAltmetricArticleTests : SenTestCase
+@interface SZNAltmetricArticleTests : XCTestCase
 
 @end

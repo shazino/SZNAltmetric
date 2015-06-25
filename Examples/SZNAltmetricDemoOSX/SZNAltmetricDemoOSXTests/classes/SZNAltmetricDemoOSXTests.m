@@ -25,7 +25,7 @@
 
 - (void)testInit
 {
-    STAssertNotNil(self.client, @"The API client should be initialized");
+    XCTAssertNotNil(self.client, @"The API client should be initialized");
 }
 
 @end

@@ -13,7 +13,6 @@
 		1463019F170AFC2F00220E31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1463019D170AFC2F00220E31 /* Credits.rtf */; };
 		146301A2170AFC2F00220E31 /* SZNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301A1170AFC2F00220E31 /* SZNAppDelegate.m */; };
 		146301A5170AFC2F00220E31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146301A3170AFC2F00220E31 /* MainMenu.xib */; };
-		146301AD170AFC2F00220E31 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146301AC170AFC2F00220E31 /* SenTestingKit.framework */; };
 		146301AE170AFC2F00220E31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463018E170AFC2F00220E31 /* Cocoa.framework */; };
 		146301B6170AFC2F00220E31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146301B4170AFC2F00220E31 /* InfoPlist.strings */; };
 		146301B9170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */; };
@@ -51,7 +50,6 @@
 		146301A1170AFC2F00220E31 /* SZNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNAppDelegate.m; sourceTree = "<group>"; };
 		146301A4170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZNAltmetricDemoOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		146301AC170AFC2F00220E31 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		146301B3170AFC2F00220E31 /* SZNAltmetricDemoOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SZNAltmetricDemoOSXTests-Info.plist"; sourceTree = "<group>"; };
 		146301B5170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		146301B7170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricDemoOSXTests.h; path = classes/SZNAltmetricDemoOSXTests.h; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				146301AD170AFC2F00220E31 /* SenTestingKit.framework in Frameworks */,
 				146301AE170AFC2F00220E31 /* Cocoa.framework in Frameworks */,
 				FA00008EBD24E89D71038C32 /* libPods-SZNAltmetricDemoOSXTests.a in Frameworks */,
 			);
@@ -115,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				1463018E170AFC2F00220E31 /* Cocoa.framework */,
-				146301AC170AFC2F00220E31 /* SenTestingKit.framework */,
 				14630190170AFC2F00220E31 /* Other Frameworks */,
 				8E540AFA3B454868865832E9 /* libPods.a */,
 				0B7A1D713701CEB848F7016A /* libPods-SZNAltmetricDemoOSXTests.a */,
@@ -239,7 +235,7 @@
 			name = SZNAltmetricDemoOSXTests;
 			productName = SZNAltmetricDemoOSXTests;
 			productReference = 146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -248,6 +244,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SZN;
+				LastTestingUpgradeCheck = 0630;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = shazino;
 			};
@@ -509,13 +506,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
 				INFOPLIST_FILE = "SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -525,13 +524,15 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SZNAltmetricDemoOSX.app/Contents/MacOS/SZNAltmetricDemoOSX";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
 				INFOPLIST_FILE = "SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

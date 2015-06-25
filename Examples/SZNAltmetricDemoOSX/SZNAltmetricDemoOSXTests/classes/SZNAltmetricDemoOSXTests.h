@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 shazino. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 @class SZNAltmetricAPIClient;
 
-@interface SZNAltmetricDemoOSXTests : SenTestCase
+@interface SZNAltmetricDemoOSXTests : XCTestCase
 
 @property (nonatomic, strong) SZNAltmetricAPIClient *client;
 
