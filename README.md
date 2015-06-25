@@ -64,7 +64,7 @@ SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
 ## References
 
 - [Getting Started](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started)
-- [Documentation](http://shazino.github.io/SZNAltmetric/)
+- [Documentation](http://cocoadocs.org/docsets/SZNAltmetric/)
 - [Changelog](https://github.com/shazino/SZNAltmetric/wiki/Changelog)
 
 
