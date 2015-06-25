@@ -25,9 +25,9 @@
 
 @class SZNAltmetricArticle;
 
-typedef void (^SZNAltmetricFetchArticleSuccessBlock)(SZNAltmetricArticle * __nullable);
-typedef void (^SZNAltmetricFetchPaginatedArticlesSuccessBlock)(NSArray * __nullable, NSUInteger, NSUInteger);
-typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable);
+typedef void (^SZNAltmetricFetchArticleSuccessBlock)(SZNAltmetricArticle * __nullable article);
+typedef void (^SZNAltmetricFetchPaginatedArticlesSuccessBlock)(NSArray * __nullable articles, NSUInteger total, NSUInteger pageIndex);
+typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error);
 
 /**
  `SZNAltmetricAPIClient` is an HTTP client preconfigured for accessing Altmetric API.
