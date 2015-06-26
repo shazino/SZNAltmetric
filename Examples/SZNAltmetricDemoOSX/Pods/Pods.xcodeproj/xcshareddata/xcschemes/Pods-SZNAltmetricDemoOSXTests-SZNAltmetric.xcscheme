@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D7F6B91ADDF26ADC47123AB3"
+               BlueprintIdentifier = "EB79590410A0205D6C621133"
                BuildableName = "libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a"
                BlueprintName = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric"
                ReferencedContainer = "container:Pods.xcodeproj">

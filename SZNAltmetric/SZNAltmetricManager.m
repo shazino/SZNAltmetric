@@ -30,14 +30,14 @@
 
 @interface SZNAltmetricManager ()
 
-- (AFHTTPRequestOperation *)fetchPaginatedArticlesWithPath:(NSString *)path
-                                                parameters:(NSDictionary *)parameters
-                                                   success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                                   failure:(SZNAltmetricFetchArticleFailureBlock)failure;
-- (AFHTTPRequestOperation *)fetchArticleWithPath:(NSString *)path
-                                      identifier:(NSString *)identifier
-                                         success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                         failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (NSURLSessionDataTask *)fetchPaginatedArticlesWithPath:(NSString *)path
+                                              parameters:(NSDictionary *)parameters
+                                                 success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                                 failure:(SZNAltmetricFetchArticleFailureBlock)failure;
+- (NSURLSessionDataTask *)fetchArticleWithPath:(NSString *)path
+                                    identifier:(NSString *)identifier
+                                       success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                       failure:(SZNAltmetricFetchArticleFailureBlock)failure;
 
 @end
 
@@ -80,39 +80,39 @@
 
 #pragma mark -
 
-- (AFHTTPRequestOperation *)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier
-                                                        success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                                        failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleWithAltmetricIdentifier:(NSString *)altmetricIdentifier
+                                                      success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticleWithPath:@"id" identifier:altmetricIdentifier success:success failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticleWithDOI:(NSString *)DOI
-                                        success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                        failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleWithDOI:(NSString *)DOI
+                                      success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticleWithPath:@"doi" identifier:DOI success:success failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier
-                                                     success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                                     failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleWithPubMedIdentifier:(NSString *)pubMedIdentifier
+                                                   success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                                   failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticleWithPath:@"pmid" identifier:pubMedIdentifier success:success failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier
-                                                    success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleWithArXivIdentifier:(NSString *)arXivIdentifier
+                                                  success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                                  failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticleWithPath:@"arxiv" identifier:arXivIdentifier success:success failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticleWithADSBibcode:(NSString *)ADSBibcode
-                                               success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                               failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleWithADSBibcode:(NSString *)ADSBibcode
+                                             success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                             failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticleWithPath:@"ads" identifier:ADSBibcode success:success failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
-                                                        success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                                        failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
+                                                      success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticlesCitationsWithTimeframe:timeframe
                                                 page:0
                                      numberOfResults:0
@@ -124,15 +124,15 @@
                                              failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
-                                                           page:(NSUInteger)page
-                                                numberOfResults:(NSUInteger)numberOfResults
-                                                        citedIn:(NSString *)citedIn
-                                                      DOIPrefix:(NSString *)DOIPrefix
-                                                 NLMIdentifiers:(NSString *)NLMIdentifiers
-                                                       subjects:(NSString *)subjects
-                                                        success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                                        failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticlesCitationsWithTimeframe:(NSString *)timeframe
+                                                         page:(NSUInteger)page
+                                              numberOfResults:(NSUInteger)numberOfResults
+                                                      citedIn:(NSString *)citedIn
+                                                    DOIPrefix:(NSString *)DOIPrefix
+                                               NLMIdentifiers:(NSString *)NLMIdentifiers
+                                                     subjects:(NSString *)subjects
+                                                      success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                                      failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     if (page > 0) {
         parameters[@"page"] = @(page);
@@ -164,30 +164,25 @@
                                         failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType
-                                                       identifier:(NSString *)identifier
-                                                          success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                                          failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleDetailsWithIdentifierType:(NSString *)identifierType
+                                                     identifier:(NSString *)identifier
+                                                        success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                                        failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self fetchArticleWithPath:[@"fetch" stringByAppendingPathComponent:identifierType]
-                    identifier:identifier
-                       success:success
-                       failure:failure];
+                           identifier:identifier
+                              success:success
+                              failure:failure];
 }
 
-- (AFHTTPRequestOperation *)fetchPaginatedArticlesWithPath:(NSString *)path
+- (NSURLSessionDataTask *)fetchPaginatedArticlesWithPath:(NSString *)path
                                                 parameters:(NSDictionary *)parameters
                                                    success:(SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
                                                    failure:(SZNAltmetricFetchArticleFailureBlock)failure {
-    NSURLRequest *request = [self.requestSerializer
-                             requestWithMethod:@"GET"
-                             URLString:[[self.baseURL URLByAppendingPathComponent:path] absoluteString]
-                             parameters:parameters
-                             error:nil];
-
-    AFHTTPRequestOperation *operation =
+    NSURLSessionDataTask *operation =
     [self
-     HTTPRequestOperationWithRequest:request
-     success:^(AFHTTPRequestOperation *operation, id responseObject) {
+     GET:path
+     parameters:parameters
+     success:^(NSURLSessionDataTask *task, id responseObject) {
          if (![responseObject isKindOfClass:NSDictionary.class]) {
              if (failure) {
                  failure(nil);
@@ -195,12 +190,16 @@
              return;
          }
 
-         NSNumberFormatter *numberFormatter = [NSNumberFormatter new];
-         numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
-         self.dailyRateLimit      = [numberFormatter numberFromString:operation.response.allHeaderFields[@"X-DailyRateLimit-Limit"]];
-         self.dailyRateRemaining  = [numberFormatter numberFromString:operation.response.allHeaderFields[@"X-DailyRateLimit-Remaining"]];
-         self.hourlyRateLimit     = [numberFormatter numberFromString:operation.response.allHeaderFields[@"X-HourlyRateLimit-Limit"]];
-         self.hourlyRateRemaining = [numberFormatter numberFromString:operation.response.allHeaderFields[@"X-HourlyRateLimit-Remaining"]];
+         if ([task.response isKindOfClass:[NSHTTPURLResponse class]]) {
+             NSHTTPURLResponse *HTTPResponse = (NSHTTPURLResponse *)task.response;
+
+             NSNumberFormatter *numberFormatter = [NSNumberFormatter new];
+             numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+             self.dailyRateLimit      = [numberFormatter numberFromString:HTTPResponse.allHeaderFields[@"X-DailyRateLimit-Limit"]];
+             self.dailyRateRemaining  = [numberFormatter numberFromString:HTTPResponse.allHeaderFields[@"X-DailyRateLimit-Remaining"]];
+             self.hourlyRateLimit     = [numberFormatter numberFromString:HTTPResponse.allHeaderFields[@"X-HourlyRateLimit-Limit"]];
+             self.hourlyRateRemaining = [numberFormatter numberFromString:HTTPResponse.allHeaderFields[@"X-HourlyRateLimit-Remaining"]];
+         }
 
          if (responseObject[@"results"] && responseObject[@"query"]) {
              NSNumber *page  = responseObject[@"query"][@"page"];
@@ -225,21 +224,20 @@
                  success(article ? @[article] : @[], NSNotFound, NSNotFound);
              }
          }
-     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+     }
+     failure:^(NSURLSessionDataTask *task, NSError *error) {
          if (failure) {
              failure(error);
          }
      }];
 
-    [self.operationQueue addOperation:operation];
-
     return operation;
 }
 
-- (AFHTTPRequestOperation *)fetchArticleWithPath:(NSString *)path
-                                      identifier:(NSString *)identifier
-                                         success:(SZNAltmetricFetchArticleSuccessBlock)success
-                                         failure:(SZNAltmetricFetchArticleFailureBlock)failure {
+- (NSURLSessionDataTask *)fetchArticleWithPath:(NSString *)path
+                                    identifier:(NSString *)identifier
+                                       success:(SZNAltmetricFetchArticleSuccessBlock)success
+                                       failure:(SZNAltmetricFetchArticleFailureBlock)failure {
     return [self
             fetchPaginatedArticlesWithPath:[path stringByAppendingPathComponent:identifier]
             parameters:nil

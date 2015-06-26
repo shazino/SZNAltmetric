@@ -21,7 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - ISO8601DateFormatter (0.7)
-  - SZNAltmetric (2.0):
+  - SZNAltmetric (2.1):
     - AFNetworking (~> 2.0)
     - ISO8601DateFormatter (~> 0.6)
 
@@ -35,6 +35,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
-  SZNAltmetric: 3b0bc3a543b4599d86bc0fe1800ae2053d35b069
+  SZNAltmetric: e59a9ed0bfb2c6f0bde66b5b3c0044f212a39ec0
 
 COCOAPODS: 0.37.2
