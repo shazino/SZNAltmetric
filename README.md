@@ -3,17 +3,15 @@
 **Objective-C client for the Altmetric API.**
 [![Build Status](https://travis-ci.org/shazino/SZNAltmetric.png?branch=master)](https://travis-ci.org/shazino/SZNAltmetric)
 
-SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and Mac OS X. It’s built on top of [AFNetworking](http://www.github.com/AFNetworking/AFNetworking) to deal with network operations.
+SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and Mac OS X. It’s built on top of [AFNetworking](http://www.github.com/AFNetworking/AFNetworking) to deal with network operations, and based on `NSURLSession`.
 
 ## Getting Started
 
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your `Podfile`:
 
 ```
-pod 'SZNAltmetric', '2.0'
+pod 'SZNAltmetric', '2.1'
 ```
-
-If you want to install SZNAltmetric manually, you can read our [“Getting Started” guide](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started).
 
 
 ## Example Usage
@@ -72,12 +70,17 @@ SZNAltmetricManager *manager = [SZNAltmetricManager sharedManager];
 
 ## Requirements
 
-SZNAltmetric requires Xcode 6.3 with either the iOS 6.0 or OS X 10.8, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [ISO 8601 parser unparser](https://bitbucket.org/boredzo/iso-8601-parser-unparser/). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
+SZNAltmetric requires Xcode 6.3 with either the iOS 7.0 or OS X 10.9, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [ISO 8601 parser unparser](https://bitbucket.org/boredzo/iso-8601-parser-unparser/). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
+
+If you need to support older OS versions:
+
+- [SZNAltmetric 1.x](https://github.com/shazino/SZNAltmetric/tree/1.0.3) supports iOS 5.0 and OS X 10.7
+- [SZNAltmetric 2.0](https://github.com/shazino/SZNAltmetric/tree/2.0.) supports iOS 6.0 and OS X 10.8
 
 
 ## Credits
 
-SZNAltmetric is developed by [shazino](http://www.shazino.com).
+SZNAltmetric is developed by [Shazino](http://www.shazino.com).
 
 
 ## License

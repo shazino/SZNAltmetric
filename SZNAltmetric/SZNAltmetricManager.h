@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "AFHTTPRequestOperationManager.h"
+#import "AFHTTPSessionManager.h"
 
 @class SZNAltmetricArticle;
 
@@ -30,10 +30,10 @@ typedef void (^SZNAltmetricFetchPaginatedArticlesSuccessBlock)(NSArray * __nulla
 typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error);
 
 /**
- `SZNAltmetricManager` is an `AFHTTPRequestOperationManager` subclass for
+ `SZNAltmetricManager` is an `AFHTTPSessionManager` subclass for
  interacting with the Altmetric API.
  */
-@interface SZNAltmetricManager : AFHTTPRequestOperationManager
+@interface SZNAltmetricManager : AFHTTPSessionManager
 
 /**
  Altmetric API Key.
@@ -83,9 +83,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticleWithADSBibcode:(nonnull NSString *)ADSBibcode
-                                                       success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
-                                                       failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticleWithADSBibcode:(nonnull NSString *)ADSBibcode
+                                                     success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
+                                                     failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the Altmetric Identifier.
@@ -98,9 +98,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticleWithAltmetricIdentifier:(nonnull NSString *)altmetricIdentifier
-                                                                success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
-                                                                failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticleWithAltmetricIdentifier:(nonnull NSString *)altmetricIdentifier
+                                                              success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
+                                                              failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the ArXiv Identifier.
@@ -113,9 +113,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticleWithArXivIdentifier:(nonnull NSString *)arXivIdentifier
-                                                            success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
-                                                            failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticleWithArXivIdentifier:(nonnull NSString *)arXivIdentifier
+                                                          success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
+                                                          failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the DOI.
@@ -128,9 +128,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticleWithDOI:(nonnull NSString *)DOI
-                                                success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
-                                                failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticleWithDOI:(nonnull NSString *)DOI
+                                              success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
+                                              failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Sends a fetch article request based on the PubMed Identifier.
@@ -143,9 +143,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticleWithPubMedIdentifier:(nonnull NSString *)pubMedIdentifier
-                                                             success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
-                                                             failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticleWithPubMedIdentifier:(nonnull NSString *)pubMedIdentifier
+                                                           success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
+                                                           failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Fetches articles with activity in a given timeframe.
@@ -158,9 +158,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticlesCitationsWithTimeframe:(nonnull NSString *)timeframe
-                                                                success:(nullable SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                                                failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticlesCitationsWithTimeframe:(nonnull NSString *)timeframe
+                                                              success:(nullable SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                                              failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Fetches articles with activity in a given timeframe.
@@ -180,15 +180,15 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticlesCitationsWithTimeframe:(nonnull NSString *)timeframe
-                                                                   page:(NSUInteger)page
-                                                        numberOfResults:(NSUInteger)numberOfResults
-                                                                citedIn:(nullable NSString *)citedIn
-                                                              DOIPrefix:(nullable NSString *)DOIPrefix
-                                                         NLMIdentifiers:(nullable NSString *)NLMIdentifiers
-                                                               subjects:(nullable NSString *)subjects
-                                                                success:(nullable SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
-                                                                failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticlesCitationsWithTimeframe:(nonnull NSString *)timeframe
+                                                                 page:(NSUInteger)page
+                                                      numberOfResults:(NSUInteger)numberOfResults
+                                                              citedIn:(nullable NSString *)citedIn
+                                                            DOIPrefix:(nullable NSString *)DOIPrefix
+                                                       NLMIdentifiers:(nullable NSString *)NLMIdentifiers
+                                                             subjects:(nullable NSString *)subjects
+                                                              success:(nullable SZNAltmetricFetchPaginatedArticlesSuccessBlock)success
+                                                              failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 /**
  Fetches detailed information about an article or dataset.
@@ -204,9 +204,9 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @return The fetch request operation.
  */
-- (nonnull AFHTTPRequestOperation *)fetchArticleDetailsWithIdentifierType:(nonnull NSString *)identifierType
-                                                               identifier:(nonnull NSString *)identifier
-                                                                  success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
-                                                                  failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
+- (nonnull NSURLSessionDataTask *)fetchArticleDetailsWithIdentifierType:(nonnull NSString *)identifierType
+                                                             identifier:(nonnull NSString *)identifier
+                                                                success:(nullable SZNAltmetricFetchArticleSuccessBlock)success
+                                                                failure:(nullable SZNAltmetricFetchArticleFailureBlock)failure;
 
 @end
