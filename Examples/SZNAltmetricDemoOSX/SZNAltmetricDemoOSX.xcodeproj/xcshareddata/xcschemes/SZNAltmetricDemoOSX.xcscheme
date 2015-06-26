@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "146301AA170AFC2F00220E31"
-               BuildableName = "SZNAltmetricDemoOSXTests.octest"
+               BuildableName = "SZNAltmetricDemoOSXTests.xctest"
                BlueprintName = "SZNAltmetricDemoOSXTests"
                ReferencedContainer = "container:SZNAltmetricDemoOSX.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "146301AA170AFC2F00220E31"
-               BuildableName = "SZNAltmetricDemoOSXTests.octest"
+               BuildableName = "SZNAltmetricDemoOSXTests.xctest"
                BlueprintName = "SZNAltmetricDemoOSXTests"
                ReferencedContainer = "container:SZNAltmetricDemoOSX.xcodeproj">
             </BuildableReference>

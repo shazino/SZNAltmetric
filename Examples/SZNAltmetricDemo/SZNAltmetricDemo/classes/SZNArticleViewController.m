@@ -7,8 +7,11 @@
 //
 
 #import "SZNArticleViewController.h"
+
 #import <SZNAltmetric.h>
+
 #import <AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface SZNArticleViewController ()
 

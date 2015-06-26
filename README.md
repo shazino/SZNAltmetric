@@ -10,7 +10,7 @@ SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and 
 The easiest way to get started is to use [CocoaPods](http://cocoapods.org) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify SZNAltmetric as a dependency in your `Podfile`:
 
 ```
-pod 'SZNAltmetric', '1.0.3'
+pod 'SZNAltmetric', '2.0'
 ```
 
 If you want to install SZNAltmetric manually, you can read our [“Getting Started” guide](https://github.com/shazino/SZNAltmetric/wiki/Getting-Started).
@@ -21,9 +21,9 @@ If you want to install SZNAltmetric manually, you can read our [“Getting Start
 We wanted to make it as simple as possible to fetch details about an article from the API, so here is how it looks like:
 
 ```objectivec
-SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
+SZNAltmetricManager *manager = [SZNAltmetricManager sharedManager];
 
-[client
+[manager
  fetchArticleWithDOI:@"###DOI###"
  success:^(SZNAltmetricArticle *article) {
      // We have the article,
@@ -33,13 +33,13 @@ SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
  failure:nil];
 ```
 
-As you can see, we have just requested an article based on its DOI (you can also use Altmetric ID, PubMed ID, arXiv ID, and ADS Bibcode). What you get is a `SZNAltmetricArticle` object, containing all the identifiers, the Altmetric score, and even the URLs to the “donuts” images.
+As you can see, we have just requested an article based on its DOI. What you get is a `SZNAltmetricArticle` object, containing all the identifiers, the Altmetric score, and even the URLs to the “donuts” images.
 
 Having a client API key is optional, and it’s easy to configure if you need it:
 
 ```objectivec
-SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
-client.APIKey = @"###key###";
+SZNAltmetricManager *manager = [SZNAltmetricManager sharedManager];
+manager.APIKey = @"###key###";
 ```
 
 With just a bit of user interface, here’s how it looks like on iOS and OS X:
@@ -48,12 +48,12 @@ With just a bit of user interface, here’s how it looks like on iOS and OS X:
 
 ![OS X demo app](https://github.com/shazino/SZNAltmetric/wiki/img/v0-3/screen-OSX.png)
 
-You can also search articles with different types of identifiers, or with a timeframe:
+You can also search articles with different types of identifiers (Altmetric ID, PubMed ID, arXiv ID, and ADS Bibcode), or with a timeframe:
 
 ```objectivec
-SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
+SZNAltmetricManager *manager = [SZNAltmetricManager sharedManager];
 
-[client
+[manager
  fetchArticlesCitationsWithTimeframe:@"1d"
  success:^(NSArray *articles, NSUInteger total, NSUInteger page) {
      // We have an array of articles.
@@ -72,7 +72,7 @@ SZNAltmetricAPIClient *client = [SZNAltmetricAPIClient sharedClient];
 
 ## Requirements
 
-SZNAltmetric requires Xcode 6.3 with either the iOS 5.0 or Mac OS X 10.7, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [ISO 8601 parser unparser](https://bitbucket.org/boredzo/iso-8601-parser-unparser/). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
+SZNAltmetric requires Xcode 6.3 with either the iOS 6.0 or OS X 10.8, as well as [AFNetworking](https://github.com/AFNetworking/AFNetworking) and [ISO 8601 parser unparser](https://bitbucket.org/boredzo/iso-8601-parser-unparser/). Both SZNAltmetric and AFNetworking use [ARC](https://developer.apple.com/library/ios/#releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html).
 
 
 ## Credits

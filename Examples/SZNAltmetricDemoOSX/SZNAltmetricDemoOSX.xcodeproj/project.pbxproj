@@ -49,12 +49,10 @@
 		146301A0170AFC2F00220E31 /* SZNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNAppDelegate.h; sourceTree = "<group>"; };
 		146301A1170AFC2F00220E31 /* SZNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNAppDelegate.m; sourceTree = "<group>"; };
 		146301A4170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZNAltmetricDemoOSXTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SZNAltmetricDemoOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146301B3170AFC2F00220E31 /* SZNAltmetricDemoOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SZNAltmetricDemoOSXTests-Info.plist"; sourceTree = "<group>"; };
 		146301B5170AFC2F00220E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		146301B7170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricDemoOSXTests.h; path = classes/SZNAltmetricDemoOSXTests.h; sourceTree = "<group>"; };
 		146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricDemoOSXTests.m; path = classes/SZNAltmetricDemoOSXTests.m; sourceTree = "<group>"; };
-		146301C8170B181500220E31 /* SZNAltmetricArticleTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricArticleTests.h; path = classes/SZNAltmetricArticleTests.h; sourceTree = "<group>"; };
 		146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricArticleTests.m; path = classes/SZNAltmetricArticleTests.m; sourceTree = "<group>"; };
 		14BA88CE17143FFB00FE3550 /* article.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = article.json; path = resources/article.json; sourceTree = "<group>"; };
 		14FB98011728181D00F720E4 /* articleDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = articleDetails.json; path = resources/articleDetails.json; sourceTree = "<group>"; };
@@ -103,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1463018B170AFC2F00220E31 /* SZNAltmetricDemoOSX.app */,
-				146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */,
+				146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +154,7 @@
 		146301B1170AFC2F00220E31 /* SZNAltmetricDemoOSXTests */ = {
 			isa = PBXGroup;
 			children = (
-				146301B7170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.h */,
 				146301B8170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.m */,
-				146301C8170B181500220E31 /* SZNAltmetricArticleTests.h */,
 				146301C9170B181500220E31 /* SZNAltmetricArticleTests.m */,
 				14BA88D017143FFE00FE3550 /* Resources */,
 				146301B2170AFC2F00220E31 /* Supporting Files */,
@@ -234,7 +230,7 @@
 			);
 			name = SZNAltmetricDemoOSXTests;
 			productName = SZNAltmetricDemoOSXTests;
-			productReference = 146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.octest */;
+			productReference = 146301AB170AFC2F00220E31 /* SZNAltmetricDemoOSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -482,7 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
 				INFOPLIST_FILE = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -496,7 +492,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
 				INFOPLIST_FILE = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

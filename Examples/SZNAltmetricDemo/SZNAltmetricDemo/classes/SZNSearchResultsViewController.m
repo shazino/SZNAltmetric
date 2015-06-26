@@ -7,12 +7,19 @@
 //
 
 #import "SZNSearchResultsViewController.h"
+
 #import <SZNAltmetric.h>
+
+#import <AFNetworking/UIImageView+AFNetworking.h>
+
 #import "SZNArticleViewController.h"
 
 @interface SZNSearchResultsViewController ()
+
 @property (strong, nonatomic) UIImage *placeholderImage;
+
 @end
+
 
 @implementation SZNSearchResultsViewController
 
