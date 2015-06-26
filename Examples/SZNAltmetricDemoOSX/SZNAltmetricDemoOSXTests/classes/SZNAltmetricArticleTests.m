@@ -6,8 +6,14 @@
 //  Copyright (c) 2013-2015 shazino. All rights reserved.
 //
 
-#import "SZNAltmetricArticleTests.h"
+@import XCTest;
+
 #import <SZNAltmetric.h>
+
+@interface SZNAltmetricArticleTests : XCTestCase
+
+@end
+
 
 @implementation SZNAltmetricArticleTests
 
@@ -17,10 +23,10 @@
     NSError *JSONError = nil;
     NSDictionary *JSONArticleDictionary = [NSJSONSerialization JSONObjectWithData:JSONData options:kNilOptions error:&JSONError];
     SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:JSONArticleDictionary];
-    
+
     XCTAssertNil(JSONError, @"Article deserialization failed");
     XCTAssertNotNil(article, @"Article not created");
-    
+
     XCTAssertEqualObjects(article.addedOn, [NSDate dateWithTimeIntervalSince1970:1324491937], @"Added on not extracted");
     XCTAssertEqualObjects(article.identifier, @"502878", @"Identifier not extracted");
     XCTAssertEqualObjects(article.altmetricJournalIdentifier, @"4f6fa62f3cf058f6100082d3", @"Journal identifier not extracted");
@@ -64,17 +70,16 @@
     XCTAssertEqualObjects(article.detailsURL.absoluteString, @"http://www.altmetric.com/details.php?citation_id=502878", @"Details URL not extracted");
 }
 
-
 - (void)testArticleDetailsFromResponseDictionary
 {
     NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"articleDetails" ofType:@"json"]];
     NSError *JSONError = nil;
     NSDictionary *JSONArticleDictionary = [NSJSONSerialization JSONObjectWithData:JSONData options:kNilOptions error:&JSONError];
     SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:JSONArticleDictionary];
-    
+
     XCTAssertNil(JSONError, @"Article deserialization failed");
     XCTAssertNotNil(article, @"Article not created");
-    
+
     XCTAssertEqualObjects(article.identifier, @"194098", @"Altmetric identifier not extracted");
     XCTAssertEqualObjects(article.DOI, @"10.1038/srep00042", @"DOI not extracted");
     XCTAssertEqualObjects(article.imageSmallURL.absoluteString, @"https://altmetric-badges.a.ssl.fastly.net/?size=64&score=33&types=bgtttttt", @"Image small URL not extracted");

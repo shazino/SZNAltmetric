@@ -6,15 +6,25 @@
 //  Copyright (c) 2013-2015 shazino. All rights reserved.
 //
 
-#import "SZNAltmetricDemoOSXTests.h"
+@import XCTest;
+
 #import <SZNAltmetric.h>
+
+@class SZNAltmetricAPIClient;
+
+@interface SZNAltmetricDemoOSXTests : XCTestCase
+
+@property (nonatomic, strong) SZNAltmetricManager *client;
+
+@end
+
 
 @implementation SZNAltmetricDemoOSXTests
 
 - (void)setUp
 {
     [super setUp];
-    self.client = [[SZNAltmetricAPIClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.altmetric.com/v1/"]];
+    self.client = [[SZNAltmetricManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://api.altmetric.com/v1/"]];
 }
 
 - (void)tearDown

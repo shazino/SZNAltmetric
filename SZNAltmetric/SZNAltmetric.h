@@ -24,7 +24,9 @@
 #import <Foundation/Foundation.h>
 
 #ifndef _SZNALTMETRIC_
-    #define _SZNALTMETRIC_
-    #import "SZNAltmetricAPIClient.h"
-    #import "SZNAltmetricArticle.h"
+#define _SZNALTMETRIC_
+
+#import "SZNAltmetricManager.h"
+#import "SZNAltmetricArticle.h"
+
 #endif

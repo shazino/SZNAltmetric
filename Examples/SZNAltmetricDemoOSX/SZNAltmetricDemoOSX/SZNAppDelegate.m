@@ -12,20 +12,23 @@
 @implementation SZNAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // [SZNAltmetricAPIClient sharedClient].APIKey = @"###";
+    // [SZNAltmetricAPIClient sharedManager].APIKey = @"###";
 }
 
 - (IBAction)fetchArticle:(id)sender {
     [self.progressIndicator startAnimation:sender];
-    [[SZNAltmetricAPIClient sharedClient] fetchArticleWithDOI:self.DOITextField.stringValue success:^(SZNAltmetricArticle *article) {
-        self.representedArticle = article;
-        self.scoreImageView.image = [[NSImage alloc] initWithContentsOfURL:article.imageLargeURL];
-        [self.progressIndicator stopAnimation:sender];
-    } failure:^(NSError *error) {
-        NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
-        [[NSAlert alertWithError:error] runModal];
-        [self.progressIndicator stopAnimation:sender];
-    }];
+    [[SZNAltmetricManager sharedManager]
+     fetchArticleWithDOI:self.DOITextField.stringValue
+     success:^(SZNAltmetricArticle *article) {
+         self.representedArticle = article;
+         self.scoreImageView.image = [[NSImage alloc] initWithContentsOfURL:article.imageLargeURL];
+         [self.progressIndicator stopAnimation:sender];
+     }
+     failure:^(NSError *error) {
+         NSLog(@"%s %@", __PRETTY_FUNCTION__, [error description]);
+         [[NSAlert alertWithError:error] runModal];
+         [self.progressIndicator stopAnimation:sender];
+     }];
 }
 
 - (IBAction)openArticleURL:(id)sender {

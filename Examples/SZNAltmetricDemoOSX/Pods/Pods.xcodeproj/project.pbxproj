@@ -7,701 +7,661 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		034FB452ADA811352F01960F /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DADC0F27ECB426CDD57A31B /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		0449E9D3803641FCDA3662DA /* SZNAltmetricArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C54F3086BDBE5D6E6565A98 /* SZNAltmetricArticle.h */; };
-		1ADA11FBB77BD003A572AD0C /* SZNAltmetricAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 485EFBBF3F046BAE6FF48D75 /* SZNAltmetricAPIClient.h */; };
-		1C04C2B3733AABE03252D1E9 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C17D0876E2CC6E1EAAC0EC7 /* AFNetworkActivityIndicatorManager.h */; };
-		1CBE6DFD9BB0DE8940B6B5CE /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6EF5B941D71889D4AA381 /* AFJSONRequestOperation.h */; };
-		1EB3C317CC0E4D18D2DC5EB0 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2222DD82D4DDCE04AF4AC0 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		1EE6D0EA7F28CF69162D7D7F /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C062AD7FAC6A73AE396B3DB /* Pods-AFNetworking-dummy.m */; };
-		2040F44AA7DD9F430BA76995 /* SZNAltmetricArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C54F3086BDBE5D6E6565A98 /* SZNAltmetricArticle.h */; };
-		230CB53E9C00679429CC5DEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB206116D96D21C7F480D30 /* SystemConfiguration.framework */; };
-		2435958E2FC1BA16090251B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		2905E79EB4C45C8DC5749EB2 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD15DA811FE7D6A21DD470 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		2BBF68C4215AEC13D6C0AF7E /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE7EC897AF8687500C6D01 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		2EC6FFB6A6C33025FDCBFC83 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 50399C78C0277E422ADE3EEB /* AFHTTPClient.h */; };
-		2FC3872CB4B6B53CB545FDAD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		3C13EBEB97D2FDEC6911B96E /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 50399C78C0277E422ADE3EEB /* AFHTTPClient.h */; };
-		3C61F74B7135D943E2754BC5 /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C683D4BDF74364484E7DCF7E /* AFXMLRequestOperation.h */; };
-		40424B259044E966D84D0EF7 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A61E96175D37ED9B422DD1 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		4374D4B9EBA9B7DD157FBCED /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BEAD22BE16E9535AF55606 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m */; };
-		45BF27E1CD89B53DB6C05637 /* Pods-ISO8601DateFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9172016707631E207CBF13C0 /* Pods-ISO8601DateFormatter-dummy.m */; };
-		4656F7A80A8FBBB402778E68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		4741537756D230B327795BAD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		4D8D09BF9C76DF7912106539 /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FD694468E698503703D3571B /* AFPropertyListRequestOperation.h */; };
-		4E011582F4B614AE83EC490F /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14914A84EBB78D5998416C66 /* ISO8601DateFormatter.m */; };
-		4E7F42CBB6D285BB60EF0066 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		5937ADC5FF314538243229F8 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11269C614132A9CEE00A8D22 /* Pods-dummy.m */; };
-		616AF115B024D5A3F6937041 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0928278C2989D17F00F2B5C1 /* AFNetworking.h */; };
-		61D294C0230E84554F1CFBF6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		6239A75836B022E3B729A1EA /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14914A84EBB78D5998416C66 /* ISO8601DateFormatter.m */; };
-		65DF678F870F607C74B3CA20 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2222DD82D4DDCE04AF4AC0 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		65F11BDBB485944F9B6BF70D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD15DA811FE7D6A21DD470 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		6FB0C3B2C726FEBC5F233654 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0AADDC25550EC7CE65A1D4 /* AFHTTPRequestOperation.h */; };
-		7902E4858E878219EBBD9289 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB70076D9E7721B2E07FC4C8 /* Security.framework */; };
-		79C00D6D0364E2EB2B3DFED0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98B6DB9023FFF3067B3D3B0 /* CoreServices.framework */; };
-		7D1B97277F98790F87F13FEA /* SZNAltmetricAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 485EFBBF3F046BAE6FF48D75 /* SZNAltmetricAPIClient.h */; };
-		81E995974E1EBBEE9F23974A /* Pods-SZNAltmetricDemoOSXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B2B81AB0C5695314DBB30 /* Pods-SZNAltmetricDemoOSXTests-dummy.m */; };
-		826EC25B8014E1CF85EE3779 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF31B5DB5AC34F978385104 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		88A3C2B47F2B0C13DB152898 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D29DDE806379F07398DFD964 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m */; };
-		8B27123CE356F39D6E975B91 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 966F135CDA9037488864B1D8 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		90480DB495DC94347D0CE044 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F6EF5B941D71889D4AA381 /* AFJSONRequestOperation.h */; };
-		96F9E8E7C90439A57DCA5539 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B2E690D551686D17DC3D /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		970D5031D31E735894B653FB /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D585003AA5193F1592823542 /* UIImageView+AFNetworking.h */; };
-		9AD721989ADACF7284458415 /* SZNAltmetricAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DEFFA27F096E6770504562 /* SZNAltmetricAPIClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		9CD9F21935E5391F2441FFBB /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B2E690D551686D17DC3D /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		9CFA80E8164CA959B483A98C /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FBFD443E5F0809D6571952 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		9FDE7CD48A1E787350C06F20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		A1734724D49034A79DF03D54 /* SZNAltmetric.h in Headers */ = {isa = PBXBuildFile; fileRef = 6645F524716FD8E35164D3D0 /* SZNAltmetric.h */; };
-		A2607695EEFD4A105DD264D3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE7EC897AF8687500C6D01 /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		A36188811BA32D836D5132D1 /* SZNAltmetricArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EFAEE9E3DA9890E7804901 /* SZNAltmetricArticle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		A631FF1789E0B44241858283 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 331B0C0206AAA96B585976CA /* ISO8601DateFormatter.h */; };
-		A92C0671B74AC9194F74C1D6 /* SZNAltmetricArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EFAEE9E3DA9890E7804901 /* SZNAltmetricArticle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		AFA4B8E7BB154B04327DFEE8 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A61E96175D37ED9B422DD1 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		B2AE8DFFE2ACD64755BA1372 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B589304753B14681235DB015 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m */; };
-		B44E5A07742E197C9FB43181 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0AADDC25550EC7CE65A1D4 /* AFHTTPRequestOperation.h */; };
-		B49B91381FD271F34741CED8 /* Pods-SZNAltmetric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C81B21B3D5EA8FB7552722 /* Pods-SZNAltmetric-dummy.m */; };
-		B857D929A39527D939D0F769 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7FD679DDAA8A45A824901B /* AFURLConnectionOperation.h */; };
-		B995CA0495355EDFC1FB0E48 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98B6DB9023FFF3067B3D3B0 /* CoreServices.framework */; };
-		B9C870EB3284712F325DE31D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF31B5DB5AC34F978385104 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		BD9F29F4E8341F15F6978215 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0928278C2989D17F00F2B5C1 /* AFNetworking.h */; };
-		BE739CF31831CE955100D9DD /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D585003AA5193F1592823542 /* UIImageView+AFNetworking.h */; };
-		C0D35500877EF9761CEFC6E4 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FBFD443E5F0809D6571952 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		CA7791596F025B66EC41A25F /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 824BE6B68607012356EC92C2 /* AFImageRequestOperation.h */; };
-		CF2D592761F8CF0D5CE6F9CE /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C17D0876E2CC6E1EAAC0EC7 /* AFNetworkActivityIndicatorManager.h */; };
-		D7C9B633C34EB3E4D02C233D /* SZNAltmetric.h in Headers */ = {isa = PBXBuildFile; fileRef = 6645F524716FD8E35164D3D0 /* SZNAltmetric.h */; };
-		D8254047D8B7BBEEF5ACC02E /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = C683D4BDF74364484E7DCF7E /* AFXMLRequestOperation.h */; };
-		D94C6BE9A05370EC98379D36 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB206116D96D21C7F480D30 /* SystemConfiguration.framework */; };
-		E13D21862A5DB11E98E01F40 /* SZNAltmetricAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DEFFA27F096E6770504562 /* SZNAltmetricAPIClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		E15DE196FA379EBB693FB1D8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB70076D9E7721B2E07FC4C8 /* Security.framework */; };
-		EBA80155543DD6221148082D /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FD694468E698503703D3571B /* AFPropertyListRequestOperation.h */; };
-		ECC6943346E87A994DA70543 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB333901525D001DD58B4B7 /* Cocoa.framework */; };
-		ECF19D95F131CCAA09E9CFCA /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DADC0F27ECB426CDD57A31B /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		F733B7729C251E1363FA4B44 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 331B0C0206AAA96B585976CA /* ISO8601DateFormatter.h */; };
-		FA197E7017D75E5C77E88BB2 /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 824BE6B68607012356EC92C2 /* AFImageRequestOperation.h */; };
-		FDF77515151A8C812F732EF3 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7FD679DDAA8A45A824901B /* AFURLConnectionOperation.h */; };
-		FE1CAA56DFAA89AC956BCA2C /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 966F135CDA9037488864B1D8 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		01B0711E805FC8280C6CF166 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		0947EDDF79E8CDC00A038BCD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		0F667E9F65B2A3B8FC240C8A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FA1BE7B8B856DD4B8B5677 /* AFHTTPRequestOperation.m */; };
+		13217DCF8754CA8674F7103D /* SZNAltmetricRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B0FF7591D2E48BDC5BA36F /* SZNAltmetricRequestSerializer.h */; };
+		13B7DC94FCE3CD11D84A2EA7 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCD59A8CEAAF0492E0D1BB4 /* AFNetworkReachabilityManager.m */; };
+		151B033767F681E1C6606201 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B01C1E999128F11295DD5C9 /* AFURLSessionManager.m */; };
+		161D6D0E033E6CAAE4BF2F58 /* SZNAltmetricArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = 25240AFDB61221726C2D6EE5 /* SZNAltmetricArticle.h */; };
+		165BEC04C8920FAD5E90DFE7 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B944C68A17191FEF3CA6A7 /* AFURLConnectionOperation.h */; };
+		16683B434A2E7668A8658915 /* SZNAltmetricManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 341D8E8DDD0295950EC71E46 /* SZNAltmetricManager.h */; };
+		215375AD6FF54B94A9DA75B0 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 64009DE5985E6F84CC7ED665 /* ISO8601DateFormatter.h */; };
+		23E0A57E07EB98AD5FAFE809 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24C2AA4D1E0AB8E48B4D47 /* AFHTTPSessionManager.m */; };
+		2506152B4BBBA10904CE1670 /* SZNAltmetricResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B92E47ABFA23FDBD1ACEA2DE /* SZNAltmetricResponseSerializer.m */; };
+		27CEF9AA29B2D33E46C9A29E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E27AAC6D9BEB573E1CCE36 /* AFURLResponseSerialization.m */; };
+		2D79291ADF8466301E49F2E4 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B65770E99418D5D283E4F08D /* AFSecurityPolicy.m */; };
+		340B358CF8AF92B57313F405 /* SZNAltmetricArticle.h in Headers */ = {isa = PBXBuildFile; fileRef = 25240AFDB61221726C2D6EE5 /* SZNAltmetricArticle.h */; };
+		3562524E4FC0888F1E760AD2 /* SZNAltmetricRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 94B0FF7591D2E48BDC5BA36F /* SZNAltmetricRequestSerializer.h */; };
+		3610C1D48ED7435594676FDA /* Pods-ISO8601DateFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DAD592248F549965F041E3 /* Pods-ISO8601DateFormatter-dummy.m */; };
+		39AC5E597012615E26073423 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 64009DE5985E6F84CC7ED665 /* ISO8601DateFormatter.h */; };
+		3C6E2916459DF5DE9BCBB74F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E27AAC6D9BEB573E1CCE36 /* AFURLResponseSerialization.m */; };
+		4044CEC2DB3508A3A67C23AC /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ED714A0B7378AB811494AF1 /* AFSecurityPolicy.h */; };
+		4078F7864665189F5F709ED3 /* SZNAltmetricManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1167DDAE19A49DA4C75C9103 /* SZNAltmetricManager.m */; };
+		435E1C8D5C1383BA2305AC5F /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4E66383CA38F6A6965CF76 /* AFURLResponseSerialization.h */; };
+		4405E4403B3F46FB9397BEE6 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B65770E99418D5D283E4F08D /* AFSecurityPolicy.m */; };
+		4497EF8FC5750560952AB217 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40106EFD589A4EB466CD8E4B /* AFHTTPRequestOperationManager.m */; };
+		46D6E8E39FC64E671F337789 /* SZNAltmetric.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D13789BC7514F9339C4B3F1 /* SZNAltmetric.h */; };
+		5100820C0D0F86E2DF03743C /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 74075F385F2F660092687E3C /* AFNetworking.h */; };
+		51A9BB9FC32D03010A5DF1CD /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A67235B2E3D1A97A98402F04 /* AFHTTPRequestOperationManager.h */; };
+		582B6D73B6293FCA2576861C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		59224671BFC762218F2F6C64 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		5CA364EDC88DD20BA4487F09 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E22D15E183B6A78778D14D48 /* AFURLRequestSerialization.m */; };
+		5EE7416377BF0ADA7259B6B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331E42F5BB3506016B3B13F1 /* SystemConfiguration.framework */; };
+		5F5D154BBC2FE9878F7D9213 /* SZNAltmetricResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C5AF082B1F072022E36E0B /* SZNAltmetricResponseSerializer.h */; };
+		66FEFAC00A463D7419A11993 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = E22D15E183B6A78778D14D48 /* AFURLRequestSerialization.m */; };
+		6CE52EF2BC0E6F2364F5780D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCD59A8CEAAF0492E0D1BB4 /* AFNetworkReachabilityManager.m */; };
+		6D3E04255B4FD0AC61CA50D6 /* Pods-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D78DBE46CC0AD78640092E1E /* Pods-AFNetworking-dummy.m */; };
+		7575BA433C7560EB3992C545 /* SZNAltmetricRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CAEC2F8A57EAA1B7ADCD41 /* SZNAltmetricRequestSerializer.m */; };
+		77EC35DBB8C0EBFB598AD156 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FA1BE7B8B856DD4B8B5677 /* AFHTTPRequestOperation.m */; };
+		780714A40169924D53AB7C6F /* Pods-SZNAltmetric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 027F14C6A7AE98CEF10BE541 /* Pods-SZNAltmetric-dummy.m */; };
+		7D9A353A2548F64D13D86BF8 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D1C7A82EC1DBA238F375AF /* AFHTTPRequestOperation.h */; };
+		80EDE665D89A8F333697F826 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DAB48077605E758ECFA92B /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m */; };
+		841690FAC34FA8D3876C4F2A /* SZNAltmetricRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CAEC2F8A57EAA1B7ADCD41 /* SZNAltmetricRequestSerializer.m */; };
+		8449A4B3CCC0B6A015AF0E27 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		87246C1A4FB36727A937E0A4 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D0D1C7A82EC1DBA238F375AF /* AFHTTPRequestOperation.h */; };
+		89CD8BF33E2B872963463543 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A67235B2E3D1A97A98402F04 /* AFHTTPRequestOperationManager.h */; };
+		9585213979B5B76DFCA588B1 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A92C0B4868C64E660DB9 /* AFURLRequestSerialization.h */; };
+		977875CDAACC209D7F2395B4 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 530C513DF163F13B50848726 /* AFNetworkReachabilityManager.h */; };
+		9A3FF13FD613EAAFB7697BA3 /* SZNAltmetric.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D13789BC7514F9339C4B3F1 /* SZNAltmetric.h */; };
+		9CDD7CF347E7DC8C814D97A5 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BD563220DCE7244815EB2A /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m */; };
+		A48B2A45681B2E563AE1E2F4 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24C2AA4D1E0AB8E48B4D47 /* AFHTTPSessionManager.m */; };
+		A583C186A9852F40B69E6B23 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 530C513DF163F13B50848726 /* AFNetworkReachabilityManager.h */; };
+		A5D88FDD9CD307BB3BAAD33D /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 74075F385F2F660092687E3C /* AFNetworking.h */; };
+		A62B04F96C078838F5357E27 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40106EFD589A4EB466CD8E4B /* AFHTTPRequestOperationManager.m */; };
+		A72F80FAE741DADD79EAD64D /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E86A9FBA23D2AAE34AB8FCC /* AFURLConnectionOperation.m */; };
+		A91C4CBDE53A2A5A33D89352 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A82DE9B739530AC22169D43 /* AFURLSessionManager.h */; };
+		A9F5ADC100A1172601987BBD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902A6E51AE5F96DDFF1D362F /* Security.framework */; };
+		B1B46816EB555F90F258A6BD /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A92C0B4868C64E660DB9 /* AFURLRequestSerialization.h */; };
+		B36DDC14B4A1BC5FFEDF83A3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331E42F5BB3506016B3B13F1 /* SystemConfiguration.framework */; };
+		BAD295003D14FD355DA6C3DF /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EB23260C2546C076EE64B053 /* AFHTTPSessionManager.h */; };
+		BB503D2B25121D49AD11D9EF /* SZNAltmetricArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F72BB9B305136949424A9A /* SZNAltmetricArticle.m */; };
+		BCB2A55C166C56B1E5BA5573 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E86A9FBA23D2AAE34AB8FCC /* AFURLConnectionOperation.m */; };
+		BF0F4E42AF63427FEA0A6DA3 /* SZNAltmetricResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C5AF082B1F072022E36E0B /* SZNAltmetricResponseSerializer.h */; };
+		BF57B4A806188B8CC4323133 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		BFB4D6DA4EF4ACBA20711F23 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3C0CB4D36949ED2FFC617C /* CoreServices.framework */; };
+		C0C276E0DCACCD14CB7441CC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B01C1E999128F11295DD5C9 /* AFURLSessionManager.m */; };
+		C16B921A05EDEA70C2A42361 /* SZNAltmetricArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F72BB9B305136949424A9A /* SZNAltmetricArticle.m */; };
+		CE72D74C0400BA3236123373 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 902A6E51AE5F96DDFF1D362F /* Security.framework */; };
+		D2BBFD33D8A7E9F99959C412 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A82DE9B739530AC22169D43 /* AFURLSessionManager.h */; };
+		D3A2A1AC43F38AD4E5DAD4E2 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08B944C68A17191FEF3CA6A7 /* AFURLConnectionOperation.h */; };
+		D532ADC2FD1663BFB9F83143 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C3C2F306013F121FCAEF75 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m */; };
+		D7F9DFB35885F8ECC860F1B9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D820C70B33137D5BF61E5CC /* Pods-dummy.m */; };
+		DC9D1FFC6B227F9616EE4C96 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		E0E079796069B780798626F4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EB23260C2546C076EE64B053 /* AFHTTPSessionManager.h */; };
+		E42AE3434036A63252B1E39B /* SZNAltmetricResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B92E47ABFA23FDBD1ACEA2DE /* SZNAltmetricResponseSerializer.m */; };
+		E74F46DF01CF87A4AF51F9FA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C17E647B3805E66689B1C73 /* Cocoa.framework */; };
+		E865E2623B24F177FA33C57D /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3C0CB4D36949ED2FFC617C /* CoreServices.framework */; };
+		EF48CB80DD3D56BDACD85BB6 /* SZNAltmetricManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 341D8E8DDD0295950EC71E46 /* SZNAltmetricManager.h */; };
+		F1E29BA0EFF8552B8CF0D1D2 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76089C58F77DCEED2EAB6D81 /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F41D4E97F7A69BEDA267594D /* Pods-SZNAltmetricDemoOSXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7C0C4420D4A1B90A7DEAAE /* Pods-SZNAltmetricDemoOSXTests-dummy.m */; };
+		F5FC8ADCFF62ED22ED0D4C8C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ED714A0B7378AB811494AF1 /* AFSecurityPolicy.h */; };
+		F87F0722FF8EE9BD399096F7 /* SZNAltmetricManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1167DDAE19A49DA4C75C9103 /* SZNAltmetricManager.m */; };
+		F8B7FD0511D595D1987656D2 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4E66383CA38F6A6965CF76 /* AFURLResponseSerialization.h */; };
+		FAC2DA27F9C320C7B930F927 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76089C58F77DCEED2EAB6D81 /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B54AE6E5FEEA562A730D138 /* PBXContainerItemProxy */ = {
+		13666C0A8CD9A7A03FEFF8B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 51232D79E493B696C6A043BE;
-			remoteInfo = "Pods-AFNetworking";
-		};
-		346A092CCE8D0BF5C1CA9179 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 241E8FF06973C731B0C128C8;
-			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
-		};
-		3E5329B032DF48526768F770 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 76C4FA29236F217930C9154D;
-			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
-		};
-		77E2607BF72E2F26C48257B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 241E8FF06973C731B0C128C8;
-			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
-		};
-		9E8DD1F9E1282C557E1747A7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 969F660B44DC0DFBD3AF378C;
+			remoteGlobalIDString = 2A15863CFBF85E2FBFF23812;
 			remoteInfo = "Pods-ISO8601DateFormatter";
 		};
-		AE40A7B31FB806E766427CBD /* PBXContainerItemProxy */ = {
+		4298C26537FDCF5C31165751 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D9847697AB33062501946D04;
+			remoteGlobalIDString = F6A87291D882081890057819;
+			remoteInfo = "Pods-AFNetworking";
+		};
+		708CF924840B36BAB1C5573C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0AA0E93AC4E2BD5E35715A2;
+			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
+		};
+		7CC510946E2DDEBCBFEBF847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A15863CFBF85E2FBFF23812;
+			remoteInfo = "Pods-ISO8601DateFormatter";
+		};
+		8EA9D84E6281D975D9F68567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE27C8F5A7623486CF70C6DE;
 			remoteInfo = "Pods-SZNAltmetric";
 		};
-		C7638139B53B4395C7F0F3B2 /* PBXContainerItemProxy */ = {
+		9E09A0F0F7BEAA64555AE20B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6DFD343150F77DC3A08A05C8;
-			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
+			remoteGlobalIDString = 37003FDFB0992B2C8F28F275;
+			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
 		};
-		C8B591C590A3BAA814F2C4E5 /* PBXContainerItemProxy */ = {
+		9EAF597E072597D8125C8BCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 969F660B44DC0DFBD3AF378C;
-			remoteInfo = "Pods-ISO8601DateFormatter";
+			remoteGlobalIDString = E0AA0E93AC4E2BD5E35715A2;
+			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
 		};
-		D5AA6AFE23752787081900BC /* PBXContainerItemProxy */ = {
+		B0C831B694F35FFD0B40955E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 51232D79E493B696C6A043BE;
+			remoteGlobalIDString = F6A87291D882081890057819;
 			remoteInfo = "Pods-AFNetworking";
 		};
-		D7BD4B175452D36A98AB7221 /* PBXContainerItemProxy */ = {
+		B9D5C9838F2259DB45C785F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2AC4996E91974E1BA9D16890 /* Project object */;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76C4FA29236F217930C9154D;
+			remoteGlobalIDString = D7F6B91ADDF26ADC47123AB3;
+			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
+		};
+		FDB39526922A8573ABB2708F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66748D832F0AE17E9E70CDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37003FDFB0992B2C8F28F275;
 			remoteInfo = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01AD15DA811FE7D6A21DD470 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		08B3C412AD2C140B077F2741 /* libPods-SZNAltmetric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetric.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0928278C2989D17F00F2B5C1 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		11269C614132A9CEE00A8D22 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		144C0C9D1B5ADF810C81A862 /* libPods-SZNAltmetricDemoOSXTests-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14914A84EBB78D5998416C66 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
-		18345EEFED4C96BDBAFC43DB /* Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig"; sourceTree = "<group>"; };
-		1C17D0876E2CC6E1EAAC0EC7 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		1C54F3086BDBE5D6E6565A98 /* SZNAltmetricArticle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricArticle.h; path = SZNAltmetric/SZNAltmetricArticle.h; sourceTree = "<group>"; };
-		1CF31B5DB5AC34F978385104 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		24DEFFA27F096E6770504562 /* SZNAltmetricAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricAPIClient.m; path = SZNAltmetric/SZNAltmetricAPIClient.m; sourceTree = "<group>"; };
-		24F6EF5B941D71889D4AA381 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		2784664612E7D2A78FC007A3 /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZNAltmetricDemoOSXTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2BFE8DB70FCFE2B65BFB4E89 /* Pods-SZNAltmetricDemoOSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetricDemoOSXTests.release.xcconfig"; sourceTree = "<group>"; };
-		2CA7183E3094C63408274B2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		331B0C0206AAA96B585976CA /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
-		390B2B81AB0C5695314DBB30 /* Pods-SZNAltmetricDemoOSXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZNAltmetricDemoOSXTests-dummy.m"; sourceTree = "<group>"; };
-		3DADC0F27ECB426CDD57A31B /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		42507C2908CF3BCF3C8C0DB3 /* Pods-SZNAltmetricDemoOSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetricDemoOSXTests.debug.xcconfig"; sourceTree = "<group>"; };
-		43C02732CEA11BC4804D1ACE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		467DACAC3FB8329F625A0503 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		485EFBBF3F046BAE6FF48D75 /* SZNAltmetricAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SZNAltmetricAPIClient.h; path = SZNAltmetric/SZNAltmetricAPIClient.h; sourceTree = "<group>"; };
-		4969C5196D26B2B9A1256D43 /* libPods-ISO8601DateFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISO8601DateFormatter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BAE7EC897AF8687500C6D01 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		4BB206116D96D21C7F480D30 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		4C062AD7FAC6A73AE396B3DB /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		50399C78C0277E422ADE3EEB /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
-		50B60BA6F970DE99C96FE3F5 /* Pods-SZNAltmetricDemoOSXTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SZNAltmetricDemoOSXTests-resources.sh"; sourceTree = "<group>"; };
-		554787E6461A914EFC3288D7 /* libPods-SZNAltmetricDemoOSXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D50141262EE35AC39494049 /* Pods-SZNAltmetric.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetric.xcconfig"; sourceTree = "<group>"; };
-		5DD6B07D738255C35D4212C6 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		61D63C3955B83757D681C6B5 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64347475F21A2CE96E503D18 /* libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6645F524716FD8E35164D3D0 /* SZNAltmetric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SZNAltmetric.h; path = SZNAltmetric/SZNAltmetric.h; sourceTree = "<group>"; };
-		6A36832D8C70874E75292A92 /* Pods-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		71BE388A93EB00DFDEED9F9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
-		75DBEBDEAB6C0D35F3F66D39 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		824BE6B68607012356EC92C2 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
-		89A61E96175D37ED9B422DD1 /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
-		8DF69A538032A91FA2D680F1 /* Pods-ISO8601DateFormatter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISO8601DateFormatter.xcconfig"; sourceTree = "<group>"; };
-		9172016707631E207CBF13C0 /* Pods-ISO8601DateFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISO8601DateFormatter-dummy.m"; sourceTree = "<group>"; };
-		966F135CDA9037488864B1D8 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		9BBDB67E24EDB47CC3D6CA81 /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SZNAltmetricDemoOSXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A0467E54F816911F1EF96E6E /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		A0941572DE02397D6FD30FB5 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig"; sourceTree = "<group>"; };
-		A5C7D87E37BFA1E4185725DB /* Pods-ISO8601DateFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISO8601DateFormatter-prefix.pch"; sourceTree = "<group>"; };
-		A5EFAEE9E3DA9890E7804901 /* SZNAltmetricArticle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SZNAltmetricArticle.m; path = SZNAltmetric/SZNAltmetricArticle.m; sourceTree = "<group>"; };
-		A851C9EA7299BC71C3A0BEAF /* Pods-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.xcconfig"; sourceTree = "<group>"; };
-		AC2222DD82D4DDCE04AF4AC0 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		AC47EF7966A85FF44FCE04A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		AEEAB54AF3EA4FCA57941A3E /* Pods-SZNAltmetric-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZNAltmetric-prefix.pch"; sourceTree = "<group>"; };
-		B0ADA2CA464D3AE827871743 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig"; sourceTree = "<group>"; };
-		B4A24292BF005AFB00C91C04 /* libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4C81B21B3D5EA8FB7552722 /* Pods-SZNAltmetric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZNAltmetric-dummy.m"; sourceTree = "<group>"; };
-		B589304753B14681235DB015 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m"; sourceTree = "<group>"; };
-		B8BEAD22BE16E9535AF55606 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m"; sourceTree = "<group>"; };
-		BA391DFF18AC26689022A891 /* Pods-SZNAltmetric-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetric-Private.xcconfig"; sourceTree = "<group>"; };
-		BB70076D9E7721B2E07FC4C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		BDF9B2E690D551686D17DC3D /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
-		C4CB836AD82E231BEC1BEBAE /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch"; sourceTree = "<group>"; };
-		C683D4BDF74364484E7DCF7E /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		C8FBFD443E5F0809D6571952 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		C98B6DB9023FFF3067B3D3B0 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		D29DDE806379F07398DFD964 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		D585003AA5193F1592823542 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		D5CDEC39EA4626FE4BAC46A2 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig"; sourceTree = "<group>"; };
-		D7EFA9EFC8DC7EB94FB680B7 /* Pods-ISO8601DateFormatter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISO8601DateFormatter-Private.xcconfig"; sourceTree = "<group>"; };
-		DC6CE58D913F1C68531EC586 /* Pods-SZNAltmetricDemoOSXTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZNAltmetricDemoOSXTests-environment.h"; sourceTree = "<group>"; };
-		DFB333901525D001DD58B4B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		DFEA817FA0EAE40BD4C573AD /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
-		E0B3C597B04051299A9FDD2F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		E4B9D9D34D42383F1E18096A /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig"; sourceTree = "<group>"; };
-		E61CB2754F696125ECDAD981 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch"; sourceTree = "<group>"; };
-		EE0AADDC25550EC7CE65A1D4 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		F093A1005113BE50577E84FE /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		FB7FD679DDAA8A45A824901B /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		FD694468E698503703D3571B /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		010571120227CBA39ACCF576 /* Pods-SZNAltmetric-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetric-Private.xcconfig"; sourceTree = "<group>"; };
+		0263907132A701C99E465121 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch"; sourceTree = "<group>"; };
+		027F14C6A7AE98CEF10BE541 /* Pods-SZNAltmetric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZNAltmetric-dummy.m"; sourceTree = "<group>"; };
+		06D0EC01A9C61EC248EF9D9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		08B944C68A17191FEF3CA6A7 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		0ED714A0B7378AB811494AF1 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		1167DDAE19A49DA4C75C9103 /* SZNAltmetricManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SZNAltmetricManager.m; sourceTree = "<group>"; };
+		17DAD592248F549965F041E3 /* Pods-ISO8601DateFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISO8601DateFormatter-dummy.m"; sourceTree = "<group>"; };
+		1A8482145278399F1D10A6E5 /* Pods-SZNAltmetricDemoOSXTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SZNAltmetricDemoOSXTests-resources.sh"; sourceTree = "<group>"; };
+		1E86A9FBA23D2AAE34AB8FCC /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		21F45A705499AD67CFE55AF0 /* Pods-SZNAltmetricDemoOSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetricDemoOSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		235AC26BA46E0451F938C171 /* libPods-SZNAltmetricDemoOSXTests-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25240AFDB61221726C2D6EE5 /* SZNAltmetricArticle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SZNAltmetricArticle.h; sourceTree = "<group>"; };
+		25D7A92C0B4868C64E660DB9 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		2B01C1E999128F11295DD5C9 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		2E70F1C91C15414D829D583D /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		331E42F5BB3506016B3B13F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		341D8E8DDD0295950EC71E46 /* SZNAltmetricManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SZNAltmetricManager.h; sourceTree = "<group>"; };
+		3CDCADFEC5E570DB35271E4A /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SZNAltmetricDemoOSXTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		40106EFD589A4EB466CD8E4B /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		45BD563220DCE7244815EB2A /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m"; sourceTree = "<group>"; };
+		4DFD501912839181CE95D5F7 /* Pods-SZNAltmetricDemoOSXTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZNAltmetricDemoOSXTests-environment.h"; sourceTree = "<group>"; };
+		530C513DF163F13B50848726 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		573AEA082E730B06F37AFA1A /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		5A82DE9B739530AC22169D43 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		64009DE5985E6F84CC7ED665 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		64862D31C6785C4D943827D0 /* libPods-ISO8601DateFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ISO8601DateFormatter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B102E5ED36AA0C58196A097 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig"; sourceTree = "<group>"; };
+		6B7C0C4420D4A1B90A7DEAAE /* Pods-SZNAltmetricDemoOSXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SZNAltmetricDemoOSXTests-dummy.m"; sourceTree = "<group>"; };
+		6C17E647B3805E66689B1C73 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6E24C2AA4D1E0AB8E48B4D47 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		6EBFFC34890710ABE192AEAF /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch"; sourceTree = "<group>"; };
+		74075F385F2F660092687E3C /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		74BF9F19921C08390585FD94 /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SZNAltmetricDemoOSXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76089C58F77DCEED2EAB6D81 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		793DC142EA12DA9CD34CBEEC /* Pods-SZNAltmetric.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetric.xcconfig"; sourceTree = "<group>"; };
+		7D13789BC7514F9339C4B3F1 /* SZNAltmetric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SZNAltmetric.h; sourceTree = "<group>"; };
+		82E27AAC6D9BEB573E1CCE36 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		84F72BB9B305136949424A9A /* SZNAltmetricArticle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SZNAltmetricArticle.m; sourceTree = "<group>"; };
+		8640529B3D38FA91E6E69738 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig"; sourceTree = "<group>"; };
+		8D3C0CB4D36949ED2FFC617C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		8D820C70B33137D5BF61E5CC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		902A6E51AE5F96DDFF1D362F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		93C5AF082B1F072022E36E0B /* SZNAltmetricResponseSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SZNAltmetricResponseSerializer.h; sourceTree = "<group>"; };
+		94B0FF7591D2E48BDC5BA36F /* SZNAltmetricRequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SZNAltmetricRequestSerializer.h; sourceTree = "<group>"; };
+		954137B56E4681EE508768DC /* Pods-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		9D93EAF7B5A4DFAE1725C363 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig"; sourceTree = "<group>"; };
+		A0163DAD46AA56507E701655 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig"; sourceTree = "<group>"; };
+		A67235B2E3D1A97A98402F04 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		A9DAB48077605E758ECFA92B /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m"; path = "../Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m"; sourceTree = "<group>"; };
+		ADE5B2FE1B5EFBC9462EF903 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF9EA8BD9E658BCD05959370 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		B17B1502561A217FAEE78968 /* libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CAEC2F8A57EAA1B7ADCD41 /* SZNAltmetricRequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SZNAltmetricRequestSerializer.m; sourceTree = "<group>"; };
+		B45D320B32F84575FF950172 /* libPods-SZNAltmetricDemoOSXTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6395610C7D2CA84DD065DCD /* libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65770E99418D5D283E4F08D /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		B85E2984A6EAFF05927B626C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		B92E47ABFA23FDBD1ACEA2DE /* SZNAltmetricResponseSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SZNAltmetricResponseSerializer.m; sourceTree = "<group>"; };
+		B9FA1BE7B8B856DD4B8B5677 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		BC45DB31CDA9170E2B8CA5B5 /* Pods-ISO8601DateFormatter-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISO8601DateFormatter-Private.xcconfig"; sourceTree = "<group>"; };
+		BD48B8A60C66CF2EC2F7F744 /* Pods-SZNAltmetric-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SZNAltmetric-prefix.pch"; sourceTree = "<group>"; };
+		BDCD59A8CEAAF0492E0D1BB4 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C2FA4F2F3D34AF4E34898D35 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4265DFB1157CA775FB57C7F /* Pods-SZNAltmetricDemoOSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SZNAltmetricDemoOSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C481BA8543961F98DBF76D75 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9C3C2F306013F121FCAEF75 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		CDAD2CC3053D7B1628FD4A64 /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		D054A347959437C73754740F /* Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig"; path = "../Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		D0D1C7A82EC1DBA238F375AF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		D4BB95BF23596A807418B012 /* Pods-ISO8601DateFormatter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISO8601DateFormatter-prefix.pch"; sourceTree = "<group>"; };
+		D78DBE46CC0AD78640092E1E /* Pods-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		DFE8741C6334E187504C29C4 /* Pods-ISO8601DateFormatter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISO8601DateFormatter.xcconfig"; sourceTree = "<group>"; };
+		E22D15E183B6A78778D14D48 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		E24C2643E11C4B276608D65B /* Pods-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		E9DCFA0A61409FCB5AD66B13 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		EA4E66383CA38F6A6965CF76 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		EB23260C2546C076EE64B053 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F2F923E94602F2E4D6A4EA53 /* libPods-SZNAltmetric.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SZNAltmetric.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58CBD2459DA1844745C201A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9538A1E377A42E600D5732 /* libPods-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2BEA917C73B814E55A6E6925 /* Frameworks */ = {
+		22F8F7588D068CF37D258C66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4741537756D230B327795BAD /* Cocoa.framework in Frameworks */,
+				E74F46DF01CF87A4AF51F9FA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DB9358FC0425F6598B8E675 /* Frameworks */ = {
+		35C3775B925B2BEDD9A7CE63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FDE7CD48A1E787350C06F20 /* Cocoa.framework in Frameworks */,
-				B995CA0495355EDFC1FB0E48 /* CoreServices.framework in Frameworks */,
-				7902E4858E878219EBBD9289 /* Security.framework in Frameworks */,
-				D94C6BE9A05370EC98379D36 /* SystemConfiguration.framework in Frameworks */,
+				0947EDDF79E8CDC00A038BCD /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F531AE24086DE59D19C4EA3 /* Frameworks */ = {
+		5463DD996148D9253F5BF572 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECC6943346E87A994DA70543 /* Cocoa.framework in Frameworks */,
-				79C00D6D0364E2EB2B3DFED0 /* CoreServices.framework in Frameworks */,
-				E15DE196FA379EBB693FB1D8 /* Security.framework in Frameworks */,
-				230CB53E9C00679429CC5DEA /* SystemConfiguration.framework in Frameworks */,
+				59224671BFC762218F2F6C64 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F95AD42ECACE38A78C1508A /* Frameworks */ = {
+		954D7BDE85DACE3CF41E2E58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D294C0230E84554F1CFBF6 /* Cocoa.framework in Frameworks */,
+				582B6D73B6293FCA2576861C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79C0470620B8647747990AA9 /* Frameworks */ = {
+		B99756F8DCF03EC75F56656E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2435958E2FC1BA16090251B8 /* Cocoa.framework in Frameworks */,
+				DC9D1FFC6B227F9616EE4C96 /* Cocoa.framework in Frameworks */,
+				E865E2623B24F177FA33C57D /* CoreServices.framework in Frameworks */,
+				CE72D74C0400BA3236123373 /* Security.framework in Frameworks */,
+				B36DDC14B4A1BC5FFEDF83A3 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BD06EBBB725D4C1808FED03 /* Frameworks */ = {
+		BC3D0704BBAEE2C11D1C421B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4656F7A80A8FBBB402778E68 /* Cocoa.framework in Frameworks */,
+				8449A4B3CCC0B6A015AF0E27 /* Cocoa.framework in Frameworks */,
+				BFB4D6DA4EF4ACBA20711F23 /* CoreServices.framework in Frameworks */,
+				A9F5ADC100A1172601987BBD /* Security.framework in Frameworks */,
+				5EE7416377BF0ADA7259B6B4 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BC77AB1328219DCAA2A0B4 /* Frameworks */ = {
+		CC45A3C2F27B9AB3C5D8CE5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7F42CBB6D285BB60EF0066 /* Cocoa.framework in Frameworks */,
+				01B0711E805FC8280C6CF166 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F614231FCB5D9873116C17AD /* Frameworks */ = {
+		E42DF9E2FCD948B9154C4BDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FC3872CB4B6B53CB545FDAD /* Cocoa.framework in Frameworks */,
+				BF57B4A806188B8CC4323133 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C8D39FEDB83D8803E550788 = {
+		05AD324E37E0E0F9F22D1472 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5DD6B07D738255C35D4212C6 /* Podfile */,
-				8CB564D5F6A71E4DBD88C7ED /* Development Pods */,
-				FDD316592BED606690DDB57E /* Frameworks */,
-				E58080B72528102833AF5859 /* Pods */,
-				D92B8FB6BA3E83094917571B /* Products */,
-				E7E3610F93F039AA001439F1 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		295ADD47F3BA15E9F90E1FF8 /* ISO8601DateFormatter */ = {
-			isa = PBXGroup;
-			children = (
-				331B0C0206AAA96B585976CA /* ISO8601DateFormatter.h */,
-				14914A84EBB78D5998416C66 /* ISO8601DateFormatter.m */,
-				696060EDF55157C4043DB6FA /* Support Files */,
-			);
-			path = ISO8601DateFormatter;
-			sourceTree = "<group>";
-		};
-		2DACF8E77F3F718BF67B3A43 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A851C9EA7299BC71C3A0BEAF /* Pods-AFNetworking.xcconfig */,
-				DFEA817FA0EAE40BD4C573AD /* Pods-AFNetworking-Private.xcconfig */,
-				4C062AD7FAC6A73AE396B3DB /* Pods-AFNetworking-dummy.m */,
-				6A36832D8C70874E75292A92 /* Pods-AFNetworking-prefix.pch */,
-				18345EEFED4C96BDBAFC43DB /* Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig */,
-				71BE388A93EB00DFDEED9F9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */,
-				D29DDE806379F07398DFD964 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m */,
-				A0467E54F816911F1EF96E6E /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-AFNetworking";
-			sourceTree = "<group>";
-		};
-		696060EDF55157C4043DB6FA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8DF69A538032A91FA2D680F1 /* Pods-ISO8601DateFormatter.xcconfig */,
-				D7EFA9EFC8DC7EB94FB680B7 /* Pods-ISO8601DateFormatter-Private.xcconfig */,
-				9172016707631E207CBF13C0 /* Pods-ISO8601DateFormatter-dummy.m */,
-				A5C7D87E37BFA1E4185725DB /* Pods-ISO8601DateFormatter-prefix.pch */,
-				B0ADA2CA464D3AE827871743 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig */,
-				D5CDEC39EA4626FE4BAC46A2 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */,
-				B8BEAD22BE16E9535AF55606 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m */,
-				C4CB836AD82E231BEC1BEBAE /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-ISO8601DateFormatter";
-			sourceTree = "<group>";
-		};
-		8CB564D5F6A71E4DBD88C7ED /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FFD6347F23DC8B35757E2FBB /* SZNAltmetric */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B1B5FE817EA59EFB21B8E1F7 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				50399C78C0277E422ADE3EEB /* AFHTTPClient.h */,
-				89A61E96175D37ED9B422DD1 /* AFHTTPClient.m */,
-				EE0AADDC25550EC7CE65A1D4 /* AFHTTPRequestOperation.h */,
-				01AD15DA811FE7D6A21DD470 /* AFHTTPRequestOperation.m */,
-				824BE6B68607012356EC92C2 /* AFImageRequestOperation.h */,
-				BDF9B2E690D551686D17DC3D /* AFImageRequestOperation.m */,
-				24F6EF5B941D71889D4AA381 /* AFJSONRequestOperation.h */,
-				C8FBFD443E5F0809D6571952 /* AFJSONRequestOperation.m */,
-				1C17D0876E2CC6E1EAAC0EC7 /* AFNetworkActivityIndicatorManager.h */,
-				4BAE7EC897AF8687500C6D01 /* AFNetworkActivityIndicatorManager.m */,
-				0928278C2989D17F00F2B5C1 /* AFNetworking.h */,
-				FD694468E698503703D3571B /* AFPropertyListRequestOperation.h */,
-				3DADC0F27ECB426CDD57A31B /* AFPropertyListRequestOperation.m */,
-				FB7FD679DDAA8A45A824901B /* AFURLConnectionOperation.h */,
-				AC2222DD82D4DDCE04AF4AC0 /* AFURLConnectionOperation.m */,
-				C683D4BDF74364484E7DCF7E /* AFXMLRequestOperation.h */,
-				966F135CDA9037488864B1D8 /* AFXMLRequestOperation.m */,
-				D585003AA5193F1592823542 /* UIImageView+AFNetworking.h */,
-				1CF31B5DB5AC34F978385104 /* UIImageView+AFNetworking.m */,
-				2DACF8E77F3F718BF67B3A43 /* Support Files */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		B1D664B19D99D8C41D8EA51A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75DBEBDEAB6C0D35F3F66D39 /* Pods-acknowledgements.markdown */,
-				467DACAC3FB8329F625A0503 /* Pods-acknowledgements.plist */,
-				11269C614132A9CEE00A8D22 /* Pods-dummy.m */,
-				E0B3C597B04051299A9FDD2F /* Pods-environment.h */,
-				F093A1005113BE50577E84FE /* Pods-resources.sh */,
-				AC47EF7966A85FF44FCE04A4 /* Pods.debug.xcconfig */,
-				43C02732CEA11BC4804D1ACE /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		C37C56961602E1B0316D3D96 /* Pods-SZNAltmetricDemoOSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				9BBDB67E24EDB47CC3D6CA81 /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.markdown */,
-				2784664612E7D2A78FC007A3 /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.plist */,
-				390B2B81AB0C5695314DBB30 /* Pods-SZNAltmetricDemoOSXTests-dummy.m */,
-				DC6CE58D913F1C68531EC586 /* Pods-SZNAltmetricDemoOSXTests-environment.h */,
-				50B60BA6F970DE99C96FE3F5 /* Pods-SZNAltmetricDemoOSXTests-resources.sh */,
-				42507C2908CF3BCF3C8C0DB3 /* Pods-SZNAltmetricDemoOSXTests.debug.xcconfig */,
-				2BFE8DB70FCFE2B65BFB4E89 /* Pods-SZNAltmetricDemoOSXTests.release.xcconfig */,
-			);
-			name = "Pods-SZNAltmetricDemoOSXTests";
-			path = "Target Support Files/Pods-SZNAltmetricDemoOSXTests";
-			sourceTree = "<group>";
-		};
-		CDBE1332CBB1DEC4AB4BE1F9 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				DFB333901525D001DD58B4B7 /* Cocoa.framework */,
-				C98B6DB9023FFF3067B3D3B0 /* CoreServices.framework */,
-				BB70076D9E7721B2E07FC4C8 /* Security.framework */,
-				4BB206116D96D21C7F480D30 /* SystemConfiguration.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		D92B8FB6BA3E83094917571B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2CA7183E3094C63408274B2F /* libPods.a */,
-				61D63C3955B83757D681C6B5 /* libPods-AFNetworking.a */,
-				4969C5196D26B2B9A1256D43 /* libPods-ISO8601DateFormatter.a */,
-				08B3C412AD2C140B077F2741 /* libPods-SZNAltmetric.a */,
-				554787E6461A914EFC3288D7 /* libPods-SZNAltmetricDemoOSXTests.a */,
-				144C0C9D1B5ADF810C81A862 /* libPods-SZNAltmetricDemoOSXTests-AFNetworking.a */,
-				64347475F21A2CE96E503D18 /* libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a */,
-				B4A24292BF005AFB00C91C04 /* libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E20504FC3C09469F9D828E54 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5D50141262EE35AC39494049 /* Pods-SZNAltmetric.xcconfig */,
-				BA391DFF18AC26689022A891 /* Pods-SZNAltmetric-Private.xcconfig */,
-				B4C81B21B3D5EA8FB7552722 /* Pods-SZNAltmetric-dummy.m */,
-				AEEAB54AF3EA4FCA57941A3E /* Pods-SZNAltmetric-prefix.pch */,
-				A0941572DE02397D6FD30FB5 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig */,
-				E4B9D9D34D42383F1E18096A /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */,
-				B589304753B14681235DB015 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m */,
-				E61CB2754F696125ECDAD981 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch */,
+				793DC142EA12DA9CD34CBEEC /* Pods-SZNAltmetric.xcconfig */,
+				010571120227CBA39ACCF576 /* Pods-SZNAltmetric-Private.xcconfig */,
+				027F14C6A7AE98CEF10BE541 /* Pods-SZNAltmetric-dummy.m */,
+				BD48B8A60C66CF2EC2F7F744 /* Pods-SZNAltmetric-prefix.pch */,
+				8640529B3D38FA91E6E69738 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric.xcconfig */,
+				6B102E5ED36AA0C58196A097 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */,
+				A9DAB48077605E758ECFA92B /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m */,
+				6EBFFC34890710ABE192AEAF /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Examples/SZNAltmetricDemoOSX/Pods/Target Support Files/Pods-SZNAltmetric";
 			sourceTree = "<group>";
 		};
-		E58080B72528102833AF5859 /* Pods */ = {
+		0612329948E3077B89A40D16 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B1B5FE817EA59EFB21B8E1F7 /* AFNetworking */,
-				295ADD47F3BA15E9F90E1FF8 /* ISO8601DateFormatter */,
+				DFE8741C6334E187504C29C4 /* Pods-ISO8601DateFormatter.xcconfig */,
+				BC45DB31CDA9170E2B8CA5B5 /* Pods-ISO8601DateFormatter-Private.xcconfig */,
+				17DAD592248F549965F041E3 /* Pods-ISO8601DateFormatter-dummy.m */,
+				D4BB95BF23596A807418B012 /* Pods-ISO8601DateFormatter-prefix.pch */,
+				A0163DAD46AA56507E701655 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.xcconfig */,
+				9D93EAF7B5A4DFAE1725C363 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */,
+				45BD563220DCE7244815EB2A /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m */,
+				0263907132A701C99E465121 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ISO8601DateFormatter";
 			sourceTree = "<group>";
 		};
-		E7E3610F93F039AA001439F1 /* Targets Support Files */ = {
+		075BE52CE9C353FBF6833E3D /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				B1D664B19D99D8C41D8EA51A /* Pods */,
-				C37C56961602E1B0316D3D96 /* Pods-SZNAltmetricDemoOSXTests */,
+				25D7A92C0B4868C64E660DB9 /* AFURLRequestSerialization.h */,
+				E22D15E183B6A78778D14D48 /* AFURLRequestSerialization.m */,
+				EA4E66383CA38F6A6965CF76 /* AFURLResponseSerialization.h */,
+				82E27AAC6D9BEB573E1CCE36 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		21041B73A95291FA98120899 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50228E090C540E42943E3B11 /* Pods */,
+				2169E83F8AAF6061EC3C41F6 /* Pods-SZNAltmetricDemoOSXTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FDD316592BED606690DDB57E /* Frameworks */ = {
+		2169E83F8AAF6061EC3C41F6 /* Pods-SZNAltmetricDemoOSXTests */ = {
 			isa = PBXGroup;
 			children = (
-				CDBE1332CBB1DEC4AB4BE1F9 /* OS X */,
+				74BF9F19921C08390585FD94 /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.markdown */,
+				3CDCADFEC5E570DB35271E4A /* Pods-SZNAltmetricDemoOSXTests-acknowledgements.plist */,
+				6B7C0C4420D4A1B90A7DEAAE /* Pods-SZNAltmetricDemoOSXTests-dummy.m */,
+				4DFD501912839181CE95D5F7 /* Pods-SZNAltmetricDemoOSXTests-environment.h */,
+				1A8482145278399F1D10A6E5 /* Pods-SZNAltmetricDemoOSXTests-resources.sh */,
+				C4265DFB1157CA775FB57C7F /* Pods-SZNAltmetricDemoOSXTests.debug.xcconfig */,
+				21F45A705499AD67CFE55AF0 /* Pods-SZNAltmetricDemoOSXTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-SZNAltmetricDemoOSXTests";
+			path = "Target Support Files/Pods-SZNAltmetricDemoOSXTests";
 			sourceTree = "<group>";
 		};
-		FFD6347F23DC8B35757E2FBB /* SZNAltmetric */ = {
+		2D8410732912DB5FDEAC01A3 /* ISO8601DateFormatter */ = {
 			isa = PBXGroup;
 			children = (
-				6645F524716FD8E35164D3D0 /* SZNAltmetric.h */,
-				485EFBBF3F046BAE6FF48D75 /* SZNAltmetricAPIClient.h */,
-				24DEFFA27F096E6770504562 /* SZNAltmetricAPIClient.m */,
-				1C54F3086BDBE5D6E6565A98 /* SZNAltmetricArticle.h */,
-				A5EFAEE9E3DA9890E7804901 /* SZNAltmetricArticle.m */,
-				E20504FC3C09469F9D828E54 /* Support Files */,
+				64009DE5985E6F84CC7ED665 /* ISO8601DateFormatter.h */,
+				76089C58F77DCEED2EAB6D81 /* ISO8601DateFormatter.m */,
+				0612329948E3077B89A40D16 /* Support Files */,
+			);
+			path = ISO8601DateFormatter;
+			sourceTree = "<group>";
+		};
+		2E841469B250B514FDC65B52 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1C7A82EC1DBA238F375AF /* AFHTTPRequestOperation.h */,
+				B9FA1BE7B8B856DD4B8B5677 /* AFHTTPRequestOperation.m */,
+				A67235B2E3D1A97A98402F04 /* AFHTTPRequestOperationManager.h */,
+				40106EFD589A4EB466CD8E4B /* AFHTTPRequestOperationManager.m */,
+				08B944C68A17191FEF3CA6A7 /* AFURLConnectionOperation.h */,
+				1E86A9FBA23D2AAE34AB8FCC /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		50228E090C540E42943E3B11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADE5B2FE1B5EFBC9462EF903 /* Pods-acknowledgements.markdown */,
+				C2FA4F2F3D34AF4E34898D35 /* Pods-acknowledgements.plist */,
+				8D820C70B33137D5BF61E5CC /* Pods-dummy.m */,
+				2E70F1C91C15414D829D583D /* Pods-environment.h */,
+				AF9EA8BD9E658BCD05959370 /* Pods-resources.sh */,
+				B85E2984A6EAFF05927B626C /* Pods.debug.xcconfig */,
+				E9DCFA0A61409FCB5AD66B13 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		57AAC0AF13FC4F19ED166119 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				530C513DF163F13B50848726 /* AFNetworkReachabilityManager.h */,
+				BDCD59A8CEAAF0492E0D1BB4 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		60E0946CE1D907DBBD28DBF7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83017048DC51B4D422DC8CAC /* SZNAltmetric */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7276C5B08244D07634E675E2 /* SZNAltmetric */ = {
+			isa = PBXGroup;
+			children = (
+				7D13789BC7514F9339C4B3F1 /* SZNAltmetric.h */,
+				25240AFDB61221726C2D6EE5 /* SZNAltmetricArticle.h */,
+				84F72BB9B305136949424A9A /* SZNAltmetricArticle.m */,
+				341D8E8DDD0295950EC71E46 /* SZNAltmetricManager.h */,
+				1167DDAE19A49DA4C75C9103 /* SZNAltmetricManager.m */,
+				94B0FF7591D2E48BDC5BA36F /* SZNAltmetricRequestSerializer.h */,
+				B2CAEC2F8A57EAA1B7ADCD41 /* SZNAltmetricRequestSerializer.m */,
+				93C5AF082B1F072022E36E0B /* SZNAltmetricResponseSerializer.h */,
+				B92E47ABFA23FDBD1ACEA2DE /* SZNAltmetricResponseSerializer.m */,
+			);
+			path = SZNAltmetric;
+			sourceTree = "<group>";
+		};
+		83017048DC51B4D422DC8CAC /* SZNAltmetric */ = {
+			isa = PBXGroup;
+			children = (
+				7276C5B08244D07634E675E2 /* SZNAltmetric */,
+				05AD324E37E0E0F9F22D1472 /* Support Files */,
 			);
 			name = SZNAltmetric;
 			path = ../../..;
 			sourceTree = "<group>";
 		};
+		83405F77C87A123FCA6366B2 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				0ED714A0B7378AB811494AF1 /* AFSecurityPolicy.h */,
+				B65770E99418D5D283E4F08D /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		85D0582E069F5A9C55F1DB63 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				74075F385F2F660092687E3C /* AFNetworking.h */,
+				2E841469B250B514FDC65B52 /* NSURLConnection */,
+				EB5CBE7B1AC25F7D935D9467 /* NSURLSession */,
+				57AAC0AF13FC4F19ED166119 /* Reachability */,
+				83405F77C87A123FCA6366B2 /* Security */,
+				075BE52CE9C353FBF6833E3D /* Serialization */,
+				F27F37DBB562C5C041AB8B24 /* Support Files */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		943E2D469DE9D7AD59293626 = {
+			isa = PBXGroup;
+			children = (
+				C481BA8543961F98DBF76D75 /* Podfile */,
+				60E0946CE1D907DBBD28DBF7 /* Development Pods */,
+				FE381993C30DA410469E4C1B /* Frameworks */,
+				C215CB5F3A09A6D5179E8534 /* Pods */,
+				B985B30B1016C03C463F04B0 /* Products */,
+				21041B73A95291FA98120899 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B985B30B1016C03C463F04B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F58CBD2459DA1844745C201A /* libPods.a */,
+				FF9538A1E377A42E600D5732 /* libPods-AFNetworking.a */,
+				64862D31C6785C4D943827D0 /* libPods-ISO8601DateFormatter.a */,
+				F2F923E94602F2E4D6A4EA53 /* libPods-SZNAltmetric.a */,
+				B45D320B32F84575FF950172 /* libPods-SZNAltmetricDemoOSXTests.a */,
+				235AC26BA46E0451F938C171 /* libPods-SZNAltmetricDemoOSXTests-AFNetworking.a */,
+				B17B1502561A217FAEE78968 /* libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a */,
+				B6395610C7D2CA84DD065DCD /* libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C215CB5F3A09A6D5179E8534 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85D0582E069F5A9C55F1DB63 /* AFNetworking */,
+				2D8410732912DB5FDEAC01A3 /* ISO8601DateFormatter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD0548EBC9C23F4D22A72EB7 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				6C17E647B3805E66689B1C73 /* Cocoa.framework */,
+				8D3C0CB4D36949ED2FFC617C /* CoreServices.framework */,
+				902A6E51AE5F96DDFF1D362F /* Security.framework */,
+				331E42F5BB3506016B3B13F1 /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		EB5CBE7B1AC25F7D935D9467 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				EB23260C2546C076EE64B053 /* AFHTTPSessionManager.h */,
+				6E24C2AA4D1E0AB8E48B4D47 /* AFHTTPSessionManager.m */,
+				5A82DE9B739530AC22169D43 /* AFURLSessionManager.h */,
+				2B01C1E999128F11295DD5C9 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		F27F37DBB562C5C041AB8B24 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				954137B56E4681EE508768DC /* Pods-AFNetworking.xcconfig */,
+				CDAD2CC3053D7B1628FD4A64 /* Pods-AFNetworking-Private.xcconfig */,
+				D78DBE46CC0AD78640092E1E /* Pods-AFNetworking-dummy.m */,
+				E24C2643E11C4B276608D65B /* Pods-AFNetworking-prefix.pch */,
+				D054A347959437C73754740F /* Pods-SZNAltmetricDemoOSXTests-AFNetworking.xcconfig */,
+				06D0EC01A9C61EC248EF9D9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */,
+				C9C3C2F306013F121FCAEF75 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m */,
+				573AEA082E730B06F37AFA1A /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-AFNetworking";
+			sourceTree = "<group>";
+		};
+		FE381993C30DA410469E4C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD0548EBC9C23F4D22A72EB7 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02CDA00C7199F3A9A5908A76 /* Headers */ = {
+		2B08E01F4B83EDE02EE02153 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1734724D49034A79DF03D54 /* SZNAltmetric.h in Headers */,
-				7D1B97277F98790F87F13FEA /* SZNAltmetricAPIClient.h in Headers */,
-				0449E9D3803641FCDA3662DA /* SZNAltmetricArticle.h in Headers */,
+				7D9A353A2548F64D13D86BF8 /* AFHTTPRequestOperation.h in Headers */,
+				89CD8BF33E2B872963463543 /* AFHTTPRequestOperationManager.h in Headers */,
+				E0E079796069B780798626F4 /* AFHTTPSessionManager.h in Headers */,
+				977875CDAACC209D7F2395B4 /* AFNetworkReachabilityManager.h in Headers */,
+				A5D88FDD9CD307BB3BAAD33D /* AFNetworking.h in Headers */,
+				4044CEC2DB3508A3A67C23AC /* AFSecurityPolicy.h in Headers */,
+				D3A2A1AC43F38AD4E5DAD4E2 /* AFURLConnectionOperation.h in Headers */,
+				9585213979B5B76DFCA588B1 /* AFURLRequestSerialization.h in Headers */,
+				435E1C8D5C1383BA2305AC5F /* AFURLResponseSerialization.h in Headers */,
+				D2BBFD33D8A7E9F99959C412 /* AFURLSessionManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44BD8C280FAEB76B7445257C /* Headers */ = {
+		6214C30CEB571A38ACA097B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7C9B633C34EB3E4D02C233D /* SZNAltmetric.h in Headers */,
-				1ADA11FBB77BD003A572AD0C /* SZNAltmetricAPIClient.h in Headers */,
-				2040F44AA7DD9F430BA76995 /* SZNAltmetricArticle.h in Headers */,
+				9A3FF13FD613EAAFB7697BA3 /* SZNAltmetric.h in Headers */,
+				161D6D0E033E6CAAE4BF2F58 /* SZNAltmetricArticle.h in Headers */,
+				16683B434A2E7668A8658915 /* SZNAltmetricManager.h in Headers */,
+				13217DCF8754CA8674F7103D /* SZNAltmetricRequestSerializer.h in Headers */,
+				5F5D154BBC2FE9878F7D9213 /* SZNAltmetricResponseSerializer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8559E2ACD839C7939EAEAFC4 /* Headers */ = {
+		6A6E8B1510AF94B96665FFDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EC6FFB6A6C33025FDCBFC83 /* AFHTTPClient.h in Headers */,
-				B44E5A07742E197C9FB43181 /* AFHTTPRequestOperation.h in Headers */,
-				CA7791596F025B66EC41A25F /* AFImageRequestOperation.h in Headers */,
-				1CBE6DFD9BB0DE8940B6B5CE /* AFJSONRequestOperation.h in Headers */,
-				CF2D592761F8CF0D5CE6F9CE /* AFNetworkActivityIndicatorManager.h in Headers */,
-				BD9F29F4E8341F15F6978215 /* AFNetworking.h in Headers */,
-				EBA80155543DD6221148082D /* AFPropertyListRequestOperation.h in Headers */,
-				B857D929A39527D939D0F769 /* AFURLConnectionOperation.h in Headers */,
-				3C61F74B7135D943E2754BC5 /* AFXMLRequestOperation.h in Headers */,
-				970D5031D31E735894B653FB /* UIImageView+AFNetworking.h in Headers */,
+				39AC5E597012615E26073423 /* ISO8601DateFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9077FC6675A3ADBE5B200FCC /* Headers */ = {
+		7B37DADED378830C3BC5233E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A631FF1789E0B44241858283 /* ISO8601DateFormatter.h in Headers */,
+				46D6E8E39FC64E671F337789 /* SZNAltmetric.h in Headers */,
+				340B358CF8AF92B57313F405 /* SZNAltmetricArticle.h in Headers */,
+				EF48CB80DD3D56BDACD85BB6 /* SZNAltmetricManager.h in Headers */,
+				3562524E4FC0888F1E760AD2 /* SZNAltmetricRequestSerializer.h in Headers */,
+				BF0F4E42AF63427FEA0A6DA3 /* SZNAltmetricResponseSerializer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7326615265DED073BFAEB9B /* Headers */ = {
+		93E7776354493A1001765B99 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F733B7729C251E1363FA4B44 /* ISO8601DateFormatter.h in Headers */,
+				215375AD6FF54B94A9DA75B0 /* ISO8601DateFormatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D87CE4BDA0B72F2B63B1E696 /* Headers */ = {
+		EA2153A0407146CC1ACCCE5A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C13EBEB97D2FDEC6911B96E /* AFHTTPClient.h in Headers */,
-				6FB0C3B2C726FEBC5F233654 /* AFHTTPRequestOperation.h in Headers */,
-				FA197E7017D75E5C77E88BB2 /* AFImageRequestOperation.h in Headers */,
-				90480DB495DC94347D0CE044 /* AFJSONRequestOperation.h in Headers */,
-				1C04C2B3733AABE03252D1E9 /* AFNetworkActivityIndicatorManager.h in Headers */,
-				616AF115B024D5A3F6937041 /* AFNetworking.h in Headers */,
-				4D8D09BF9C76DF7912106539 /* AFPropertyListRequestOperation.h in Headers */,
-				FDF77515151A8C812F732EF3 /* AFURLConnectionOperation.h in Headers */,
-				D8254047D8B7BBEEF5ACC02E /* AFXMLRequestOperation.h in Headers */,
-				BE739CF31831CE955100D9DD /* UIImageView+AFNetworking.h in Headers */,
+				87246C1A4FB36727A937E0A4 /* AFHTTPRequestOperation.h in Headers */,
+				51A9BB9FC32D03010A5DF1CD /* AFHTTPRequestOperationManager.h in Headers */,
+				BAD295003D14FD355DA6C3DF /* AFHTTPSessionManager.h in Headers */,
+				A583C186A9852F40B69E6B23 /* AFNetworkReachabilityManager.h in Headers */,
+				5100820C0D0F86E2DF03743C /* AFNetworking.h in Headers */,
+				F5FC8ADCFF62ED22ED0D4C8C /* AFSecurityPolicy.h in Headers */,
+				165BEC04C8920FAD5E90DFE7 /* AFURLConnectionOperation.h in Headers */,
+				B1B46816EB555F90F258A6BD /* AFURLRequestSerialization.h in Headers */,
+				F8B7FD0511D595D1987656D2 /* AFURLResponseSerialization.h in Headers */,
+				A91C4CBDE53A2A5A33D89352 /* AFURLSessionManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		14EB52A276C8DB688328BEE3 /* Pods */ = {
+		2A15863CFBF85E2FBFF23812 /* Pods-ISO8601DateFormatter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B65EA15D39A2A4931EF9859E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 8BE3BF6E3CD6F21A00C99BE5 /* Build configuration list for PBXNativeTarget "Pods-ISO8601DateFormatter" */;
 			buildPhases = (
-				528FD2A6742CDE2338D7860E /* Sources */,
-				79C0470620B8647747990AA9 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3AF13CB76860C3362B0390E4 /* PBXTargetDependency */,
-				67100EFF9E9F7552C8FAE7C3 /* PBXTargetDependency */,
-				1C55B2DCA9DF8AEBB2B20E3F /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 2CA7183E3094C63408274B2F /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		241E8FF06973C731B0C128C8 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D42A8D16105372E0EED70B17 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-AFNetworking" */;
-			buildPhases = (
-				2B4D4890B8C2E7C51AC37AA7 /* Sources */,
-				6F531AE24086DE59D19C4EA3 /* Frameworks */,
-				8559E2ACD839C7939EAEAFC4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
-			productName = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
-			productReference = 144C0C9D1B5ADF810C81A862 /* libPods-SZNAltmetricDemoOSXTests-AFNetworking.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		51232D79E493B696C6A043BE /* Pods-AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE85ACAA71D409EC5CDB2323 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
-			buildPhases = (
-				7CA887A4448DB64E5CA41159 /* Sources */,
-				4DB9358FC0425F6598B8E675 /* Frameworks */,
-				D87CE4BDA0B72F2B63B1E696 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-AFNetworking";
-			productName = "Pods-AFNetworking";
-			productReference = 61D63C3955B83757D681C6B5 /* libPods-AFNetworking.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		6DFD343150F77DC3A08A05C8 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE8E5E33828A056C5157A892 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric" */;
-			buildPhases = (
-				A8CB510F0BFCBE6AC6CE1BA0 /* Sources */,
-				E2BC77AB1328219DCAA2A0B4 /* Frameworks */,
-				44BD8C280FAEB76B7445257C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				076BD2F85C47DA5AF182F941 /* PBXTargetDependency */,
-				2318719E701FC9375986749C /* PBXTargetDependency */,
-			);
-			name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
-			productName = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
-			productReference = B4A24292BF005AFB00C91C04 /* libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		76C4FA29236F217930C9154D /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B761B8D1AD4C89FF11320858 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter" */;
-			buildPhases = (
-				5FD58C64464E5C5190322DDC /* Sources */,
-				8BD06EBBB725D4C1808FED03 /* Frameworks */,
-				9077FC6675A3ADBE5B200FCC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
-			productName = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
-			productReference = 64347475F21A2CE96E503D18 /* libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		83247BB812D45AEF7428B6BB /* Pods-SZNAltmetricDemoOSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 435F8B3505C924EBC9A40011 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests" */;
-			buildPhases = (
-				C44F5F3C75302E9775060DB8 /* Sources */,
-				2BEA917C73B814E55A6E6925 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				584D7CF1D47ADE015B01CE3F /* PBXTargetDependency */,
-				EA9E4A01858EC321C0945868 /* PBXTargetDependency */,
-				86B8D9C36F89CEFA3F1B72AD /* PBXTargetDependency */,
-			);
-			name = "Pods-SZNAltmetricDemoOSXTests";
-			productName = "Pods-SZNAltmetricDemoOSXTests";
-			productReference = 554787E6461A914EFC3288D7 /* libPods-SZNAltmetricDemoOSXTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		969F660B44DC0DFBD3AF378C /* Pods-ISO8601DateFormatter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D477FAFB9B44A5331D59719 /* Build configuration list for PBXNativeTarget "Pods-ISO8601DateFormatter" */;
-			buildPhases = (
-				54B6E59D0700A59079543C71 /* Sources */,
-				6F95AD42ECACE38A78C1508A /* Frameworks */,
-				B7326615265DED073BFAEB9B /* Headers */,
+				1967C1C05E36E0AE6BE6D762 /* Sources */,
+				5463DD996148D9253F5BF572 /* Frameworks */,
+				6A6E8B1510AF94B96665FFDA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -709,244 +669,603 @@
 			);
 			name = "Pods-ISO8601DateFormatter";
 			productName = "Pods-ISO8601DateFormatter";
-			productReference = 4969C5196D26B2B9A1256D43 /* libPods-ISO8601DateFormatter.a */;
+			productReference = 64862D31C6785C4D943827D0 /* libPods-ISO8601DateFormatter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D9847697AB33062501946D04 /* Pods-SZNAltmetric */ = {
+		37003FDFB0992B2C8F28F275 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B20C6A166E5409DA6CA4A44 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetric" */;
+			buildConfigurationList = EF2A2CEBE76511CE90A56FC1 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter" */;
 			buildPhases = (
-				BA9C3D905115DF8E7CA52669 /* Sources */,
-				F614231FCB5D9873116C17AD /* Frameworks */,
-				02CDA00C7199F3A9A5908A76 /* Headers */,
+				50E8758A662C090712E9B69D /* Sources */,
+				E42DF9E2FCD948B9154C4BDA /* Frameworks */,
+				93E7776354493A1001765B99 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				94CC0DF5803770BB92F9E1F3 /* PBXTargetDependency */,
-				1B56F3D26E658DA868BFFBA9 /* PBXTargetDependency */,
+			);
+			name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
+			productName = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
+			productReference = B17B1502561A217FAEE78968 /* libPods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8045DA9DCEB6D8A5FD170051 /* Pods-SZNAltmetricDemoOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA549216D6277E28B99961D /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests" */;
+			buildPhases = (
+				BFC6FBEB64E0DA1DA49949F2 /* Sources */,
+				CC45A3C2F27B9AB3C5D8CE5B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D8121990C50607A730DA807 /* PBXTargetDependency */,
+				DC1B77E4359DC3AA6F47A968 /* PBXTargetDependency */,
+				DF88CF13032DD36491F7165C /* PBXTargetDependency */,
+			);
+			name = "Pods-SZNAltmetricDemoOSXTests";
+			productName = "Pods-SZNAltmetricDemoOSXTests";
+			productReference = B45D320B32F84575FF950172 /* libPods-SZNAltmetricDemoOSXTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D7F6B91ADDF26ADC47123AB3 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2200D78C8A19DFB0ED3EB34D /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric" */;
+			buildPhases = (
+				5825F202A87217DA4A3E2DA2 /* Sources */,
+				22F8F7588D068CF37D258C66 /* Frameworks */,
+				6214C30CEB571A38ACA097B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C1D4D28DA67F4662CFD7B62 /* PBXTargetDependency */,
+				073AB3A0F7D598C5E62E1F8A /* PBXTargetDependency */,
+			);
+			name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
+			productName = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
+			productReference = B6395610C7D2CA84DD065DCD /* libPods-SZNAltmetricDemoOSXTests-SZNAltmetric.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E0AA0E93AC4E2BD5E35715A2 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12E38BE662D74AC757E02AF /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-AFNetworking" */;
+			buildPhases = (
+				46BBD83AE109090C116ACA48 /* Sources */,
+				BC3D0704BBAEE2C11D1C421B /* Frameworks */,
+				2B08E01F4B83EDE02EE02153 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
+			productName = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
+			productReference = 235AC26BA46E0451F938C171 /* libPods-SZNAltmetricDemoOSXTests-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7AF2F12FEA61D5463CD1E98 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A8E7D9F34ED4E62863F1E2 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				58BFA68DDEE1C1AD668291F6 /* Sources */,
+				954D7BDE85DACE3CF41E2E58 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E355080FF0F3158B17239836 /* PBXTargetDependency */,
+				694B164868C6113D9549B95B /* PBXTargetDependency */,
+				7748DCAA9F2977EA40720045 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = F58CBD2459DA1844745C201A /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F6A87291D882081890057819 /* Pods-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC989E1E3B4FCE774009F1F /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */;
+			buildPhases = (
+				3F23026A062BE43BD3EE9BC8 /* Sources */,
+				B99756F8DCF03EC75F56656E /* Frameworks */,
+				EA2153A0407146CC1ACCCE5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-AFNetworking";
+			productName = "Pods-AFNetworking";
+			productReference = FF9538A1E377A42E600D5732 /* libPods-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE27C8F5A7623486CF70C6DE /* Pods-SZNAltmetric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF2B617373D000AA09FFF84 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetric" */;
+			buildPhases = (
+				8D494D31522B26F9E010C753 /* Sources */,
+				35C3775B925B2BEDD9A7CE63 /* Frameworks */,
+				7B37DADED378830C3BC5233E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85BF12F0E8D2C9BD95C2F021 /* PBXTargetDependency */,
+				E71B79D3490FC6D6E34EC8FA /* PBXTargetDependency */,
 			);
 			name = "Pods-SZNAltmetric";
 			productName = "Pods-SZNAltmetric";
-			productReference = 08B3C412AD2C140B077F2741 /* libPods-SZNAltmetric.a */;
+			productReference = F2F923E94602F2E4D6A4EA53 /* libPods-SZNAltmetric.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2AC4996E91974E1BA9D16890 /* Project object */ = {
+		66748D832F0AE17E9E70CDD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 204DD680DC440705D0915621 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 3F2F4AC5CEDBC19AB0B27E61 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0C8D39FEDB83D8803E550788;
-			productRefGroup = D92B8FB6BA3E83094917571B /* Products */;
+			mainGroup = 943E2D469DE9D7AD59293626;
+			productRefGroup = B985B30B1016C03C463F04B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14EB52A276C8DB688328BEE3 /* Pods */,
-				51232D79E493B696C6A043BE /* Pods-AFNetworking */,
-				969F660B44DC0DFBD3AF378C /* Pods-ISO8601DateFormatter */,
-				D9847697AB33062501946D04 /* Pods-SZNAltmetric */,
-				83247BB812D45AEF7428B6BB /* Pods-SZNAltmetricDemoOSXTests */,
-				241E8FF06973C731B0C128C8 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */,
-				76C4FA29236F217930C9154D /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */,
-				6DFD343150F77DC3A08A05C8 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric */,
+				E7AF2F12FEA61D5463CD1E98 /* Pods */,
+				F6A87291D882081890057819 /* Pods-AFNetworking */,
+				2A15863CFBF85E2FBFF23812 /* Pods-ISO8601DateFormatter */,
+				FE27C8F5A7623486CF70C6DE /* Pods-SZNAltmetric */,
+				8045DA9DCEB6D8A5FD170051 /* Pods-SZNAltmetricDemoOSXTests */,
+				E0AA0E93AC4E2BD5E35715A2 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */,
+				37003FDFB0992B2C8F28F275 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */,
+				D7F6B91ADDF26ADC47123AB3 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B4D4890B8C2E7C51AC37AA7 /* Sources */ = {
+		1967C1C05E36E0AE6BE6D762 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40424B259044E966D84D0EF7 /* AFHTTPClient.m in Sources */,
-				2905E79EB4C45C8DC5749EB2 /* AFHTTPRequestOperation.m in Sources */,
-				96F9E8E7C90439A57DCA5539 /* AFImageRequestOperation.m in Sources */,
-				9CFA80E8164CA959B483A98C /* AFJSONRequestOperation.m in Sources */,
-				2BBF68C4215AEC13D6C0AF7E /* AFNetworkActivityIndicatorManager.m in Sources */,
-				ECF19D95F131CCAA09E9CFCA /* AFPropertyListRequestOperation.m in Sources */,
-				1EB3C317CC0E4D18D2DC5EB0 /* AFURLConnectionOperation.m in Sources */,
-				8B27123CE356F39D6E975B91 /* AFXMLRequestOperation.m in Sources */,
-				88A3C2B47F2B0C13DB152898 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m in Sources */,
-				B9C870EB3284712F325DE31D /* UIImageView+AFNetworking.m in Sources */,
+				FAC2DA27F9C320C7B930F927 /* ISO8601DateFormatter.m in Sources */,
+				3610C1D48ED7435594676FDA /* Pods-ISO8601DateFormatter-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		528FD2A6742CDE2338D7860E /* Sources */ = {
+		3F23026A062BE43BD3EE9BC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5937ADC5FF314538243229F8 /* Pods-dummy.m in Sources */,
+				77EC35DBB8C0EBFB598AD156 /* AFHTTPRequestOperation.m in Sources */,
+				4497EF8FC5750560952AB217 /* AFHTTPRequestOperationManager.m in Sources */,
+				23E0A57E07EB98AD5FAFE809 /* AFHTTPSessionManager.m in Sources */,
+				13B7DC94FCE3CD11D84A2EA7 /* AFNetworkReachabilityManager.m in Sources */,
+				2D79291ADF8466301E49F2E4 /* AFSecurityPolicy.m in Sources */,
+				A72F80FAE741DADD79EAD64D /* AFURLConnectionOperation.m in Sources */,
+				66FEFAC00A463D7419A11993 /* AFURLRequestSerialization.m in Sources */,
+				3C6E2916459DF5DE9BCBB74F /* AFURLResponseSerialization.m in Sources */,
+				C0C276E0DCACCD14CB7441CC /* AFURLSessionManager.m in Sources */,
+				6D3E04255B4FD0AC61CA50D6 /* Pods-AFNetworking-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54B6E59D0700A59079543C71 /* Sources */ = {
+		46BBD83AE109090C116ACA48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E011582F4B614AE83EC490F /* ISO8601DateFormatter.m in Sources */,
-				45BF27E1CD89B53DB6C05637 /* Pods-ISO8601DateFormatter-dummy.m in Sources */,
+				0F667E9F65B2A3B8FC240C8A /* AFHTTPRequestOperation.m in Sources */,
+				A62B04F96C078838F5357E27 /* AFHTTPRequestOperationManager.m in Sources */,
+				A48B2A45681B2E563AE1E2F4 /* AFHTTPSessionManager.m in Sources */,
+				6CE52EF2BC0E6F2364F5780D /* AFNetworkReachabilityManager.m in Sources */,
+				4405E4403B3F46FB9397BEE6 /* AFSecurityPolicy.m in Sources */,
+				BCB2A55C166C56B1E5BA5573 /* AFURLConnectionOperation.m in Sources */,
+				5CA364EDC88DD20BA4487F09 /* AFURLRequestSerialization.m in Sources */,
+				27CEF9AA29B2D33E46C9A29E /* AFURLResponseSerialization.m in Sources */,
+				151B033767F681E1C6606201 /* AFURLSessionManager.m in Sources */,
+				D532ADC2FD1663BFB9F83143 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FD58C64464E5C5190322DDC /* Sources */ = {
+		50E8758A662C090712E9B69D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6239A75836B022E3B729A1EA /* ISO8601DateFormatter.m in Sources */,
-				4374D4B9EBA9B7DD157FBCED /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m in Sources */,
+				F1E29BA0EFF8552B8CF0D1D2 /* ISO8601DateFormatter.m in Sources */,
+				9CDD7CF347E7DC8C814D97A5 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CA887A4448DB64E5CA41159 /* Sources */ = {
+		5825F202A87217DA4A3E2DA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA4B8E7BB154B04327DFEE8 /* AFHTTPClient.m in Sources */,
-				65F11BDBB485944F9B6BF70D /* AFHTTPRequestOperation.m in Sources */,
-				9CD9F21935E5391F2441FFBB /* AFImageRequestOperation.m in Sources */,
-				C0D35500877EF9761CEFC6E4 /* AFJSONRequestOperation.m in Sources */,
-				A2607695EEFD4A105DD264D3 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				034FB452ADA811352F01960F /* AFPropertyListRequestOperation.m in Sources */,
-				65DF678F870F607C74B3CA20 /* AFURLConnectionOperation.m in Sources */,
-				FE1CAA56DFAA89AC956BCA2C /* AFXMLRequestOperation.m in Sources */,
-				1EE6D0EA7F28CF69162D7D7F /* Pods-AFNetworking-dummy.m in Sources */,
-				826EC25B8014E1CF85EE3779 /* UIImageView+AFNetworking.m in Sources */,
+				80EDE665D89A8F333697F826 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m in Sources */,
+				BB503D2B25121D49AD11D9EF /* SZNAltmetricArticle.m in Sources */,
+				F87F0722FF8EE9BD399096F7 /* SZNAltmetricManager.m in Sources */,
+				7575BA433C7560EB3992C545 /* SZNAltmetricRequestSerializer.m in Sources */,
+				2506152B4BBBA10904CE1670 /* SZNAltmetricResponseSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8CB510F0BFCBE6AC6CE1BA0 /* Sources */ = {
+		58BFA68DDEE1C1AD668291F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2AE8DFFE2ACD64755BA1372 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-dummy.m in Sources */,
-				9AD721989ADACF7284458415 /* SZNAltmetricAPIClient.m in Sources */,
-				A36188811BA32D836D5132D1 /* SZNAltmetricArticle.m in Sources */,
+				D7F9DFB35885F8ECC860F1B9 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA9C3D905115DF8E7CA52669 /* Sources */ = {
+		8D494D31522B26F9E010C753 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B49B91381FD271F34741CED8 /* Pods-SZNAltmetric-dummy.m in Sources */,
-				E13D21862A5DB11E98E01F40 /* SZNAltmetricAPIClient.m in Sources */,
-				A92C0671B74AC9194F74C1D6 /* SZNAltmetricArticle.m in Sources */,
+				780714A40169924D53AB7C6F /* Pods-SZNAltmetric-dummy.m in Sources */,
+				C16B921A05EDEA70C2A42361 /* SZNAltmetricArticle.m in Sources */,
+				4078F7864665189F5F709ED3 /* SZNAltmetricManager.m in Sources */,
+				841690FAC34FA8D3876C4F2A /* SZNAltmetricRequestSerializer.m in Sources */,
+				E42AE3434036A63252B1E39B /* SZNAltmetricResponseSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C44F5F3C75302E9775060DB8 /* Sources */ = {
+		BFC6FBEB64E0DA1DA49949F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E995974E1EBBEE9F23974A /* Pods-SZNAltmetricDemoOSXTests-dummy.m in Sources */,
+				F41D4E97F7A69BEDA267594D /* Pods-SZNAltmetricDemoOSXTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		076BD2F85C47DA5AF182F941 /* PBXTargetDependency */ = {
+		073AB3A0F7D598C5E62E1F8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 241E8FF06973C731B0C128C8 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */;
-			targetProxy = 77E2607BF72E2F26C48257B2 /* PBXContainerItemProxy */;
+			name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
+			target = 37003FDFB0992B2C8F28F275 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */;
+			targetProxy = 9E09A0F0F7BEAA64555AE20B /* PBXContainerItemProxy */;
 		};
-		1B56F3D26E658DA868BFFBA9 /* PBXTargetDependency */ = {
+		3C1D4D28DA67F4662CFD7B62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 969F660B44DC0DFBD3AF378C /* Pods-ISO8601DateFormatter */;
-			targetProxy = 9E8DD1F9E1282C557E1747A7 /* PBXContainerItemProxy */;
+			name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
+			target = E0AA0E93AC4E2BD5E35715A2 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */;
+			targetProxy = 9EAF597E072597D8125C8BCF /* PBXContainerItemProxy */;
 		};
-		1C55B2DCA9DF8AEBB2B20E3F /* PBXTargetDependency */ = {
+		694B164868C6113D9549B95B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9847697AB33062501946D04 /* Pods-SZNAltmetric */;
-			targetProxy = AE40A7B31FB806E766427CBD /* PBXContainerItemProxy */;
+			name = "Pods-ISO8601DateFormatter";
+			target = 2A15863CFBF85E2FBFF23812 /* Pods-ISO8601DateFormatter */;
+			targetProxy = 13666C0A8CD9A7A03FEFF8B6 /* PBXContainerItemProxy */;
 		};
-		2318719E701FC9375986749C /* PBXTargetDependency */ = {
+		7748DCAA9F2977EA40720045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76C4FA29236F217930C9154D /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */;
-			targetProxy = D7BD4B175452D36A98AB7221 /* PBXContainerItemProxy */;
+			name = "Pods-SZNAltmetric";
+			target = FE27C8F5A7623486CF70C6DE /* Pods-SZNAltmetric */;
+			targetProxy = 8EA9D84E6281D975D9F68567 /* PBXContainerItemProxy */;
 		};
-		3AF13CB76860C3362B0390E4 /* PBXTargetDependency */ = {
+		7D8121990C50607A730DA807 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51232D79E493B696C6A043BE /* Pods-AFNetworking */;
-			targetProxy = D5AA6AFE23752787081900BC /* PBXContainerItemProxy */;
+			name = "Pods-SZNAltmetricDemoOSXTests-AFNetworking";
+			target = E0AA0E93AC4E2BD5E35715A2 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */;
+			targetProxy = 708CF924840B36BAB1C5573C /* PBXContainerItemProxy */;
 		};
-		584D7CF1D47ADE015B01CE3F /* PBXTargetDependency */ = {
+		85BF12F0E8D2C9BD95C2F021 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 241E8FF06973C731B0C128C8 /* Pods-SZNAltmetricDemoOSXTests-AFNetworking */;
-			targetProxy = 346A092CCE8D0BF5C1CA9179 /* PBXContainerItemProxy */;
+			name = "Pods-AFNetworking";
+			target = F6A87291D882081890057819 /* Pods-AFNetworking */;
+			targetProxy = 4298C26537FDCF5C31165751 /* PBXContainerItemProxy */;
 		};
-		67100EFF9E9F7552C8FAE7C3 /* PBXTargetDependency */ = {
+		DC1B77E4359DC3AA6F47A968 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 969F660B44DC0DFBD3AF378C /* Pods-ISO8601DateFormatter */;
-			targetProxy = C8B591C590A3BAA814F2C4E5 /* PBXContainerItemProxy */;
+			name = "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter";
+			target = 37003FDFB0992B2C8F28F275 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */;
+			targetProxy = FDB39526922A8573ABB2708F /* PBXContainerItemProxy */;
 		};
-		86B8D9C36F89CEFA3F1B72AD /* PBXTargetDependency */ = {
+		DF88CF13032DD36491F7165C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6DFD343150F77DC3A08A05C8 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric */;
-			targetProxy = C7638139B53B4395C7F0F3B2 /* PBXContainerItemProxy */;
+			name = "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric";
+			target = D7F6B91ADDF26ADC47123AB3 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric */;
+			targetProxy = B9D5C9838F2259DB45C785F9 /* PBXContainerItemProxy */;
 		};
-		94CC0DF5803770BB92F9E1F3 /* PBXTargetDependency */ = {
+		E355080FF0F3158B17239836 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51232D79E493B696C6A043BE /* Pods-AFNetworking */;
-			targetProxy = 0B54AE6E5FEEA562A730D138 /* PBXContainerItemProxy */;
+			name = "Pods-AFNetworking";
+			target = F6A87291D882081890057819 /* Pods-AFNetworking */;
+			targetProxy = B0C831B694F35FFD0B40955E /* PBXContainerItemProxy */;
 		};
-		EA9E4A01858EC321C0945868 /* PBXTargetDependency */ = {
+		E71B79D3490FC6D6E34EC8FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76C4FA29236F217930C9154D /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter */;
-			targetProxy = 3E5329B032DF48526768F770 /* PBXContainerItemProxy */;
+			name = "Pods-ISO8601DateFormatter";
+			target = 2A15863CFBF85E2FBFF23812 /* Pods-ISO8601DateFormatter */;
+			targetProxy = 7CC510946E2DDEBCBFEBF847 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A3E1D72F5C0A1DEE10A7ED3 /* Release */ = {
+		18FD56D5A8D2019B61E92475 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B9D9D34D42383F1E18096A /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */;
+			baseConfigurationReference = CDAD2CC3053D7B1628FD4A64 /* Pods-AFNetworking-Private.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		19A14D1336F417C3B7503982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DCFA0A61409FCB5AD66B13 /* Pods.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		0A44814E409BFAACA6378094 /* Debug */ = {
+		28FB746796D4490B383352BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B102E5ED36AA0C58196A097 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		479E585884DF80486F0690E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D93EAF7B5A4DFAE1725C363 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		693C30A5036F57681A213D1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4265DFB1157CA775FB57C7F /* Pods-SZNAltmetricDemoOSXTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		760213D3717F709F84721350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010571120227CBA39ACCF576 /* Pods-SZNAltmetric-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetric/Pods-SZNAltmetric-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		773D735B6E0879BAA1767B5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D0EC01A9C61EC248EF9D9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7D2374D2337EE82A0EF12AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC45DB31CDA9170E2B8CA5B5 /* Pods-ISO8601DateFormatter-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ISO8601DateFormatter/Pods-ISO8601DateFormatter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8DFBC8C3CD1D269A9107C740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B102E5ED36AA0C58196A097 /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		95FF599A1972D84B9F276277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC45DB31CDA9170E2B8CA5B5 /* Pods-ISO8601DateFormatter-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ISO8601DateFormatter/Pods-ISO8601DateFormatter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5B3962C253AECAF0FED27CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F45A705499AD67CFE55AF0 /* Pods-SZNAltmetricDemoOSXTests.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5F50AA5C932142FD16FF5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 010571120227CBA39ACCF576 /* Pods-SZNAltmetric-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetric/Pods-SZNAltmetric-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C864268730E6C025822D4689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D0EC01A9C61EC248EF9D9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C945621D6177FD7A62D02763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D93EAF7B5A4DFAE1725C363 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CEBC7FAE36B6FCA808EC69F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDAD2CC3053D7B1628FD4A64 /* Pods-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E10EE6C97B8B2C972E4C2751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85E2984A6EAFF05927B626C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E6FD2AA28E396BE3FDCBC30E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
@@ -954,7 +1273,9 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -969,285 +1290,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		0D93D8C12B086CCD6F8E103B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BE388A93EB00DFDEED9F9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		271BB255E64D67EAA9C43A09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4B9D9D34D42383F1E18096A /* Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric/Pods-SZNAltmetricDemoOSXTests-SZNAltmetric-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		55CC241F029C85630118F60A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42507C2908CF3BCF3C8C0DB3 /* Pods-SZNAltmetricDemoOSXTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5990378BC7E01D17AC9DAA50 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71BE388A93EB00DFDEED9F9D /* Pods-SZNAltmetricDemoOSXTests-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-AFNetworking/Pods-SZNAltmetricDemoOSXTests-AFNetworking-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5A39C7077C78F19E26E1022A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC47EF7966A85FF44FCE04A4 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		73D23DD55B0CD63F674E0D99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7EFA9EFC8DC7EB94FB680B7 /* Pods-ISO8601DateFormatter-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ISO8601DateFormatter/Pods-ISO8601DateFormatter-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8BABE1C3C0F37C8789CF513D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFEA817FA0EAE40BD4C573AD /* Pods-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		8F886B00FA4B59682D80D5D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5CDEC39EA4626FE4BAC46A2 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		93B98C7D00FEF3E5374E4E2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA391DFF18AC26689022A891 /* Pods-SZNAltmetric-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetric/Pods-SZNAltmetric-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9A065B6A4DD8FD0A040DB275 /* Release */ = {
+		FB93D763D1E33ADEE1EC8136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
@@ -1255,7 +1312,9 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
@@ -1265,277 +1324,98 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A07758D6B1CBB739C23E1F6B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5CDEC39EA4626FE4BAC46A2 /* Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter/Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A7304048C8BB18F88A934D11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7EFA9EFC8DC7EB94FB680B7 /* Pods-ISO8601DateFormatter-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-ISO8601DateFormatter/Pods-ISO8601DateFormatter-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B6F43E638D2A044BCE183A2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BFE8DB70FCFE2B65BFB4E89 /* Pods-SZNAltmetricDemoOSXTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E43968E3448CA1B73CD050D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43C02732CEA11BC4804D1ACE /* Pods.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E4F23E9DE7EA27A920C0ECE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFEA817FA0EAE40BD4C573AD /* Pods-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-AFNetworking/Pods-AFNetworking-prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		F3D412CFC6F61421A15C889E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA391DFF18AC26689022A891 /* Pods-SZNAltmetric-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-SZNAltmetric/Pods-SZNAltmetric-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B20C6A166E5409DA6CA4A44 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetric" */ = {
+		12A8E7D9F34ED4E62863F1E2 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3D412CFC6F61421A15C889E /* Debug */,
-				93B98C7D00FEF3E5374E4E2F /* Release */,
+				E10EE6C97B8B2C972E4C2751 /* Debug */,
+				19A14D1336F417C3B7503982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		204DD680DC440705D0915621 /* Build configuration list for PBXProject "Pods" */ = {
+		2200D78C8A19DFB0ED3EB34D /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A44814E409BFAACA6378094 /* Debug */,
-				9A065B6A4DD8FD0A040DB275 /* Release */,
+				28FB746796D4490B383352BE /* Debug */,
+				8DFBC8C3CD1D269A9107C740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		435F8B3505C924EBC9A40011 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests" */ = {
+		3F2F4AC5CEDBC19AB0B27E61 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55CC241F029C85630118F60A /* Debug */,
-				B6F43E638D2A044BCE183A2A /* Release */,
+				E6FD2AA28E396BE3FDCBC30E /* Debug */,
+				FB93D763D1E33ADEE1EC8136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D477FAFB9B44A5331D59719 /* Build configuration list for PBXNativeTarget "Pods-ISO8601DateFormatter" */ = {
+		6DF2B617373D000AA09FFF84 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetric" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				73D23DD55B0CD63F674E0D99 /* Debug */,
-				A7304048C8BB18F88A934D11 /* Release */,
+				C5F50AA5C932142FD16FF5D6 /* Debug */,
+				760213D3717F709F84721350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B65EA15D39A2A4931EF9859E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		8BE3BF6E3CD6F21A00C99BE5 /* Build configuration list for PBXNativeTarget "Pods-ISO8601DateFormatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A39C7077C78F19E26E1022A /* Debug */,
-				E43968E3448CA1B73CD050D1 /* Release */,
+				95FF599A1972D84B9F276277 /* Debug */,
+				7D2374D2337EE82A0EF12AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B761B8D1AD4C89FF11320858 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter" */ = {
+		ADA549216D6277E28B99961D /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A07758D6B1CBB739C23E1F6B /* Debug */,
-				8F886B00FA4B59682D80D5D0 /* Release */,
+				693C30A5036F57681A213D1F /* Debug */,
+				C5B3962C253AECAF0FED27CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D42A8D16105372E0EED70B17 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-AFNetworking" */ = {
+		E12E38BE662D74AC757E02AF /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5990378BC7E01D17AC9DAA50 /* Debug */,
-				0D93D8C12B086CCD6F8E103B /* Release */,
+				C864268730E6C025822D4689 /* Debug */,
+				773D735B6E0879BAA1767B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE85ACAA71D409EC5CDB2323 /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
+		EDC989E1E3B4FCE774009F1F /* Build configuration list for PBXNativeTarget "Pods-AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BABE1C3C0F37C8789CF513D /* Debug */,
-				E4F23E9DE7EA27A920C0ECE4 /* Release */,
+				18FD56D5A8D2019B61E92475 /* Debug */,
+				CEBC7FAE36B6FCA808EC69F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE8E5E33828A056C5157A892 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-SZNAltmetric" */ = {
+		EF2A2CEBE76511CE90A56FC1 /* Build configuration list for PBXNativeTarget "Pods-SZNAltmetricDemoOSXTests-ISO8601DateFormatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				271BB255E64D67EAA9C43A09 /* Debug */,
-				0A3E1D72F5C0A1DEE10A7ED3 /* Release */,
+				479E585884DF80486F0690E2 /* Debug */,
+				C945621D6177FD7A62D02763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2AC4996E91974E1BA9D16890 /* Project object */;
+	rootObject = 66748D832F0AE17E9E70CDD7 /* Project object */;
 }
