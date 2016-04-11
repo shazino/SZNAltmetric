@@ -87,17 +87,17 @@
 /**
  The cohorts of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary *cohorts;
+@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSNumber *> *cohorts;
 
 /**
  The raw content of the article from the API response.
  */
-@property (strong, nonatomic, nullable) NSDictionary *content;
+@property (strong, nonatomic, nullable) NSDictionary <NSString *, __kindof NSObject *> *content;
 
 /**
  The context of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary *context;
+@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSDictionary *> *context;
 
 /**
  The details URL of the article.
@@ -112,7 +112,7 @@
 /**
  The history of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary *history;
+@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSNumber *> *history;
 
 /**
  The Altmetric identifier of the article.
@@ -137,7 +137,7 @@
 /**
  The ISSNs of the article.
  */
-@property (strong, nonatomic, nullable) NSArray *ISSNs;
+@property (strong, nonatomic, nullable) NSArray <NSString *> *ISSNs;
 
 /**
  The journal of the article.
@@ -172,7 +172,7 @@
 /**
  The readers of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary *readers;
+@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSNumber *> *readers;
 
 /**
  The readers count of the article.
@@ -187,7 +187,7 @@
 /**
  The Scopus subjects of the article.
  */
-@property (strong, nonatomic, nullable) NSArray *scopusSubjects;
+@property (strong, nonatomic, nullable) NSArray <NSString *> *scopusSubjects;
 
 /**
  The Altmetric score of the article.
@@ -197,7 +197,7 @@
 /**
  The subjects of the article.
  */
-@property (strong, nonatomic, nullable) NSArray *subjects;
+@property (strong, nonatomic, nullable) NSArray <NSString *> *subjects;
 
 /**
  The title of the article.
@@ -207,7 +207,7 @@
 /**
  The quotes of the article (a.k.a. tweet quotes, selected quotes).
  */
-@property (strong, nonatomic, nullable) NSArray *quotes;
+@property (strong, nonatomic, nullable) NSArray <NSString *> *quotes;
 
 
 /**
