@@ -241,7 +241,7 @@
 			attributes = {
 				CLASSPREFIX = SZN;
 				LastTestingUpgradeCheck = 0630;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = shazino;
 			};
 			buildConfigurationList = 14630186170AFC2F00220E31 /* Build configuration list for PBXProject "SZNAltmetricDemoOSX" */;
@@ -425,6 +425,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -511,6 +512,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
 				INFOPLIST_FILE = "SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shazino.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -529,6 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SZNAltmetricDemoOSX/SZNAltmetricDemoOSX-Prefix.pch";
 				INFOPLIST_FILE = "SZNAltmetricDemoOSXTests/SZNAltmetricDemoOSXTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shazino.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
