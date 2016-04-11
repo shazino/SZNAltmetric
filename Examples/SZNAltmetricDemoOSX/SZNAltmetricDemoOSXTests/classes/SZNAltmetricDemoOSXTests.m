@@ -3,7 +3,7 @@
 //  SZNAltmetricDemoOSXTests
 //
 //  Created by Vincent Tourraine on 02/04/13.
-//  Copyright (c) 2013-2015 shazino. All rights reserved.
+//  Copyright (c) 2013-2016 shazino. All rights reserved.
 //
 
 @import XCTest;
