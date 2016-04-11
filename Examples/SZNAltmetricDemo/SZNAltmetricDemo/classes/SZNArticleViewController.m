@@ -13,12 +13,6 @@
 #import <AFNetworking.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
-@interface SZNArticleViewController ()
-
-- (void)configureViewWithArticle:(SZNAltmetricArticle *)article;
-
-@end
-
 
 @implementation SZNArticleViewController
 

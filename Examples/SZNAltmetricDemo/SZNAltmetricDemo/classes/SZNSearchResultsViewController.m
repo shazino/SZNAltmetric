@@ -14,9 +14,10 @@
 
 #import "SZNArticleViewController.h"
 
+
 @interface SZNSearchResultsViewController ()
 
-@property (strong, nonatomic) UIImage *placeholderImage;
+@property (nonatomic, strong, nullable) UIImage *placeholderImage;
 
 @end
 

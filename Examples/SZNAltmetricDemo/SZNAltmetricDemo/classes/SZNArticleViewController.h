@@ -10,41 +10,42 @@
 
 @class SZNAltmetricArticle;
 
+
 @interface SZNArticleViewController : UIViewController
 
-@property (strong, nonatomic) SZNAltmetricArticle *article;
+@property (nonatomic, strong, nullable) SZNAltmetricArticle *article;
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, weak, nullable) IBOutlet UIImageView *imageView;
 
-@property (weak, nonatomic) IBOutlet UILabel *altmetricIdentifierLabel;
-@property (weak, nonatomic) IBOutlet UILabel *DOILabel;
-@property (weak, nonatomic) IBOutlet UILabel *arXivLabel;
-@property (weak, nonatomic) IBOutlet UILabel *NLMIdentifierLabel;
-@property (weak, nonatomic) IBOutlet UILabel *pubMedIdentifierLabel;
-@property (weak, nonatomic) IBOutlet UILabel *ADSBibcodeLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *altmetricIdentifierLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *DOILabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *arXivLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *NLMIdentifierLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *pubMedIdentifierLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *ADSBibcodeLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *journalLabel;
-@property (weak, nonatomic) IBOutlet UILabel *publishedOnLabel;
-@property (weak, nonatomic) IBOutlet UILabel *lastUpdatedLabel;
-@property (weak, nonatomic) IBOutlet UILabel *addedOnLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *journalLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *publishedOnLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *lastUpdatedLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *addedOnLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *articleURLLabel;
-@property (weak, nonatomic) IBOutlet UILabel *detailsURLLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *articleURLLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *detailsURLLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *tweetersLabel;
-@property (weak, nonatomic) IBOutlet UILabel *facebookUsersLabel;
-@property (weak, nonatomic) IBOutlet UILabel *scienceBlogsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *googlePlusLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *tweetersLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *facebookUsersLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *scienceBlogsLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *googlePlusLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *readersMendeleyLabel;
-@property (weak, nonatomic) IBOutlet UILabel *readersCiteULikeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *readersConnoteaLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *readersMendeleyLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *readersCiteULikeLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *readersConnoteaLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *subjectsLabel;
-@property (weak, nonatomic) IBOutlet UILabel *scopusSubjectsLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *subjectsLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *scopusSubjectsLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *quotesLabel;
+@property (nonatomic, weak, nullable) IBOutlet UILabel *quotesLabel;
 
 @end

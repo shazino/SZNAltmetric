@@ -8,8 +8,11 @@
 
 @import UIKit;
 
+@class SZNAltmetricArticle;
+
+
 @interface SZNSearchResultsViewController : UITableViewController
 
-@property (strong, nonatomic) NSArray *searchResults;
+@property (nonatomic, strong, nullable) NSArray <SZNAltmetricArticle *> *searchResults;
 
 @end
