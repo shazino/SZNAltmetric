@@ -32,182 +32,182 @@
 /**
  The add date of the article.
  */
-@property (strong, nonatomic, nullable) NSDate *addedOn;
+@property (nonatomic, copy, nullable) NSDate *addedOn;
 
 /**
  The ADS Bibcode of the article.
  */
-@property (copy, nonatomic, nullable) NSString *ADSBibcode;
+@property (nonatomic, copy, nullable) NSString *ADSBibcode;
 
 /**
  The Altmetric journal identifier of the article.
  */
-@property (copy, nonatomic, nullable) NSString *altmetricJournalIdentifier;
+@property (nonatomic, copy, nullable) NSString *altmetricJournalIdentifier;
 
 /**
  The URL of the article.
  */
-@property (strong, nonatomic, nullable) NSURL *articleURL;
+@property (nonatomic, copy, nullable) NSURL *articleURL;
 
 /**
  The arXiv identifier of the article.
  */
-@property (copy, nonatomic, nullable) NSString *arXiv;
+@property (nonatomic, copy, nullable) NSString *arXiv;
 
 /**
  The cited by accounts count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *citedByAccountsCount;
+@property (nonatomic, copy, nullable) NSNumber *citedByAccountsCount;
 
 /**
  The cited by Facebook walls count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *citedByFacebookWallsCount;
+@property (nonatomic, copy, nullable) NSNumber *citedByFacebookWallsCount;
 
 /**
  The cited by feeds count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *citedByFeedsCount;
+@property (nonatomic, copy, nullable) NSNumber *citedByFeedsCount;
 
 /**
  The cited by Google+ count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *citedByGooglePlusCount;
+@property (nonatomic, copy, nullable) NSNumber *citedByGooglePlusCount;
 
 /**
  The cited by posts count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *citedByPostsCount;
+@property (nonatomic, copy, nullable) NSNumber *citedByPostsCount;
 
 /**
  The cited by tweeters count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *citedByTweetersCount;
+@property (nonatomic, copy, nullable) NSNumber *citedByTweetersCount;
 
 /**
  The cohorts of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSNumber *> *cohorts;
+@property (nonatomic, strong, nullable) NSDictionary <NSString *, NSNumber *> *cohorts;
 
 /**
  The raw content of the article from the API response.
  */
-@property (strong, nonatomic, nullable) NSDictionary <NSString *, __kindof NSObject *> *content;
+@property (nonatomic, strong, nullable) NSDictionary <NSString *, __kindof NSObject *> *content;
 
 /**
  The context of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSDictionary *> *context;
+@property (nonatomic, strong, nullable) NSDictionary <NSString *, NSDictionary *> *context;
 
 /**
  The details URL of the article.
  */
-@property (strong, nonatomic, nullable) NSURL *detailsURL;
+@property (nonatomic, copy, nullable) NSURL *detailsURL;
 
 /**
  The DOI of the article.
  */
-@property (copy, nonatomic, nullable) NSString *DOI;
+@property (nonatomic, copy, nullable) NSString *DOI;
 
 /**
  The history of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSNumber *> *history;
+@property (nonatomic, strong, nullable) NSDictionary <NSString *, NSNumber *> *history;
 
 /**
  The Altmetric identifier of the article.
  */
-@property (copy, nonatomic, nullable) NSString *identifier;
+@property (nonatomic, copy, nullable) NSString *identifier;
 
 /**
  The Altmetric image URL of the article (large).
  */
-@property (strong, nonatomic, nullable) NSURL *imageLargeURL;
+@property (nonatomic, copy, nullable) NSURL *imageLargeURL;
 
 /**
  The Altmetric image URL of the article (medium).
  */
-@property (strong, nonatomic, nullable) NSURL *imageMediumURL;
+@property (nonatomic, copy, nullable) NSURL *imageMediumURL;
 
 /**
  The Altmetric image URL of the article (small).
  */
-@property (strong, nonatomic, nullable) NSURL *imageSmallURL;
+@property (nonatomic, copy, nullable) NSURL *imageSmallURL;
 
 /**
  The ISSNs of the article.
  */
-@property (strong, nonatomic, nullable) NSArray <NSString *> *ISSNs;
+@property (nonatomic, strong, nullable) NSArray <NSString *> *ISSNs;
 
 /**
  The journal of the article.
  */
-@property (copy, nonatomic, nullable) NSString *journal;
+@property (nonatomic, copy, nullable) NSString *journal;
 
 /**
  The last update of the article.
  */
-@property (strong, nonatomic, nullable) NSDate *lastUpdated;
+@property (nonatomic, copy, nullable) NSDate *lastUpdated;
 
 /**
  The NLM (National Library of Medicine) identifier of the article.
  */
-@property (copy, nonatomic, nullable) NSString *NLMIdentifier;
+@property (nonatomic, copy, nullable) NSString *NLMIdentifier;
 
 /**
  The Open Access status (boolean) of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *openAccess;
+@property (nonatomic, copy, nullable) NSNumber *openAccess;
 
 /**
  The publication date of the article.
  */
-@property (strong, nonatomic, nullable) NSDate *publishedOn;
+@property (nonatomic, copy, nullable) NSDate *publishedOn;
 
 /**
  The PubMed identifier of the article.
  */
-@property (copy, nonatomic, nullable) NSString *pubMedIdentifier;
+@property (nonatomic, copy, nullable) NSString *pubMedIdentifier;
 
 /**
  The readers of the article.
  */
-@property (strong, nonatomic, nullable) NSDictionary <NSString *, NSNumber *> *readers;
+@property (nonatomic, strong, nullable) NSDictionary <NSString *, NSNumber *> *readers;
 
 /**
  The readers count of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *readersCount;
+@property (nonatomic, copy, nullable) NSNumber *readersCount;
 
 /**
  The schema of the article.
  */
-@property (copy, nonatomic, nullable) NSString *schema;
+@property (nonatomic, copy, nullable) NSString *schema;
 
 /**
  The Scopus subjects of the article.
  */
-@property (strong, nonatomic, nullable) NSArray <NSString *> *scopusSubjects;
+@property (nonatomic, strong, nullable) NSArray <NSString *> *scopusSubjects;
 
 /**
  The Altmetric score of the article.
  */
-@property (strong, nonatomic, nullable) NSNumber *score;
+@property (nonatomic, copy, nullable) NSNumber *score;
 
 /**
  The subjects of the article.
  */
-@property (strong, nonatomic, nullable) NSArray <NSString *> *subjects;
+@property (nonatomic, strong, nullable) NSArray <NSString *> *subjects;
 
 /**
  The title of the article.
  */
-@property (copy, nonatomic, nullable) NSString *title;
+@property (nonatomic, copy, nullable) NSString *title;
 
 /**
  The quotes of the article (a.k.a. tweet quotes, selected quotes).
  */
-@property (strong, nonatomic, nullable) NSArray <NSString *> *quotes;
+@property (nonatomic, strong, nullable) NSArray <NSString *> *quotes;
 
 
 /**

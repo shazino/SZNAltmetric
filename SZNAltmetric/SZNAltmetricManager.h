@@ -42,27 +42,28 @@ typedef void (^SZNAltmetricFetchArticleFailureBlock)(NSError * __nullable error)
 
  @see [Altmetric API documentation](http://api.altmetric.com)
  */
-@property (copy, nonatomic, nullable) NSString *APIKey;
+@property (nonatomic, copy, nullable) NSString *APIKey;
 
 /**
  Daily API rate limit.
  */
-@property (strong, nonatomic, nullable) NSNumber *dailyRateLimit;
+@property (nonatomic, copy, nullable) NSNumber *dailyRateLimit;
 
 /**
  Daily API rate limit remaining calls.
  */
-@property (strong, nonatomic, nullable) NSNumber *dailyRateRemaining;
+@property (nonatomic, copy, nullable) NSNumber *dailyRateRemaining;
 
 /**
  Hourly API rate limit.
  */
-@property (strong, nonatomic, nullable) NSNumber *hourlyRateLimit;
+@property (nonatomic, copy, nullable) NSNumber *hourlyRateLimit;
 
 /**
  Hourly API rate limit remaining calls.
  */
-@property (strong, nonatomic, nullable) NSNumber *hourlyRateRemaining;
+@property (nonatomic, copy, nullable) NSNumber *hourlyRateRemaining;
+
 
 /**
  Creates and initializes if needed a shared instance of a `SZNAltmetricManager`
