@@ -21,12 +21,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 /**
  `SZNAltmetricArticle` represents an article, as described by Altmetric.
  */
-
 @interface SZNAltmetricArticle : NSObject
 
 /**
@@ -217,6 +216,6 @@
 
  @return  The newly-initialized article.
  */
-+ (nullable SZNAltmetricArticle *)articleWithAPIResponseObject:(nonnull id)responseObject;
+- (nullable instancetype)initWithAPIResponseObject:(nonnull NSDictionary <NSString *, __kindof NSObject *> *)responseObject;
 
 @end

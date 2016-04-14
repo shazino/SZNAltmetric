@@ -1,5 +1,5 @@
 //
-// SZNAltmetricArticle.m
+// SZNAltmetricself.m
 //
 // Copyright (c) 2013-2016 shazino (shazino SAS), http://www.shazino.com/
 //
@@ -24,79 +24,75 @@
 #import "SZNAltmetricArticle.h"
 #import <ISO8601DateFormatter.h>
 
-@interface SZNAltmetricArticle ()
-
-+ (NSDate *)dateFromResponseObject:(id)responseObject;
-
-@end
-
 
 @implementation SZNAltmetricArticle
 
-+ (SZNAltmetricArticle *)articleWithAPIResponseObject:(id)responseObject {
-    if (![responseObject isKindOfClass:[NSDictionary class]]) {
-        return nil;
+- (nullable instancetype)initWithAPIResponseObject:(nonnull NSDictionary <NSString *, __kindof NSObject *> *)responseObject {
+    self = [super init];
+
+    if (self) {
+        self.content = responseObject;
+
+        NSDictionary *citationDictionary = responseObject[@"citation"] ?: responseObject;
+        self.addedOn             = [SZNAltmetricArticle dateFromResponseObject:responseObject[@"added_on"]];
+        self.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
+        self.altmetricJournalIdentifier  = [NSString stringWithFormat:@"%@", citationDictionary[@"altmetric_jid"]];
+        self.ADSBibcode          = citationDictionary[@"ads_id"];
+        self.citedByAccountsCount      = responseObject[@"cited_by_accounts_count"];
+        self.citedByFacebookWallsCount = responseObject[@"cited_by_fbwalls_count"];
+        self.citedByFeedsCount         = responseObject[@"cited_by_feeds_count"];
+        self.citedByGooglePlusCount    = responseObject[@"cited_by_gplus_count"];
+        self.citedByPostsCount         = responseObject[@"cited_by_posts_count"];
+        self.citedByTweetersCount      = responseObject[@"cited_by_tweeters_count"];
+        self.cohorts          = responseObject[@"cohorts"];
+        self.context          = responseObject[@"context"];
+        self.DOI              = citationDictionary[@"doi"];
+        self.arXiv            = citationDictionary[@"arxiv_id"];
+        self.lastUpdated      = [SZNAltmetricArticle dateFromResponseObject:responseObject[@"last_updated"]];
+        self.NLMIdentifier    = citationDictionary[@"nlmid"];
+        self.pubMedIdentifier = citationDictionary[@"pmid"];
+
+        if (responseObject[@"published_on"]) {
+            self.publishedOn     = [SZNAltmetricArticle dateFromResponseObject:responseObject[@"published_on"]];
+        }
+
+        if (citationDictionary[@"pubdate"]) {
+            self.publishedOn     = [SZNAltmetricArticle dateFromResponseObject:citationDictionary[@"pubdate"]];
+        }
+
+        self.schema          = responseObject[@"schema"];
+        self.score           = responseObject[@"score"];
+        self.subjects        = responseObject[@"subjects"];
+        self.scopusSubjects  = responseObject[@"scopus_subjects"];
+        self.quotes          = responseObject[@"selected_quotes"] ?: responseObject[@"tq"];
+        self.ISSNs           = responseObject[@"issns"];
+
+        NSDictionary *images = responseObject[@"images"];
+        self.imageLargeURL   = [NSURL URLWithString:images[@"large"]];
+        self.imageMediumURL  = [NSURL URLWithString:images[@"medium"]];
+        self.imageSmallURL   = [NSURL URLWithString:images[@"small"]];
+
+        self.history         = responseObject[@"history"];
+        self.openAccess      = responseObject[@"is_oa"];
+        self.journal         = citationDictionary[@"journal"];
+        self.title           = citationDictionary[@"title"];
+        self.readersCount    = responseObject[@"readers_count"];
+        self.readers         = responseObject[@"readers"];
+        self.articleURL      = [NSURL URLWithString:responseObject[@"url"]];
+
+        if ([citationDictionary[@"links"] isKindOfClass:[NSArray class]] &&
+            [citationDictionary[@"links"] count] > 0) {
+            self.detailsURL = [NSURL URLWithString:citationDictionary[@"links"][0]];
+        }
+        else {
+            self.detailsURL = [NSURL URLWithString:responseObject[@"details_url"]];
+        }
     }
 
-    SZNAltmetricArticle *article = [SZNAltmetricArticle new];
-    article.content = responseObject;
-
-    NSDictionary *citationDictionary = responseObject[@"citation"] ?: responseObject;
-    article.addedOn             = [self dateFromResponseObject:responseObject[@"added_on"]];
-    article.identifier          = [NSString stringWithFormat:@"%@", responseObject[@"altmetric_id"]];
-    article.altmetricJournalIdentifier  = [NSString stringWithFormat:@"%@", citationDictionary[@"altmetric_jid"]];
-    article.ADSBibcode          = citationDictionary[@"ads_id"];
-    article.citedByAccountsCount      = responseObject[@"cited_by_accounts_count"];
-    article.citedByFacebookWallsCount = responseObject[@"cited_by_fbwalls_count"];
-    article.citedByFeedsCount         = responseObject[@"cited_by_feeds_count"];
-    article.citedByGooglePlusCount    = responseObject[@"cited_by_gplus_count"];
-    article.citedByPostsCount         = responseObject[@"cited_by_posts_count"];
-    article.citedByTweetersCount      = responseObject[@"cited_by_tweeters_count"];
-    article.cohorts          = responseObject[@"cohorts"];
-    article.context          = responseObject[@"context"];
-    article.DOI              = citationDictionary[@"doi"];
-    article.arXiv            = citationDictionary[@"arxiv_id"];
-    article.lastUpdated      = [self dateFromResponseObject:responseObject[@"last_updated"]];
-    article.NLMIdentifier    = citationDictionary[@"nlmid"];
-    article.pubMedIdentifier = citationDictionary[@"pmid"];
-
-    if (responseObject[@"published_on"]) {
-        article.publishedOn     = [self dateFromResponseObject:responseObject[@"published_on"]];
-    }
-
-    if (citationDictionary[@"pubdate"]) {
-        article.publishedOn     = [self dateFromResponseObject:citationDictionary[@"pubdate"]];
-    }
-
-    article.schema          = responseObject[@"schema"];
-    article.score           = responseObject[@"score"];
-    article.subjects        = responseObject[@"subjects"];
-    article.scopusSubjects  = responseObject[@"scopus_subjects"];
-    article.quotes          = responseObject[@"selected_quotes"] ?: responseObject[@"tq"];
-    article.ISSNs           = responseObject[@"issns"];
-    article.imageLargeURL   = [NSURL URLWithString:responseObject[@"images"][@"large"]];
-    article.imageMediumURL  = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
-    article.imageSmallURL   = [NSURL URLWithString:responseObject[@"images"][@"small"]];
-    article.history         = responseObject[@"history"];
-    article.openAccess      = responseObject[@"is_oa"];
-    article.journal         = citationDictionary[@"journal"];
-    article.title           = citationDictionary[@"title"];
-    article.readersCount    = responseObject[@"readers_count"];
-    article.readers         = responseObject[@"readers"];
-    article.articleURL      = [NSURL URLWithString:responseObject[@"url"]];
-
-    if ([citationDictionary[@"links"] isKindOfClass:[NSArray class]] &&
-        [citationDictionary[@"links"] count] > 0) {
-        article.detailsURL = [NSURL URLWithString:citationDictionary[@"links"][0]];
-    }
-    else {
-        article.detailsURL = [NSURL URLWithString:responseObject[@"details_url"]];
-    }
-
-    return article;
+    return self;
 }
 
-+ (NSDate *)dateFromResponseObject:(id)responseObject {
++ (nullable NSDate *)dateFromResponseObject:(nullable id)responseObject {
     if ([responseObject isKindOfClass:[NSNumber class]]) {
         return [NSDate dateWithTimeIntervalSince1970:[responseObject doubleValue]];
     }

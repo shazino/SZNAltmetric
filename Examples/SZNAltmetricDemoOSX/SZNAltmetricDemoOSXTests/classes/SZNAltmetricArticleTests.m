@@ -22,7 +22,7 @@
     NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"article" ofType:@"json"]];
     NSError *JSONError = nil;
     NSDictionary *JSONArticleDictionary = [NSJSONSerialization JSONObjectWithData:JSONData options:kNilOptions error:&JSONError];
-    SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:JSONArticleDictionary];
+    SZNAltmetricArticle *article = [[SZNAltmetricArticle alloc] initWithAPIResponseObject:JSONArticleDictionary];
 
     XCTAssertNil(JSONError, @"Article deserialization failed");
     XCTAssertNotNil(article, @"Article not created");
@@ -75,7 +75,7 @@
     NSData *JSONData = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"articleDetails" ofType:@"json"]];
     NSError *JSONError = nil;
     NSDictionary *JSONArticleDictionary = [NSJSONSerialization JSONObjectWithData:JSONData options:kNilOptions error:&JSONError];
-    SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:JSONArticleDictionary];
+    SZNAltmetricArticle *article = [[SZNAltmetricArticle alloc] initWithAPIResponseObject:JSONArticleDictionary];
 
     XCTAssertNil(JSONError, @"Article deserialization failed");
     XCTAssertNotNil(article, @"Article not created");

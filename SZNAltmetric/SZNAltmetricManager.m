@@ -207,7 +207,7 @@
 
              NSMutableArray *results = [NSMutableArray array];
              for (NSDictionary *result in responseObject[@"results"]) {
-                 SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:result];
+                 SZNAltmetricArticle *article = [[SZNAltmetricArticle alloc] initWithAPIResponseObject:result];
                  if (article) {
                      [results addObject:article];
                  }
@@ -218,7 +218,7 @@
              }
          }
          else {
-             SZNAltmetricArticle *article = [SZNAltmetricArticle articleWithAPIResponseObject:responseObject];
+             SZNAltmetricArticle *article = [[SZNAltmetricArticle alloc] initWithAPIResponseObject:responseObject];
 
              if (success) {
                  success(article ? @[article] : @[], NSNotFound, NSNotFound);
