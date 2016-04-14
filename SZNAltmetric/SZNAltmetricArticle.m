@@ -52,13 +52,13 @@
     article.citedByGooglePlusCount    = responseObject[@"cited_by_gplus_count"];
     article.citedByPostsCount         = responseObject[@"cited_by_posts_count"];
     article.citedByTweetersCount      = responseObject[@"cited_by_tweeters_count"];
-    article.cohorts             = responseObject[@"cohorts"];
-    article.context             = responseObject[@"context"];
-    article.DOI                 = citationDictionary[@"doi"];
-    article.arXiv               = citationDictionary[@"arxiv_id"];
-    article.lastUpdated         = [self dateFromResponseObject:responseObject[@"last_updated"]];
-    article.NLMIdentifier       = citationDictionary[@"nlmid"];
-    article.pubMedIdentifier    = citationDictionary[@"pmid"];
+    article.cohorts          = responseObject[@"cohorts"];
+    article.context          = responseObject[@"context"];
+    article.DOI              = citationDictionary[@"doi"];
+    article.arXiv            = citationDictionary[@"arxiv_id"];
+    article.lastUpdated      = [self dateFromResponseObject:responseObject[@"last_updated"]];
+    article.NLMIdentifier    = citationDictionary[@"nlmid"];
+    article.pubMedIdentifier = citationDictionary[@"pmid"];
 
     if (responseObject[@"published_on"]) {
         article.publishedOn     = [self dateFromResponseObject:responseObject[@"published_on"]];
@@ -68,29 +68,29 @@
         article.publishedOn     = [self dateFromResponseObject:citationDictionary[@"pubdate"]];
     }
 
-    article.schema              = responseObject[@"schema"];
-    article.score               = responseObject[@"score"];
-    article.subjects            = responseObject[@"subjects"];
-    article.scopusSubjects      = responseObject[@"scopus_subjects"];
-    article.quotes              = responseObject[@"selected_quotes"] ?: responseObject[@"tq"];
-    article.ISSNs               = responseObject[@"issns"];
-    article.imageLargeURL       = [NSURL URLWithString:responseObject[@"images"][@"large"]];
-    article.imageMediumURL      = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
-    article.imageSmallURL       = [NSURL URLWithString:responseObject[@"images"][@"small"]];
-    article.history             = responseObject[@"history"];
-    article.openAccess          = responseObject[@"is_oa"];
-    article.journal             = citationDictionary[@"journal"];
-    article.title               = citationDictionary[@"title"];
-    article.readersCount        = responseObject[@"readers_count"];
-    article.readers             = responseObject[@"readers"];
-    article.articleURL          = [NSURL URLWithString:responseObject[@"url"]];
+    article.schema          = responseObject[@"schema"];
+    article.score           = responseObject[@"score"];
+    article.subjects        = responseObject[@"subjects"];
+    article.scopusSubjects  = responseObject[@"scopus_subjects"];
+    article.quotes          = responseObject[@"selected_quotes"] ?: responseObject[@"tq"];
+    article.ISSNs           = responseObject[@"issns"];
+    article.imageLargeURL   = [NSURL URLWithString:responseObject[@"images"][@"large"]];
+    article.imageMediumURL  = [NSURL URLWithString:responseObject[@"images"][@"medium"]];
+    article.imageSmallURL   = [NSURL URLWithString:responseObject[@"images"][@"small"]];
+    article.history         = responseObject[@"history"];
+    article.openAccess      = responseObject[@"is_oa"];
+    article.journal         = citationDictionary[@"journal"];
+    article.title           = citationDictionary[@"title"];
+    article.readersCount    = responseObject[@"readers_count"];
+    article.readers         = responseObject[@"readers"];
+    article.articleURL      = [NSURL URLWithString:responseObject[@"url"]];
 
     if ([citationDictionary[@"links"] isKindOfClass:[NSArray class]] &&
         [citationDictionary[@"links"] count] > 0) {
-        article.detailsURL      = [NSURL URLWithString:citationDictionary[@"links"][0]];
+        article.detailsURL = [NSURL URLWithString:citationDictionary[@"links"][0]];
     }
     else {
-        article.detailsURL      = [NSURL URLWithString:responseObject[@"details_url"]];
+        article.detailsURL = [NSURL URLWithString:responseObject[@"details_url"]];
     }
 
     return article;
