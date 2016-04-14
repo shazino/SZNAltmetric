@@ -2,7 +2,7 @@
 
 **Objective-C client for the Altmetric API.**
 
-![Platform](https://img.shields.io/cocoapods/p/SZNAltmetric.svg)]
+![Platform](https://img.shields.io/cocoapods/p/SZNAltmetric.svg)
 [![Build Status](https://travis-ci.org/shazino/SZNAltmetric.png?branch=master)](https://travis-ci.org/shazino/SZNAltmetric)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SZNAltmetric.svg)](https://img.shields.io/cocoapods/v/SZNAltmetric.svg)
 [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shazino/SZNAltmetric/raw/master/LICENSE)
