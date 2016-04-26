@@ -5,6 +5,7 @@
 ![Platform](https://img.shields.io/cocoapods/p/SZNAltmetric.svg)
 [![Build Status](https://travis-ci.org/shazino/SZNAltmetric.png?branch=master)](https://travis-ci.org/shazino/SZNAltmetric)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SZNAltmetric.svg)](https://img.shields.io/cocoapods/v/SZNAltmetric.svg)
+[![CocoaPods documentation](https://img.shields.io/cocoapods/metrics/doc-percent/SZNAltmetric.svg)](http://cocoadocs.org/docsets/SZNAltmetric)
 [![MIT license](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shazino/SZNAltmetric/raw/master/LICENSE)
 
 SZNAltmetric is an [Altmetric API](http://api.altmetric.com) client for iOS and Mac OS X. It’s built on top of [AFNetworking](http://www.github.com/AFNetworking/AFNetworking) to deal with network operations, and based on `NSURLSession`.
